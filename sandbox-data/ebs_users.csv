@@ -1,0 +1,314 @@
+userName,employeeId,description,email,endDate,responsibility
+KANDERSON,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,,Application Developer
+KANDERSON,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,,Employee Self Service
+KANDERSON,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,,System Administrator
+JJOHNSON,E1003,John Johnson,john.johnson@sandbox.local,,Employee Self Service
+JJOHNSON,E1003,John Johnson,john.johnson@sandbox.local,,System Administrator
+DHALL,E1004,Debra Hall,debra.hall@sandbox.local,,Application Developer
+DHALL,E1004,Debra Hall,debra.hall@sandbox.local,,Employee Self Service
+DHALL,E1004,Debra Hall,debra.hall@sandbox.local,,System Administrator
+EPEREZ,E1005,Eric Perez,eric.perez@sandbox.local,,Application Developer
+EPEREZ,E1005,Eric Perez,eric.perez@sandbox.local,,Employee Self Service
+THILL,E1006,Timothy Hill,timothy.hill@sandbox.local,,Application Developer
+THILL,E1006,Timothy Hill,timothy.hill@sandbox.local,,Employee Self Service
+THILL,E1006,Timothy Hill,timothy.hill@sandbox.local,,System Administrator
+SJACKSON,E1007,Samuel Jackson,samuel.jackson@sandbox.local,,Application Developer
+SJACKSON,E1007,Samuel Jackson,samuel.jackson@sandbox.local,,Employee Self Service
+AROBERTS,E1008,Ashley Roberts,ashley.roberts@sandbox.local,,Application Developer
+AROBERTS,E1008,Ashley Roberts,ashley.roberts@sandbox.local,,Employee Self Service
+AROBERTS,E1008,Ashley Roberts,ashley.roberts@sandbox.local,,System Administrator
+CMURPHY,E1009,Christine Murphy,christine.murphy@sandbox.local,,Application Developer
+CMURPHY,E1009,Christine Murphy,christine.murphy@sandbox.local,,Employee Self Service
+DJONES,E1010,Dennis Jones,dennis.jones@sandbox.local,,Application Developer
+DJONES,E1010,Dennis Jones,dennis.jones@sandbox.local,,Employee Self Service
+DJONES,E1010,Dennis Jones,dennis.jones@sandbox.local,,System Administrator
+AGREEN,E1011,Andrew Green,andrew.green@sandbox.local,,Employee Self Service
+AGREEN,E1011,Andrew Green,andrew.green@sandbox.local,,System Administrator
+JNOVAK,E1012,John Novak,john.novak@sandbox.local,,Employee Self Service
+JNOVAK,E1012,John Novak,john.novak@sandbox.local,,System Administrator
+SADAMS,E1013,Sandra Adams,sandra.adams@sandbox.local,,Employee Self Service
+SADAMS,E1013,Sandra Adams,sandra.adams@sandbox.local,,System Administrator
+EWRIGHT,E1014,Emma Wright,emma.wright@sandbox.local,,Application Developer
+EWRIGHT,E1014,Emma Wright,emma.wright@sandbox.local,,Employee Self Service
+EWRIGHT,E1014,Emma Wright,emma.wright@sandbox.local,,System Administrator
+SALLEN,E1015,Sarah Allen,sarah.allen@sandbox.local,,Application Developer
+SALLEN,E1015,Sarah Allen,sarah.allen@sandbox.local,,Employee Self Service
+SALLEN,E1015,Sarah Allen,sarah.allen@sandbox.local,,System Administrator
+CRAMIREZ,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,,Application Developer
+CRAMIREZ,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,,Employee Self Service
+CRAMIREZ,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,,System Administrator
+SREILLY,E1017,Samuel Reilly,samuel.reilly@sandbox.local,,Application Developer
+SREILLY,E1017,Samuel Reilly,samuel.reilly@sandbox.local,,Employee Self Service
+DPEREZ,E1018,Dennis Perez,dennis.perez@sandbox.local,,Application Developer
+DPEREZ,E1018,Dennis Perez,dennis.perez@sandbox.local,,Employee Self Service
+DPEREZ,E1018,Dennis Perez,dennis.perez@sandbox.local,,System Administrator
+MALLEN,E1019,Matthew Allen,matthew.allen@sandbox.local,,Employee Self Service
+MALLEN,E1019,Matthew Allen,matthew.allen@sandbox.local,,System Administrator
+KWHITE,E1020,Karen White,karen.white@sandbox.local,,Application Developer
+KWHITE,E1020,Karen White,karen.white@sandbox.local,,Employee Self Service
+RDAVIS,E1021,Robert Davis,robert.davis@sandbox.local,,Application Developer
+RDAVIS,E1021,Robert Davis,robert.davis@sandbox.local,,Employee Self Service
+RDAVIS,E1021,Robert Davis,robert.davis@sandbox.local,,System Administrator
+WCAMPBELL,E1022,William Campbell,william.campbell@sandbox.local,,Application Developer
+WCAMPBELL,E1022,William Campbell,william.campbell@sandbox.local,,Employee Self Service
+WCAMPBELL,E1022,William Campbell,william.campbell@sandbox.local,,System Administrator
+SHERNANDEZ,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,,Application Developer
+SHERNANDEZ,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,,Employee Self Service
+AGONZALEZ,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,,Application Developer
+AGONZALEZ,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,,Employee Self Service
+AGONZALEZ,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,,System Administrator
+JTHOMAS,E1025,Jessica Thomas,jessica.thomas@sandbox.local,,Employee Self Service
+JTHOMAS,E1025,Jessica Thomas,jessica.thomas@sandbox.local,,System Administrator
+JJONES,E1026,James Jones,james.jones@sandbox.local,,Application Developer
+JJONES,E1026,James Jones,james.jones@sandbox.local,,Employee Self Service
+ATHOMAS,E1027,Anna Thomas,anna.thomas@sandbox.local,,Application Developer
+ATHOMAS,E1027,Anna Thomas,anna.thomas@sandbox.local,,Employee Self Service
+ATHOMAS,E1027,Anna Thomas,anna.thomas@sandbox.local,,System Administrator
+KKOWALSKI,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,,Application Developer
+KKOWALSKI,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,,Employee Self Service
+ECLARK,E1029,Eric Clark,eric.clark@sandbox.local,,Application Developer
+ECLARK,E1029,Eric Clark,eric.clark@sandbox.local,,Employee Self Service
+ECLARK,E1029,Eric Clark,eric.clark@sandbox.local,,System Administrator
+SCAMPBELL,E1030,Sharon Campbell,sharon.campbell@sandbox.local,,Employee Self Service
+SCAMPBELL,E1030,Sharon Campbell,sharon.campbell@sandbox.local,,System Administrator
+SRAMIREZ,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,,Application Developer
+SRAMIREZ,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,,Employee Self Service
+SRAMIREZ,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,,System Administrator
+SMILLER,E1032,Samuel Miller,samuel.miller@sandbox.local,,Application Developer
+SMILLER,E1032,Samuel Miller,samuel.miller@sandbox.local,,Employee Self Service
+SMILLER,E1032,Samuel Miller,samuel.miller@sandbox.local,,System Administrator
+NYOUNG,E1033,Nicholas Young,nicholas.young@sandbox.local,,Application Developer
+NYOUNG,E1033,Nicholas Young,nicholas.young@sandbox.local,,Employee Self Service
+NYOUNG,E1033,Nicholas Young,nicholas.young@sandbox.local,,System Administrator
+RTAYLOR,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,,Application Developer
+RTAYLOR,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,,Employee Self Service
+RTAYLOR,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,,System Administrator
+JMARTINEZ,E1035,Justin Martinez,justin.martinez@sandbox.local,,Employee Self Service
+JMARTINEZ,E1035,Justin Martinez,justin.martinez@sandbox.local,,System Administrator
+BBROWN,E1036,Brian Brown,brian.brown@sandbox.local,,Application Developer
+BBROWN,E1036,Brian Brown,brian.brown@sandbox.local,,Employee Self Service
+BBROWN,E1036,Brian Brown,brian.brown@sandbox.local,,System Administrator
+AGARCIA,E1037,Anna Garcia,anna.garcia@sandbox.local,,Employee Self Service
+AGARCIA,E1037,Anna Garcia,anna.garcia@sandbox.local,,FA Inquiry
+AGARCIA,E1037,Anna Garcia,anna.garcia@sandbox.local,,Payroll Processor
+SDAVIS,E1038,Sharon Davis,sharon.davis@sandbox.local,,Employee Self Service
+SDAVIS,E1038,Sharon Davis,sharon.davis@sandbox.local,,FA Inquiry
+LNELSON,E1039,Laura Nelson,laura.nelson@sandbox.local,,AP Inquiry
+LNELSON,E1039,Laura Nelson,laura.nelson@sandbox.local,,Employee Self Service
+LNELSON,E1039,Laura Nelson,laura.nelson@sandbox.local,,FA Inquiry
+LNELSON,E1039,Laura Nelson,laura.nelson@sandbox.local,,GL Super User
+GRODRIGUEZ,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,,Employee Self Service
+GRODRIGUEZ,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,,Payroll Processor
+EWRIGHT,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,,AP Inquiry
+EWRIGHT,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,,AP Manager
+EWRIGHT,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,,Employee Self Service
+EWRIGHT,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,,GL Super User
+JHERNANDEZ,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,,Employee Self Service
+JHERNANDEZ,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,,GL Super User
+JHERNANDEZ,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,,Payroll Processor
+RSULLIVAN,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,,AP Manager
+RSULLIVAN,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,,Employee Self Service
+SMITCHELL,E1044,Susan Mitchell,susan.mitchell@sandbox.local,,AP Inquiry
+SMITCHELL,E1044,Susan Mitchell,susan.mitchell@sandbox.local,,Employee Self Service
+SMITCHELL,E1044,Susan Mitchell,susan.mitchell@sandbox.local,,FA Inquiry
+SMITCHELL,E1044,Susan Mitchell,susan.mitchell@sandbox.local,,Payroll Processor
+CKELLY,E1045,Christine Kelly,christine.kelly@sandbox.local,,AP Manager
+CKELLY,E1045,Christine Kelly,christine.kelly@sandbox.local,,Employee Self Service
+CKELLY,E1045,Christine Kelly,christine.kelly@sandbox.local,,FA Inquiry
+DWILLIAMS,E1046,Donna Williams,donna.williams@sandbox.local,,Employee Self Service
+DWILLIAMS,E1046,Donna Williams,donna.williams@sandbox.local,,GL Super User
+JSCOTT,E1047,Jonathan Scott,jonathan.scott@sandbox.local,,AP Inquiry
+JSCOTT,E1047,Jonathan Scott,jonathan.scott@sandbox.local,,AP Manager
+JSCOTT,E1047,Jonathan Scott,jonathan.scott@sandbox.local,,Employee Self Service
+JSCOTT,E1047,Jonathan Scott,jonathan.scott@sandbox.local,,Payroll Processor
+SNGUYEN,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,,AP Inquiry
+SNGUYEN,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,,Employee Self Service
+SNGUYEN,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,,FA Inquiry
+CTHOMAS,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,,AP Manager
+CTHOMAS,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,,Employee Self Service
+CTHOMAS,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,,GL Super User
+CTHOMAS,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,,Payroll Processor
+KTHOMAS,E1050,Karen Thomas,karen.thomas@sandbox.local,,AP Manager
+KTHOMAS,E1050,Karen Thomas,karen.thomas@sandbox.local,,Employee Self Service
+KTHOMAS,E1050,Karen Thomas,karen.thomas@sandbox.local,,FA Inquiry
+GKOWALSKI,E1051,George Kowalski,george.kowalski@sandbox.local,,AP Inquiry
+GKOWALSKI,E1051,George Kowalski,george.kowalski@sandbox.local,,AP Manager
+GKOWALSKI,E1051,George Kowalski,george.kowalski@sandbox.local,,Employee Self Service
+GKOWALSKI,E1051,George Kowalski,george.kowalski@sandbox.local,,FA Inquiry
+JMILLER,E1052,Janet Miller,janet.miller@sandbox.local,,Employee Self Service
+JMILLER,E1052,Janet Miller,janet.miller@sandbox.local,,FA Inquiry
+AANDERSON,E1053,Ashley Anderson,ashley.anderson@sandbox.local,,AP Manager
+AANDERSON,E1053,Ashley Anderson,ashley.anderson@sandbox.local,,Employee Self Service
+AANDERSON,E1053,Ashley Anderson,ashley.anderson@sandbox.local,,FA Inquiry
+AANDERSON,E1053,Ashley Anderson,ashley.anderson@sandbox.local,,Payroll Processor
+DALLEN,E1054,Dennis Allen,dennis.allen@sandbox.local,,Employee Self Service
+DALLEN,E1054,Dennis Allen,dennis.allen@sandbox.local,,Payroll Processor
+MNGUYEN,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,,Employee Self Service
+MNGUYEN,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,,HR Self Service Admin
+MNGUYEN,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,,HRMS Manager
+BRAMIREZ,E1056,Brian Ramirez,brian.ramirez@sandbox.local,,Employee Self Service
+BRAMIREZ,E1056,Brian Ramirez,brian.ramirez@sandbox.local,,HR Self Service Admin
+BRAMIREZ,E1056,Brian Ramirez,brian.ramirez@sandbox.local,,HRMS Manager
+CSMITH,E1057,Cynthia Smith,cynthia.smith@sandbox.local,,Employee Self Service
+CSMITH,E1057,Cynthia Smith,cynthia.smith@sandbox.local,,HR Self Service Admin
+CSMITH,E1057,Cynthia Smith,cynthia.smith@sandbox.local,,HRMS Manager
+CJONES,E1058,Cynthia Jones,cynthia.jones@sandbox.local,,Employee Self Service
+CJONES,E1058,Cynthia Jones,cynthia.jones@sandbox.local,,HR Self Service Admin
+CJONES,E1058,Cynthia Jones,cynthia.jones@sandbox.local,,HRMS Manager
+SMARTIN,E1059,Scott Martin,scott.martin@sandbox.local,,Employee Self Service
+SMARTIN,E1059,Scott Martin,scott.martin@sandbox.local,,HR Self Service Admin
+SMARTIN,E1059,Scott Martin,scott.martin@sandbox.local,,HRMS Manager
+JBAKER,E1060,Jacob Baker,jacob.baker@sandbox.local,,Employee Self Service
+JBAKER,E1060,Jacob Baker,jacob.baker@sandbox.local,,HR Self Service Admin
+JBAKER,E1060,Jacob Baker,jacob.baker@sandbox.local,,HRMS Manager
+JMARTIN,E1061,James Martin,james.martin@sandbox.local,,Employee Self Service
+JMARTIN,E1061,James Martin,james.martin@sandbox.local,,HRMS Manager
+JBAKER,E1062,Jonathan Baker,jonathan.baker@sandbox.local,,Employee Self Service
+JBAKER,E1062,Jonathan Baker,jonathan.baker@sandbox.local,,HR Self Service Admin
+JBAKER,E1062,Jonathan Baker,jonathan.baker@sandbox.local,,HRMS Manager
+JGREEN,E1063,Jerry Green,jerry.green@sandbox.local,,Employee Self Service
+JGREEN,E1063,Jerry Green,jerry.green@sandbox.local,,HR Self Service Admin
+BMARTINEZ,E1064,Betty Martinez,betty.martinez@sandbox.local,2026-01-01,Employee Self Service
+BMARTINEZ,E1064,Betty Martinez,betty.martinez@sandbox.local,2026-01-01,HR Self Service Admin
+BMARTINEZ,E1064,Betty Martinez,betty.martinez@sandbox.local,2026-01-01,HRMS Manager
+JTORRES,E1065,Jack Torres,jack.torres@sandbox.local,,Employee Self Service
+JTORRES,E1065,Jack Torres,jack.torres@sandbox.local,,HR Self Service Admin
+JTORRES,E1065,Jack Torres,jack.torres@sandbox.local,,HRMS Manager
+ASMITH,E1066,Aaron Smith,aaron.smith@sandbox.local,,Employee Self Service
+ASMITH,E1066,Aaron Smith,aaron.smith@sandbox.local,,HR Self Service Admin
+ASMITH,E1066,Aaron Smith,aaron.smith@sandbox.local,,HRMS Manager
+ETHOMAS,E1067,Emma Thomas,emma.thomas@sandbox.local,,Employee Self Service
+ETHOMAS,E1067,Emma Thomas,emma.thomas@sandbox.local,,HRMS Manager
+JFLORES,E1068,Jonathan Flores,jonathan.flores@sandbox.local,,Employee Self Service
+JFLORES,E1068,Jonathan Flores,jonathan.flores@sandbox.local,,HR Self Service Admin
+JFLORES,E1068,Jonathan Flores,jonathan.flores@sandbox.local,,HRMS Manager
+LLEWIS,E1069,Larry Lewis,larry.lewis@sandbox.local,,Employee Self Service
+LLEWIS,E1069,Larry Lewis,larry.lewis@sandbox.local,,HRMS Manager
+SMOORE,E1070,Steven Moore,steven.moore@sandbox.local,,Employee Self Service
+SMOORE,E1070,Steven Moore,steven.moore@sandbox.local,,HRMS Manager
+WRODRIGUEZ,E1071,William Rodriguez,william.rodriguez@sandbox.local,,Employee Self Service
+WRODRIGUEZ,E1071,William Rodriguez,william.rodriguez@sandbox.local,,HR Self Service Admin
+WRODRIGUEZ,E1071,William Rodriguez,william.rodriguez@sandbox.local,,HRMS Manager
+GWRIGHT,E1072,George Wright,george.wright@sandbox.local,,Employee Self Service
+GWRIGHT,E1072,George Wright,george.wright@sandbox.local,,HR Self Service Admin
+RKELLY,E1073,Robert Kelly,robert.kelly@sandbox.local,,Employee Self Service
+RKELLY,E1073,Robert Kelly,robert.kelly@sandbox.local,,HR Self Service Admin
+RKELLY,E1073,Robert Kelly,robert.kelly@sandbox.local,,HRMS Manager
+LWRIGHT,E1074,Laura Wright,laura.wright@sandbox.local,,Employee Self Service
+LWRIGHT,E1074,Laura Wright,laura.wright@sandbox.local,,HRMS Manager
+CYOUNG,E1075,Cynthia Young,cynthia.young@sandbox.local,,Employee Self Service
+CYOUNG,E1075,Cynthia Young,cynthia.young@sandbox.local,,HR Self Service Admin
+CYOUNG,E1075,Cynthia Young,cynthia.young@sandbox.local,,HRMS Manager
+ARODRIGUEZ,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,,Employee Self Service
+ARODRIGUEZ,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,,HRMS Manager
+DRAMIREZ,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,,Employee Self Service
+DRAMIREZ,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,,HRMS Manager
+SLEE,E1078,Stephen Lee,stephen.lee@sandbox.local,,Employee Self Service
+SLEE,E1078,Stephen Lee,stephen.lee@sandbox.local,,HRMS Manager
+WWALKER,E1079,William Walker,william.walker@sandbox.local,,Employee Self Service
+WWALKER,E1079,William Walker,william.walker@sandbox.local,,HR Self Service Admin
+WWALKER,E1079,William Walker,william.walker@sandbox.local,,HRMS Manager
+TWALKER,E1081,Thomas Walker,thomas.walker@sandbox.local,,Employee Self Service
+ECARTER,E1092,Emma Carter,emma.carter@sandbox.local,,Employee Self Service
+NLEWIS,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,,Employee Self Service
+SJONES,E1106,Stephen Jones,stephen.jones@sandbox.local,,Employee Self Service
+ASULLIVAN,E1115,Anna Sullivan,anna.sullivan@sandbox.local,,Employee Self Service
+RFLORES,E1116,Ryan Flores,ryan.flores@sandbox.local,,Employee Self Service
+GKELLY,E1128,George Kelly,george.kelly@sandbox.local,,Employee Self Service
+ANOVAK,E1143,Angela Novak,angela.novak@sandbox.local,,Employee Self Service
+DREILLY,E1144,Donald Reilly,donald.reilly@sandbox.local,,Employee Self Service
+ELEE,E1147,Emma Lee,emma.lee@sandbox.local,,Employee Self Service
+DCLARK,E1148,Debra Clark,debra.clark@sandbox.local,,Employee Self Service
+RLOPEZ,E1157,Robert Lopez,robert.lopez@sandbox.local,,Employee Self Service
+RLEE,E1164,Richard Lee,richard.lee@sandbox.local,,AP Manager
+RLEE,E1164,Richard Lee,richard.lee@sandbox.local,,Employee Self Service
+RLEE,E1164,Richard Lee,richard.lee@sandbox.local,,Inventory Super User
+RLEE,E1164,Richard Lee,richard.lee@sandbox.local,,iProcurement Requester
+DGARCIA,E1165,David Garcia,david.garcia@sandbox.local,,Employee Self Service
+DGARCIA,E1165,David Garcia,david.garcia@sandbox.local,,PO Buyer
+DGARCIA,E1165,David Garcia,david.garcia@sandbox.local,,iProcurement Requester
+HSCOTT,E1166,Helen Scott,helen.scott@sandbox.local,,Employee Self Service
+HSCOTT,E1166,Helen Scott,helen.scott@sandbox.local,,Inventory Super User
+HSCOTT,E1166,Helen Scott,helen.scott@sandbox.local,,PO Buyer
+HSCOTT,E1166,Helen Scott,helen.scott@sandbox.local,,iProcurement Requester
+MJACKSON,E1167,Michael Jackson,michael.jackson@sandbox.local,,Employee Self Service
+MJACKSON,E1167,Michael Jackson,michael.jackson@sandbox.local,,PO Buyer
+AANDERSON,E1168,Angela Anderson,angela.anderson@sandbox.local,,Employee Self Service
+AANDERSON,E1168,Angela Anderson,angela.anderson@sandbox.local,,PO Buyer
+AANDERSON,E1168,Angela Anderson,angela.anderson@sandbox.local,,System Administrator
+EKELLY,E1169,Eric Kelly,eric.kelly@sandbox.local,,Employee Self Service
+EKELLY,E1169,Eric Kelly,eric.kelly@sandbox.local,,Inventory Super User
+EKELLY,E1169,Eric Kelly,eric.kelly@sandbox.local,,PO Buyer
+SNELSON,E1170,Samantha Nelson,samantha.nelson@sandbox.local,,Employee Self Service
+SNELSON,E1170,Samantha Nelson,samantha.nelson@sandbox.local,,Inventory Super User
+JLOPEZ,E1171,James Lopez,james.lopez@sandbox.local,,Employee Self Service
+JLOPEZ,E1171,James Lopez,james.lopez@sandbox.local,,Inventory Super User
+JLOPEZ,E1171,James Lopez,james.lopez@sandbox.local,,PO Buyer
+JLOPEZ,E1171,James Lopez,james.lopez@sandbox.local,,iProcurement Requester
+BWILSON,E1172,Brenda Wilson,brenda.wilson@sandbox.local,,Employee Self Service
+BWILSON,E1172,Brenda Wilson,brenda.wilson@sandbox.local,,Inventory Super User
+BWILSON,E1172,Brenda Wilson,brenda.wilson@sandbox.local,,iProcurement Requester
+GHILL,E1173,Gregory Hill,gregory.hill@sandbox.local,,Employee Self Service
+GHILL,E1173,Gregory Hill,gregory.hill@sandbox.local,,Inventory Super User
+WMOORE,E1174,William Moore,william.moore@sandbox.local,,Employee Self Service
+WMOORE,E1174,William Moore,william.moore@sandbox.local,,Inventory Super User
+WMOORE,E1174,William Moore,william.moore@sandbox.local,,PO Buyer
+WMOORE,E1174,William Moore,william.moore@sandbox.local,,iProcurement Requester
+ADAVIS,E1175,Anna Davis,anna.davis@sandbox.local,,Employee Self Service
+ADAVIS,E1175,Anna Davis,anna.davis@sandbox.local,,Inventory Super User
+ADAVIS,E1175,Anna Davis,anna.davis@sandbox.local,,PO Buyer
+ADAVIS,E1175,Anna Davis,anna.davis@sandbox.local,,iProcurement Requester
+RMARTIN,E1176,Rachel Martin,rachel.martin@sandbox.local,,Employee Self Service
+RMARTIN,E1176,Rachel Martin,rachel.martin@sandbox.local,,Inventory Super User
+RMARTIN,E1176,Rachel Martin,rachel.martin@sandbox.local,,iProcurement Requester
+SCARTER,E1177,Sarah Carter,sarah.carter@sandbox.local,,Employee Self Service
+SCARTER,E1177,Sarah Carter,sarah.carter@sandbox.local,,PO Buyer
+SCARTER,E1177,Sarah Carter,sarah.carter@sandbox.local,,iProcurement Requester
+JWRIGHT,E1178,Jacob Wright,jacob.wright@sandbox.local,,Employee Self Service
+JWRIGHT,E1178,Jacob Wright,jacob.wright@sandbox.local,,Inventory Super User
+JWRIGHT,E1178,Jacob Wright,jacob.wright@sandbox.local,,PO Buyer
+JWRIGHT,E1178,Jacob Wright,jacob.wright@sandbox.local,,iProcurement Requester
+JRAMIREZ,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,,Employee Self Service
+JRAMIREZ,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,,Inventory Super User
+JRAMIREZ,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,,PO Buyer
+SRIVERA,E1180,Sharon Rivera,sharon.rivera@sandbox.local,,Employee Self Service
+SRIVERA,E1180,Sharon Rivera,sharon.rivera@sandbox.local,,Inventory Super User
+SRIVERA,E1180,Sharon Rivera,sharon.rivera@sandbox.local,,PO Buyer
+KROBINSON,E1181,Katherine Robinson,katherine.robinson@sandbox.local,,Employee Self Service
+KROBINSON,E1181,Katherine Robinson,katherine.robinson@sandbox.local,,Inventory Super User
+KROBINSON,E1181,Katherine Robinson,katherine.robinson@sandbox.local,,PO Buyer
+KROBINSON,E1181,Katherine Robinson,katherine.robinson@sandbox.local,,iProcurement Requester
+SKING,E1182,Sharon King,sharon.king@sandbox.local,,Employee Self Service
+SKING,E1182,Sharon King,sharon.king@sandbox.local,,Inventory Super User
+SKING,E1182,Sharon King,sharon.king@sandbox.local,,PO Buyer
+SKING,E1182,Sharon King,sharon.king@sandbox.local,,iProcurement Requester
+LJONES,E1183,Lisa Jones,lisa.jones@sandbox.local,,Employee Self Service
+LJONES,E1183,Lisa Jones,lisa.jones@sandbox.local,,iProcurement Requester
+DSULLIVAN,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,,Employee Self Service
+DSULLIVAN,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,,PO Buyer
+DJONES,E1185,Debra Jones,debra.jones@sandbox.local,,Employee Self Service
+DJONES,E1185,Debra Jones,debra.jones@sandbox.local,,PO Buyer
+CTORRES,E1186,Carolyn Torres,carolyn.torres@sandbox.local,,Employee Self Service
+CTORRES,E1186,Carolyn Torres,carolyn.torres@sandbox.local,,Inventory Super User
+CTORRES,E1186,Carolyn Torres,carolyn.torres@sandbox.local,,PO Buyer
+CTORRES,E1186,Carolyn Torres,carolyn.torres@sandbox.local,,iProcurement Requester
+JJONES,E1187,Jonathan Jones,jonathan.jones@sandbox.local,,Employee Self Service
+JJONES,E1187,Jonathan Jones,jonathan.jones@sandbox.local,,Inventory Super User
+SJONES,E1188,Scott Jones,scott.jones@sandbox.local,,Employee Self Service
+SJONES,E1188,Scott Jones,scott.jones@sandbox.local,,Inventory Super User
+BFLORES,E1189,Barbara Flores,barbara.flores@sandbox.local,,Employee Self Service
+BFLORES,E1189,Barbara Flores,barbara.flores@sandbox.local,,Inventory Super User
+NADAMS,E1190,Nicole Adams,nicole.adams@sandbox.local,,Employee Self Service
+NADAMS,E1190,Nicole Adams,nicole.adams@sandbox.local,,Inventory Super User
+NADAMS,E1190,Nicole Adams,nicole.adams@sandbox.local,,PO Buyer
+MRIVERA,E1191,Melissa Rivera,melissa.rivera@sandbox.local,,Employee Self Service
+MRIVERA,E1191,Melissa Rivera,melissa.rivera@sandbox.local,,Inventory Super User
+MRIVERA,E1191,Melissa Rivera,melissa.rivera@sandbox.local,,iProcurement Requester
+WNGUYEN,E1195,William Nguyen,william.nguyen@sandbox.local,,Employee Self Service
+CGARCIA,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,,Employee Self Service
+BRAMIREZ,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,,Employee Self Service
+RGREEN,E1213,Robert Green,robert.green@sandbox.local,,Employee Self Service
+SWILLIAMS,E1219,Stephen Williams,stephen.williams@sandbox.local,,Employee Self Service
+TLEWIS,E1225,Timothy Lewis,timothy.lewis@sandbox.local,,AP Manager
+TLEWIS,E1225,Timothy Lewis,timothy.lewis@sandbox.local,,Employee Self Service
+LJONES,E1226,Linda Jones,linda.jones@sandbox.local,,Employee Self Service

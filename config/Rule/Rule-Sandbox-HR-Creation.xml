@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="Sandbox HR Creation" type="IdentityCreation">
+  <Description>Sandbox: names identity by employeeId and sets core attributes + manager from the HR feed.</Description>
+  <Source><![CDATA[
+import sailpoint.object.Identity;
+
+String empId = account.getStringAttribute("employeeId");
+identity.setName(empId);
+identity.setFirstname(account.getStringAttribute("firstName"));
+identity.setLastname(account.getStringAttribute("lastName"));
+identity.setDisplayName(account.getStringAttribute("displayName"));
+identity.setEmail(account.getStringAttribute("email"));
+identity.setAttribute("department", account.getStringAttribute("department"));
+identity.setAttribute("title", account.getStringAttribute("title"));
+identity.setAttribute("location", account.getStringAttribute("location"));
+identity.setAttribute("employeeType", account.getStringAttribute("employeeType"));
+identity.setInactive("Terminated".equals(account.getStringAttribute("status")));
+
+String mgrId = account.getStringAttribute("managerId");
+if (mgrId != null && mgrId.length() > 0) {
+    Identity mgr = context.getObjectByName(Identity.class, mgrId);
+    if (mgr != null) identity.setManager(mgr);
+}
+]]></Source>
+</Rule>

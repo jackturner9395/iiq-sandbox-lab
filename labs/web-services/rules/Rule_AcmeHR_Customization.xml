@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+  <!--
+    LAB EXERCISE - you write the Java.
+    Imports and runs as-is (returns the object unchanged) so aggregation works before you start.
+    Attach it: Application > Rules > Customization Rule.
+    Fires once per account the connector returns, BEFORE correlation.
+  -->
+  <Rule language="beanshell" name="AcmeHR - Account Customization" type="ResourceObjectCustomization">
+    <Description>Normalizes Acme HR accounts during aggregation.</Description>
+    <Signature returnType="ResourceObject">
+      <Inputs>
+        <Argument name="object" type="ResourceObject">
+          <Description>The account the connector just built. Read with object.getAttribute("x"), write with object.put("x", value).</Description>
+        </Argument>
+        <Argument name="application" type="Application"/>
+        <Argument name="connector"/>
+        <Argument name="state" type="Map"/>
+        <Argument name="log"/>
+        <Argument name="context"/>
+      </Inputs>
+      <Returns>
+        <Argument name="object" type="ResourceObject"/>
+      </Returns>
+    </Signature>
+    <Source><![CDATA[
+import sailpoint.object.ResourceObject;
+
+// ---------------------------------------------------------------------------
+// TODO 1: Disable suspended accounts.
+//   If the "status" attribute equals "SUSPENDED", set the reserved attribute
+//   "IIQDisabled" to Boolean true. (Check status for null first.)
+//   Verify: bwilliams and rbrown show as disabled after aggregation.
+//
+// TODO 2: Lowercase the login.
+//   "JTaylor" comes back mixed-case. Lowercase the "login" attribute.
+//   Hint: login is your Display Attribute, so also call
+//   object.setDisplayName(...) with the lowercased value.
+//
+// TODO 3: Build a full name.
+//   Combine firstName + " " + lastName into a new attribute "fullName"
+//   (add fullName to the account schema first, or it won't be stored).
+//   Handle either part being null.
+//
+// TODO 4: Log what you did.
+//   log.debug("AcmeHR customization: " + object.getIdentity() + " ...");
+//   Turn on rule logging at debug to see it.
+//
+// STRETCH: if "roles" contains "R400" (System Admin), set a new
+//   attribute "privilegedAccount" = true. roles is multi-valued, so it
+//   comes back as a List.
+// ---------------------------------------------------------------------------
+
+return object;
+]]></Source>
+  </Rule>
+</sailpoint>

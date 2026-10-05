@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application authoritative="false" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Sandbox Oracle EBS" profileClass="" type="DelimitedFile">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="Sandbox Correlation by EmployeeId"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:/IIQSandbox/data/ebs_users.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords" value="true"/>
+      <entry key="hasHeader" value="true"/>
+      <entry key="mergeRows" value="true"/>
+      <entry key="indexColumn" value="userName"/>
+      <entry key="mergeColumns">
+        <value>
+          <List>
+            <String>responsibility</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="parseType" value="delimited"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US" value="Sandbox demo app loaded from ebs_users.csv"/>
+          </Map>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="userName" identityAttribute="userName" instanceAttribute="" nativeObjectType="account" objectType="account">
+        <AttributeDefinition name="userName" type="string"/>
+        <AttributeDefinition name="employeeId" type="string"/>
+        <AttributeDefinition name="description" type="string"/>
+        <AttributeDefinition name="email" type="string"/>
+        <AttributeDefinition name="endDate" type="string"/>
+        <AttributeDefinition entitlement="true" managed="true" multi="true" name="responsibility" type="string"/>
+    </Schema>
+  </Schemas>
+</Application>

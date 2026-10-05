@@ -1,0 +1,1124 @@
+sAMAccountName,employeeId,displayName,mail,department,disabled,memberOf
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,GG-All-Employees
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,GG-CIS-Users
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,GG-Executives
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,GG-Managers
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,O365-E3
+cdavis,E1001,Christine Davis,christine.davis@sandbox.local,Executive,false,VPN-Users
+kanderson,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,Information Technology,false,GG-All-Employees
+kanderson,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,Information Technology,false,GG-Managers
+kanderson,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,Information Technology,false,GG-Server-Admins
+kanderson,E1002,Kimberly Anderson,kimberly.anderson@sandbox.local,Information Technology,false,VPN-Users
+jjohnson,E1003,John Johnson,john.johnson@sandbox.local,Information Technology,false,GG-All-Employees
+jjohnson,E1003,John Johnson,john.johnson@sandbox.local,Information Technology,false,GG-Dev-Git
+jjohnson,E1003,John Johnson,john.johnson@sandbox.local,Information Technology,false,GG-Managers
+jjohnson,E1003,John Johnson,john.johnson@sandbox.local,Information Technology,false,O365-E3
+jjohnson,E1003,John Johnson,john.johnson@sandbox.local,Information Technology,false,VPN-Users
+dhall,E1004,Debra Hall,debra.hall@sandbox.local,Information Technology,false,GG-All-Employees
+dhall,E1004,Debra Hall,debra.hall@sandbox.local,Information Technology,false,GG-DBA
+dhall,E1004,Debra Hall,debra.hall@sandbox.local,Information Technology,false,GG-Server-Admins
+dhall,E1004,Debra Hall,debra.hall@sandbox.local,Information Technology,false,O365-E3
+dhall,E1004,Debra Hall,debra.hall@sandbox.local,Information Technology,false,VPN-Users
+eperez,E1005,Eric Perez,eric.perez@sandbox.local,Information Technology,false,GG-All-Employees
+eperez,E1005,Eric Perez,eric.perez@sandbox.local,Information Technology,false,GG-DBA
+eperez,E1005,Eric Perez,eric.perez@sandbox.local,Information Technology,false,GG-Server-Admins
+eperez,E1005,Eric Perez,eric.perez@sandbox.local,Information Technology,false,GG-ServiceDesk
+eperez,E1005,Eric Perez,eric.perez@sandbox.local,Information Technology,false,VPN-Users
+thill,E1006,Timothy Hill,timothy.hill@sandbox.local,Information Technology,false,GG-All-Employees
+thill,E1006,Timothy Hill,timothy.hill@sandbox.local,Information Technology,false,GG-IT-Staff
+thill,E1006,Timothy Hill,timothy.hill@sandbox.local,Information Technology,false,O365-E3
+thill,E1006,Timothy Hill,timothy.hill@sandbox.local,Information Technology,false,VPN-Users
+sjackson,E1007,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,false,GG-All-Employees
+sjackson,E1007,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,false,GG-Dev-Git
+sjackson,E1007,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,false,GG-IT-Staff
+sjackson,E1007,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,false,O365-E3
+sjackson,E1007,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,false,VPN-Users
+aroberts,E1008,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,false,GG-All-Employees
+aroberts,E1008,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,false,GG-Server-Admins
+aroberts,E1008,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,false,GG-ServiceDesk
+aroberts,E1008,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,false,O365-E3
+aroberts,E1008,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,false,VPN-Users
+cmurphy,E1009,Christine Murphy,christine.murphy@sandbox.local,Information Technology,false,GG-All-Employees
+cmurphy,E1009,Christine Murphy,christine.murphy@sandbox.local,Information Technology,false,GG-Domain-Admins
+cmurphy,E1009,Christine Murphy,christine.murphy@sandbox.local,Information Technology,false,GG-IT-Staff
+cmurphy,E1009,Christine Murphy,christine.murphy@sandbox.local,Information Technology,false,O365-E3
+cmurphy,E1009,Christine Murphy,christine.murphy@sandbox.local,Information Technology,false,VPN-Users
+djones,E1010,Dennis Jones,dennis.jones@sandbox.local,Information Technology,false,GG-All-Employees
+djones,E1010,Dennis Jones,dennis.jones@sandbox.local,Information Technology,false,GG-DBA
+djones,E1010,Dennis Jones,dennis.jones@sandbox.local,Information Technology,false,O365-E3
+djones,E1010,Dennis Jones,dennis.jones@sandbox.local,Information Technology,false,VPN-Users
+agreen,E1011,Andrew Green,andrew.green@sandbox.local,Information Technology,false,GG-All-Employees
+agreen,E1011,Andrew Green,andrew.green@sandbox.local,Information Technology,false,GG-IT-Staff
+agreen,E1011,Andrew Green,andrew.green@sandbox.local,Information Technology,false,GG-Server-Admins
+agreen,E1011,Andrew Green,andrew.green@sandbox.local,Information Technology,false,O365-E3
+agreen,E1011,Andrew Green,andrew.green@sandbox.local,Information Technology,false,VPN-Users
+jnovak,E1012,John Novak,john.novak@sandbox.local,Information Technology,false,GG-All-Employees
+jnovak,E1012,John Novak,john.novak@sandbox.local,Information Technology,false,GG-Dev-Git
+jnovak,E1012,John Novak,john.novak@sandbox.local,Information Technology,false,GG-ServiceDesk
+jnovak,E1012,John Novak,john.novak@sandbox.local,Information Technology,false,O365-E3
+jnovak,E1012,John Novak,john.novak@sandbox.local,Information Technology,false,VPN-Users
+sadams,E1013,Sandra Adams,sandra.adams@sandbox.local,Information Technology,false,GG-All-Employees
+sadams,E1013,Sandra Adams,sandra.adams@sandbox.local,Information Technology,false,GG-ServiceDesk
+sadams,E1013,Sandra Adams,sandra.adams@sandbox.local,Information Technology,false,O365-E3
+sadams,E1013,Sandra Adams,sandra.adams@sandbox.local,Information Technology,false,VPN-Users
+ewright,E1014,Emma Wright,emma.wright@sandbox.local,Information Technology,false,GG-All-Employees
+ewright,E1014,Emma Wright,emma.wright@sandbox.local,Information Technology,false,GG-IT-Staff
+ewright,E1014,Emma Wright,emma.wright@sandbox.local,Information Technology,false,GG-Server-Admins
+ewright,E1014,Emma Wright,emma.wright@sandbox.local,Information Technology,false,O365-E3
+ewright,E1014,Emma Wright,emma.wright@sandbox.local,Information Technology,false,VPN-Users
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,GG-All-Employees
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,GG-DBA
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,GG-IT-Staff
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,GG-Managers
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,GG-ServiceDesk
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,O365-E3
+sallen,E1015,Sarah Allen,sarah.allen@sandbox.local,Information Technology,false,VPN-Users
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,GG-All-Employees
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,GG-DBA
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,GG-Dev-Git
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,GG-Domain-Admins
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,GG-ServiceDesk
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,O365-E3
+cramirez,E1016,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,false,VPN-Users
+sreilly,E1017,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,false,GG-All-Employees
+sreilly,E1017,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,false,GG-DBA
+sreilly,E1017,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,false,GG-IT-Staff
+sreilly,E1017,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,false,O365-E3
+sreilly,E1017,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,false,VPN-Users
+dperez,E1018,Dennis Perez,dennis.perez@sandbox.local,Information Technology,false,GG-All-Employees
+dperez,E1018,Dennis Perez,dennis.perez@sandbox.local,Information Technology,false,GG-Dev-Git
+dperez,E1018,Dennis Perez,dennis.perez@sandbox.local,Information Technology,false,O365-E3
+dperez,E1018,Dennis Perez,dennis.perez@sandbox.local,Information Technology,false,VPN-Users
+mallen,E1019,Matthew Allen,matthew.allen@sandbox.local,Information Technology,false,GG-All-Employees
+mallen,E1019,Matthew Allen,matthew.allen@sandbox.local,Information Technology,false,GG-DBA
+mallen,E1019,Matthew Allen,matthew.allen@sandbox.local,Information Technology,false,O365-E3
+mallen,E1019,Matthew Allen,matthew.allen@sandbox.local,Information Technology,false,VPN-Users
+kwhite,E1020,Karen White,karen.white@sandbox.local,Information Technology,false,GG-All-Employees
+kwhite,E1020,Karen White,karen.white@sandbox.local,Information Technology,false,GG-Dev-Git
+kwhite,E1020,Karen White,karen.white@sandbox.local,Information Technology,false,O365-E3
+kwhite,E1020,Karen White,karen.white@sandbox.local,Information Technology,false,VPN-Users
+rdavis,E1021,Robert Davis,robert.davis@sandbox.local,Information Technology,false,GG-All-Employees
+rdavis,E1021,Robert Davis,robert.davis@sandbox.local,Information Technology,false,GG-Server-Admins
+rdavis,E1021,Robert Davis,robert.davis@sandbox.local,Information Technology,false,GG-ServiceDesk
+rdavis,E1021,Robert Davis,robert.davis@sandbox.local,Information Technology,false,O365-E3
+rdavis,E1021,Robert Davis,robert.davis@sandbox.local,Information Technology,false,VPN-Users
+wcampbell,E1022,William Campbell,william.campbell@sandbox.local,Information Technology,false,GG-All-Employees
+wcampbell,E1022,William Campbell,william.campbell@sandbox.local,Information Technology,false,GG-IT-Staff
+wcampbell,E1022,William Campbell,william.campbell@sandbox.local,Information Technology,false,GG-Server-Admins
+wcampbell,E1022,William Campbell,william.campbell@sandbox.local,Information Technology,false,O365-E3
+wcampbell,E1022,William Campbell,william.campbell@sandbox.local,Information Technology,false,VPN-Users
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,GG-All-Employees
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,GG-Domain-Admins
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,GG-Server-Admins
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,GG-ServiceDesk
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,O365-E3
+shernandez,E1023,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,false,VPN-Users
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,GG-All-Employees
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,GG-Dev-Git
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,GG-IT-Staff
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,GG-ServiceDesk
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,O365-E3
+agonzalez,E1024,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,false,VPN-Users
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,GG-All-Employees
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,GG-DBA
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,GG-IT-Staff
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,GG-Server-Admins
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,O365-E3
+jthomas,E1025,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,false,VPN-Users
+jjones,E1026,James Jones,james.jones@sandbox.local,Information Technology,false,GG-All-Employees
+jjones,E1026,James Jones,james.jones@sandbox.local,Information Technology,false,GG-Dev-Git
+jjones,E1026,James Jones,james.jones@sandbox.local,Information Technology,false,GG-Server-Admins
+jjones,E1026,James Jones,james.jones@sandbox.local,Information Technology,false,GG-ServiceDesk
+jjones,E1026,James Jones,james.jones@sandbox.local,Information Technology,false,VPN-Users
+athomas,E1027,Anna Thomas,anna.thomas@sandbox.local,Information Technology,false,GG-All-Employees
+athomas,E1027,Anna Thomas,anna.thomas@sandbox.local,Information Technology,false,GG-Dev-Git
+athomas,E1027,Anna Thomas,anna.thomas@sandbox.local,Information Technology,false,GG-Server-Admins
+athomas,E1027,Anna Thomas,anna.thomas@sandbox.local,Information Technology,false,O365-E3
+athomas,E1027,Anna Thomas,anna.thomas@sandbox.local,Information Technology,false,VPN-Users
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,GG-All-Employees
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,GG-DBA
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,GG-Domain-Admins
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,GG-Managers
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,O365-E3
+kkowalski,E1028,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,false,VPN-Users
+eclark,E1029,Eric Clark,eric.clark@sandbox.local,Information Technology,false,GG-All-Employees
+eclark,E1029,Eric Clark,eric.clark@sandbox.local,Information Technology,false,GG-ServiceDesk
+eclark,E1029,Eric Clark,eric.clark@sandbox.local,Information Technology,false,O365-E3
+eclark,E1029,Eric Clark,eric.clark@sandbox.local,Information Technology,false,VPN-Users
+scampbell,E1030,Sharon Campbell,sharon.campbell@sandbox.local,Information Technology,false,GG-All-Employees
+scampbell,E1030,Sharon Campbell,sharon.campbell@sandbox.local,Information Technology,false,GG-Server-Admins
+scampbell,E1030,Sharon Campbell,sharon.campbell@sandbox.local,Information Technology,false,O365-E3
+scampbell,E1030,Sharon Campbell,sharon.campbell@sandbox.local,Information Technology,false,VPN-Users
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,GG-All-Employees
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,GG-Dev-Git
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,GG-Server-Admins
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,GG-ServiceDesk
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,O365-E3
+sramirez,E1031,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,false,VPN-Users
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,GG-All-Employees
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,GG-Dev-Git
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,GG-IT-Staff
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,GG-Server-Admins
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,O365-E3
+smiller,E1032,Samuel Miller,samuel.miller@sandbox.local,Information Technology,false,VPN-Users
+nyoung,E1033,Nicholas Young,nicholas.young@sandbox.local,Information Technology,false,GG-All-Employees
+nyoung,E1033,Nicholas Young,nicholas.young@sandbox.local,Information Technology,false,GG-ServiceDesk
+nyoung,E1033,Nicholas Young,nicholas.young@sandbox.local,Information Technology,false,O365-E3
+nyoung,E1033,Nicholas Young,nicholas.young@sandbox.local,Information Technology,false,VPN-Users
+rtaylor,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,false,GG-All-Employees
+rtaylor,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,false,GG-DBA
+rtaylor,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,false,GG-Dev-Git
+rtaylor,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,false,O365-E3
+rtaylor,E1034,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,false,VPN-Users
+jmartinez,E1035,Justin Martinez,justin.martinez@sandbox.local,Information Technology,false,GG-All-Employees
+jmartinez,E1035,Justin Martinez,justin.martinez@sandbox.local,Information Technology,false,GG-Server-Admins
+jmartinez,E1035,Justin Martinez,justin.martinez@sandbox.local,Information Technology,false,O365-E3
+jmartinez,E1035,Justin Martinez,justin.martinez@sandbox.local,Information Technology,false,VPN-Users
+bbrown,E1036,Brian Brown,brian.brown@sandbox.local,Information Technology,false,GG-All-Employees
+bbrown,E1036,Brian Brown,brian.brown@sandbox.local,Information Technology,false,GG-ServiceDesk
+bbrown,E1036,Brian Brown,brian.brown@sandbox.local,Information Technology,false,O365-E3
+bbrown,E1036,Brian Brown,brian.brown@sandbox.local,Information Technology,false,VPN-Users
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,GG-All-Employees
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,GG-Finance-AP
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,GG-GridOps
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,GG-Managers
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,GG-Payroll-Share
+agarcia,E1037,Anna Garcia,anna.garcia@sandbox.local,Finance,false,VPN-Users
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,GG-All-Employees
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,GG-Finance
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,GG-Finance-AP
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,GG-Managers
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,GG-Payroll-Share
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,O365-E3
+sdavis,E1038,Sharon Davis,sharon.davis@sandbox.local,Finance,false,VPN-Users
+lnelson,E1039,Laura Nelson,laura.nelson@sandbox.local,Finance,false,GG-All-Employees
+lnelson,E1039,Laura Nelson,laura.nelson@sandbox.local,Finance,false,GG-Finance
+lnelson,E1039,Laura Nelson,laura.nelson@sandbox.local,Finance,false,O365-E3
+lnelson,E1039,Laura Nelson,laura.nelson@sandbox.local,Finance,false,VPN-Users
+grodriguez,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,false,GG-All-Employees
+grodriguez,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,false,GG-Finance
+grodriguez,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,false,GG-Finance-AP
+grodriguez,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,false,GG-Payroll-Share
+grodriguez,E1040,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,false,VPN-Users
+ewright2,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,Finance,false,GG-All-Employees
+ewright2,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,Finance,false,GG-Finance-AP
+ewright2,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,Finance,false,O365-E3
+ewright2,E1041,Elizabeth Wright,elizabeth.wright@sandbox.local,Finance,false,VPN-Users
+jhernandez,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,false,GG-All-Employees
+jhernandez,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,false,GG-Finance-AP
+jhernandez,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,false,GG-Payroll-Share
+jhernandez,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,false,O365-E3
+jhernandez,E1042,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,false,VPN-Users
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,GG-All-Employees
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,GG-Finance
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,GG-Finance-AP
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,GG-Managers
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,O365-E3
+rsullivan,E1043,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,false,VPN-Users
+smitchell,E1044,Susan Mitchell,susan.mitchell@sandbox.local,Finance,false,GG-All-Employees
+smitchell,E1044,Susan Mitchell,susan.mitchell@sandbox.local,Finance,false,GG-Finance-AP
+smitchell,E1044,Susan Mitchell,susan.mitchell@sandbox.local,Finance,false,O365-E3
+smitchell,E1044,Susan Mitchell,susan.mitchell@sandbox.local,Finance,false,VPN-Users
+ckelly,E1045,Christine Kelly,christine.kelly@sandbox.local,Finance,false,GG-All-Employees
+ckelly,E1045,Christine Kelly,christine.kelly@sandbox.local,Finance,false,GG-Finance-AP
+ckelly,E1045,Christine Kelly,christine.kelly@sandbox.local,Finance,false,GG-Managers
+ckelly,E1045,Christine Kelly,christine.kelly@sandbox.local,Finance,false,O365-E3
+ckelly,E1045,Christine Kelly,christine.kelly@sandbox.local,Finance,false,VPN-Users
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,GG-All-Employees
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,GG-Finance
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,GG-Finance-AP
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,GG-Payroll-Share
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,O365-E3
+dwilliams,E1046,Donna Williams,donna.williams@sandbox.local,Finance,false,VPN-Users
+jscott,E1047,Jonathan Scott,jonathan.scott@sandbox.local,Finance,false,GG-All-Employees
+jscott,E1047,Jonathan Scott,jonathan.scott@sandbox.local,Finance,false,GG-Finance-AP
+jscott,E1047,Jonathan Scott,jonathan.scott@sandbox.local,Finance,false,GG-Payroll-Share
+jscott,E1047,Jonathan Scott,jonathan.scott@sandbox.local,Finance,false,VPN-Users
+snguyen,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,false,GG-All-Employees
+snguyen,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,false,GG-Finance
+snguyen,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,false,GG-Payroll-Share
+snguyen,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,false,O365-E3
+snguyen,E1048,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,false,VPN-Users
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,GG-All-Employees
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,GG-DBA
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,GG-Finance
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,GG-Payroll-Share
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,O365-E3
+cthomas,E1049,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,false,VPN-Users
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,GG-All-Employees
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,GG-Finance
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,GG-Finance-AP
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,GG-Payroll-Share
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,O365-E3
+kthomas,E1050,Karen Thomas,karen.thomas@sandbox.local,Finance,false,VPN-Users
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,GG-All-Employees
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,GG-Finance
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,GG-Finance-AP
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,GG-Payroll-Share
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,O365-E3
+gkowalski,E1051,George Kowalski,george.kowalski@sandbox.local,Finance,false,VPN-Users
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,GG-All-Employees
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,GG-Finance
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,GG-Finance-AP
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,GG-Payroll-Share
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,O365-E3
+jmiller,E1052,Janet Miller,janet.miller@sandbox.local,Finance,false,VPN-Users
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,GG-All-Employees
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,GG-Finance
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,GG-Finance-AP
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,GG-Payroll-Share
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,O365-E3
+aanderson,E1053,Ashley Anderson,ashley.anderson@sandbox.local,Finance,false,VPN-Users
+dallen,E1054,Dennis Allen,dennis.allen@sandbox.local,Finance,false,GG-All-Employees
+dallen,E1054,Dennis Allen,dennis.allen@sandbox.local,Finance,false,GG-Finance-AP
+dallen,E1054,Dennis Allen,dennis.allen@sandbox.local,Finance,false,O365-E3
+dallen,E1054,Dennis Allen,dennis.allen@sandbox.local,Finance,false,VPN-Users
+mnguyen,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,false,GG-All-Employees
+mnguyen,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,false,GG-HR-Confidential
+mnguyen,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,false,GG-Managers
+mnguyen,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,false,O365-E3
+mnguyen,E1055,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,false,VPN-Users
+bramirez,E1056,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,false,GG-All-Employees
+bramirez,E1056,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,false,GG-HR
+bramirez,E1056,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,false,GG-HR-Confidential
+bramirez,E1056,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,false,GG-Managers
+bramirez,E1056,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,false,VPN-Users
+csmith,E1057,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,false,GG-All-Employees
+csmith,E1057,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,false,GG-HR
+csmith,E1057,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,false,GG-HR-Confidential
+csmith,E1057,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,false,O365-E3
+csmith,E1057,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,false,VPN-Users
+cjones,E1058,Cynthia Jones,cynthia.jones@sandbox.local,Human Resources,false,GG-All-Employees
+cjones,E1058,Cynthia Jones,cynthia.jones@sandbox.local,Human Resources,false,GG-HR-Confidential
+cjones,E1058,Cynthia Jones,cynthia.jones@sandbox.local,Human Resources,false,O365-E3
+cjones,E1058,Cynthia Jones,cynthia.jones@sandbox.local,Human Resources,false,VPN-Users
+smartin,E1059,Scott Martin,scott.martin@sandbox.local,Human Resources,false,GG-All-Employees
+smartin,E1059,Scott Martin,scott.martin@sandbox.local,Human Resources,false,GG-HR
+smartin,E1059,Scott Martin,scott.martin@sandbox.local,Human Resources,false,GG-HR-Confidential
+smartin,E1059,Scott Martin,scott.martin@sandbox.local,Human Resources,false,O365-E3
+smartin,E1059,Scott Martin,scott.martin@sandbox.local,Human Resources,false,VPN-Users
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,GG-All-Employees
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,GG-Finance
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,GG-HR
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,GG-HR-Confidential
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,O365-E3
+jbaker,E1060,Jacob Baker,jacob.baker@sandbox.local,Human Resources,false,VPN-Users
+jmartin,E1061,James Martin,james.martin@sandbox.local,Human Resources,false,GG-All-Employees
+jmartin,E1061,James Martin,james.martin@sandbox.local,Human Resources,false,GG-HR
+jmartin,E1061,James Martin,james.martin@sandbox.local,Human Resources,false,GG-HR-Confidential
+jmartin,E1061,James Martin,james.martin@sandbox.local,Human Resources,false,O365-E3
+jmartin,E1061,James Martin,james.martin@sandbox.local,Human Resources,false,VPN-Users
+jbaker2,E1062,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,false,GG-All-Employees
+jbaker2,E1062,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,false,GG-HR
+jbaker2,E1062,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,false,GG-HR-Confidential
+jbaker2,E1062,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,false,O365-E3
+jbaker2,E1062,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,false,VPN-Users
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,GG-All-Employees
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,GG-HR
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,GG-HR-Confidential
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,GG-Managers
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,O365-E3
+jgreen,E1063,Jerry Green,jerry.green@sandbox.local,Human Resources,false,VPN-Users
+jtorres,E1065,Jack Torres,jack.torres@sandbox.local,Human Resources,false,GG-All-Employees
+jtorres,E1065,Jack Torres,jack.torres@sandbox.local,Human Resources,false,GG-HR
+jtorres,E1065,Jack Torres,jack.torres@sandbox.local,Human Resources,false,GG-HR-Confidential
+jtorres,E1065,Jack Torres,jack.torres@sandbox.local,Human Resources,false,O365-E3
+jtorres,E1065,Jack Torres,jack.torres@sandbox.local,Human Resources,false,VPN-Users
+asmith,E1066,Aaron Smith,aaron.smith@sandbox.local,Human Resources,false,GG-All-Employees
+asmith,E1066,Aaron Smith,aaron.smith@sandbox.local,Human Resources,false,GG-HR
+asmith,E1066,Aaron Smith,aaron.smith@sandbox.local,Human Resources,false,GG-HR-Confidential
+asmith,E1066,Aaron Smith,aaron.smith@sandbox.local,Human Resources,false,O365-E3
+asmith,E1066,Aaron Smith,aaron.smith@sandbox.local,Human Resources,false,VPN-Users
+ethomas,E1067,Emma Thomas,emma.thomas@sandbox.local,Human Resources,false,GG-All-Employees
+ethomas,E1067,Emma Thomas,emma.thomas@sandbox.local,Human Resources,false,GG-HR
+ethomas,E1067,Emma Thomas,emma.thomas@sandbox.local,Human Resources,false,GG-HR-Confidential
+ethomas,E1067,Emma Thomas,emma.thomas@sandbox.local,Human Resources,false,O365-E3
+ethomas,E1067,Emma Thomas,emma.thomas@sandbox.local,Human Resources,false,VPN-Users
+jflores,E1068,Jonathan Flores,jonathan.flores@sandbox.local,Human Resources,false,GG-All-Employees
+jflores,E1068,Jonathan Flores,jonathan.flores@sandbox.local,Human Resources,false,GG-HR-Confidential
+jflores,E1068,Jonathan Flores,jonathan.flores@sandbox.local,Human Resources,false,O365-E3
+jflores,E1068,Jonathan Flores,jonathan.flores@sandbox.local,Human Resources,false,VPN-Users
+llewis,E1069,Larry Lewis,larry.lewis@sandbox.local,Human Resources,false,GG-All-Employees
+llewis,E1069,Larry Lewis,larry.lewis@sandbox.local,Human Resources,false,GG-HR-Confidential
+llewis,E1069,Larry Lewis,larry.lewis@sandbox.local,Human Resources,false,O365-E3
+llewis,E1069,Larry Lewis,larry.lewis@sandbox.local,Human Resources,false,VPN-Users
+smoore,E1070,Steven Moore,steven.moore@sandbox.local,Human Resources,false,GG-All-Employees
+smoore,E1070,Steven Moore,steven.moore@sandbox.local,Human Resources,false,GG-HR
+smoore,E1070,Steven Moore,steven.moore@sandbox.local,Human Resources,false,GG-HR-Confidential
+smoore,E1070,Steven Moore,steven.moore@sandbox.local,Human Resources,false,O365-E3
+smoore,E1070,Steven Moore,steven.moore@sandbox.local,Human Resources,false,VPN-Users
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,GG-All-Employees
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,GG-HR
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,GG-HR-Confidential
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,GG-Managers
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,O365-E3
+wrodriguez,E1071,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,false,VPN-Users
+gwright,E1072,George Wright,george.wright@sandbox.local,Human Resources,false,GG-All-Employees
+gwright,E1072,George Wright,george.wright@sandbox.local,Human Resources,false,GG-HR
+gwright,E1072,George Wright,george.wright@sandbox.local,Human Resources,false,GG-HR-Confidential
+gwright,E1072,George Wright,george.wright@sandbox.local,Human Resources,false,O365-E3
+gwright,E1072,George Wright,george.wright@sandbox.local,Human Resources,false,VPN-Users
+rkelly,E1073,Robert Kelly,robert.kelly@sandbox.local,Human Resources,false,GG-All-Employees
+rkelly,E1073,Robert Kelly,robert.kelly@sandbox.local,Human Resources,false,GG-HR-Confidential
+rkelly,E1073,Robert Kelly,robert.kelly@sandbox.local,Human Resources,false,GG-Server-Admins
+rkelly,E1073,Robert Kelly,robert.kelly@sandbox.local,Human Resources,false,O365-E3
+rkelly,E1073,Robert Kelly,robert.kelly@sandbox.local,Human Resources,false,VPN-Users
+lwright,E1074,Laura Wright,laura.wright@sandbox.local,Human Resources,false,GG-All-Employees
+lwright,E1074,Laura Wright,laura.wright@sandbox.local,Human Resources,false,GG-HR-Confidential
+lwright,E1074,Laura Wright,laura.wright@sandbox.local,Human Resources,false,O365-E3
+lwright,E1074,Laura Wright,laura.wright@sandbox.local,Human Resources,false,VPN-Users
+cyoung,E1075,Cynthia Young,cynthia.young@sandbox.local,Human Resources,false,GG-All-Employees
+cyoung,E1075,Cynthia Young,cynthia.young@sandbox.local,Human Resources,false,GG-HR
+cyoung,E1075,Cynthia Young,cynthia.young@sandbox.local,Human Resources,false,GG-HR-Confidential
+cyoung,E1075,Cynthia Young,cynthia.young@sandbox.local,Human Resources,false,O365-E3
+cyoung,E1075,Cynthia Young,cynthia.young@sandbox.local,Human Resources,false,VPN-Users
+arodriguez,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,false,GG-All-Employees
+arodriguez,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,false,GG-HR
+arodriguez,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,false,GG-HR-Confidential
+arodriguez,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,false,O365-E3
+arodriguez,E1076,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,false,VPN-Users
+dramirez,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,false,GG-All-Employees
+dramirez,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,false,GG-HR
+dramirez,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,false,GG-HR-Confidential
+dramirez,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,false,GG-Legal
+dramirez,E1077,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,false,VPN-Users
+slee,E1078,Stephen Lee,stephen.lee@sandbox.local,Human Resources,false,GG-All-Employees
+slee,E1078,Stephen Lee,stephen.lee@sandbox.local,Human Resources,false,GG-HR
+slee,E1078,Stephen Lee,stephen.lee@sandbox.local,Human Resources,false,O365-E3
+slee,E1078,Stephen Lee,stephen.lee@sandbox.local,Human Resources,false,VPN-Users
+wwalker,E1079,William Walker,william.walker@sandbox.local,Human Resources,false,GG-All-Employees
+wwalker,E1079,William Walker,william.walker@sandbox.local,Human Resources,false,GG-HR
+wwalker,E1079,William Walker,william.walker@sandbox.local,Human Resources,false,GG-HR-Confidential
+wwalker,E1079,William Walker,william.walker@sandbox.local,Human Resources,false,O365-E3
+wwalker,E1079,William Walker,william.walker@sandbox.local,Human Resources,false,VPN-Users
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,GG-All-Employees
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,GG-EMS-Operators
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,GG-GridOps
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,GG-Managers
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,GG-SCADA-Users
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,O365-E3
+twalker,E1081,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,false,VPN-Users
+shernandez2,E1082,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,false,GG-All-Employees
+shernandez2,E1082,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,false,GG-Managers
+shernandez2,E1082,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,false,GG-SCADA-Users
+shernandez2,E1082,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,false,O365-E3
+shernandez2,E1082,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,false,VPN-Users
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,GG-All-Employees
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,GG-EMS-Operators
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,GG-GridOps
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,GG-SCADA-Users
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,O365-E3
+pmartin,E1083,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,false,VPN-Users
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,GG-All-Employees
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,GG-EMS-Operators
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,GG-GridOps
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,GG-SCADA-Users
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,O365-E3
+jthomas2,E1084,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,false,VPN-Users
+gkowalski2,E1085,Gregory Kowalski,gregory.kowalski@sandbox.local,Grid Operations,false,GG-All-Employees
+gkowalski2,E1085,Gregory Kowalski,gregory.kowalski@sandbox.local,Grid Operations,false,GG-GridOps
+gkowalski2,E1085,Gregory Kowalski,gregory.kowalski@sandbox.local,Grid Operations,false,O365-E3
+gkowalski2,E1085,Gregory Kowalski,gregory.kowalski@sandbox.local,Grid Operations,false,VPN-Users
+msmith,E1086,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,false,GG-All-Employees
+msmith,E1086,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,false,GG-GridOps
+msmith,E1086,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,false,GG-SCADA-Users
+msmith,E1086,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,false,O365-E3
+msmith,E1086,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,false,VPN-Users
+srivera,E1087,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,false,GG-All-Employees
+srivera,E1087,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,false,GG-EMS-Operators
+srivera,E1087,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,false,GG-GridOps
+srivera,E1087,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,false,O365-E3
+srivera,E1087,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,false,VPN-Users
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,GG-All-Employees
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,GG-EMS-Operators
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,GG-GridOps
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,GG-SCADA-Users
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,O365-E3
+broberts,E1088,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,false,VPN-Users
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,GG-All-Employees
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,GG-EMS-Operators
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,GG-GridOps
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,GG-SCADA-Users
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,O365-E3
+bmoore,E1089,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,false,VPN-Users
+pyoung,E1090,Patricia Young,patricia.young@sandbox.local,Grid Operations,false,GG-All-Employees
+pyoung,E1090,Patricia Young,patricia.young@sandbox.local,Grid Operations,false,GG-GridOps
+pyoung,E1090,Patricia Young,patricia.young@sandbox.local,Grid Operations,false,GG-SCADA-Users
+pyoung,E1090,Patricia Young,patricia.young@sandbox.local,Grid Operations,false,O365-E3
+pyoung,E1090,Patricia Young,patricia.young@sandbox.local,Grid Operations,false,VPN-Users
+rhall,E1091,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,false,GG-All-Employees
+rhall,E1091,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,false,GG-GridOps
+rhall,E1091,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,false,GG-SCADA-Users
+rhall,E1091,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,false,O365-E3
+rhall,E1091,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,false,VPN-Users
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,GG-All-Employees
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,GG-EMS-Operators
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,GG-GridOps
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,GG-SCADA-Users
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,O365-E3
+ecarter,E1092,Emma Carter,emma.carter@sandbox.local,Grid Operations,false,VPN-Users
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,GG-All-Employees
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,GG-EMS-Operators
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,GG-GridOps
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,GG-Managers
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,GG-SCADA-Users
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,O365-E3
+manderson,E1093,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,false,VPN-Users
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,GG-All-Employees
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,GG-EMS-Operators
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,GG-GridOps
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,GG-SCADA-Users
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,O365-E3
+bthompson,E1094,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,false,VPN-Users
+panderson,E1095,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,false,GG-All-Employees
+panderson,E1095,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,false,GG-EMS-Operators
+panderson,E1095,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,false,GG-GridOps
+panderson,E1095,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,false,GG-SCADA-Users
+panderson,E1095,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,false,VPN-Users
+awilson,E1096,Anthony Wilson,anthony.wilson@sandbox.local,Grid Operations,false,GG-All-Employees
+awilson,E1096,Anthony Wilson,anthony.wilson@sandbox.local,Grid Operations,false,GG-GridOps
+awilson,E1096,Anthony Wilson,anthony.wilson@sandbox.local,Grid Operations,false,O365-E3
+awilson,E1096,Anthony Wilson,anthony.wilson@sandbox.local,Grid Operations,false,VPN-Users
+rmurphy,E1097,Richard Murphy,richard.murphy@sandbox.local,Grid Operations,false,GG-All-Employees
+rmurphy,E1097,Richard Murphy,richard.murphy@sandbox.local,Grid Operations,false,GG-SCADA-Users
+rmurphy,E1097,Richard Murphy,richard.murphy@sandbox.local,Grid Operations,false,O365-E3
+rmurphy,E1097,Richard Murphy,richard.murphy@sandbox.local,Grid Operations,false,VPN-Users
+tmoore,E1098,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,false,GG-All-Employees
+tmoore,E1098,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,false,GG-GridOps
+tmoore,E1098,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,false,GG-SCADA-Users
+tmoore,E1098,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,false,O365-E3
+tmoore,E1098,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,false,VPN-Users
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,GG-All-Employees
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,GG-CustomerService
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,GG-EMS-Operators
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,GG-GridOps
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,O365-E3
+jmiller2,E1099,Justin Miller,justin.miller@sandbox.local,Grid Operations,false,VPN-Users
+preilly,E1100,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,false,GG-All-Employees
+preilly,E1100,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,false,GG-GridOps
+preilly,E1100,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,false,GG-SCADA-Users
+preilly,E1100,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,false,O365-E3
+preilly,E1100,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,false,VPN-Users
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,GG-All-Employees
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,GG-EMS-Operators
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,GG-GridOps
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,GG-SCADA-Users
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,O365-E3
+cbrown,E1101,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,false,VPN-Users
+lhill,E1102,Laura Hill,laura.hill@sandbox.local,Grid Operations,false,GG-All-Employees
+lhill,E1102,Laura Hill,laura.hill@sandbox.local,Grid Operations,false,GG-GridOps
+lhill,E1102,Laura Hill,laura.hill@sandbox.local,Grid Operations,false,GG-SCADA-Users
+lhill,E1102,Laura Hill,laura.hill@sandbox.local,Grid Operations,false,O365-E3
+lhill,E1102,Laura Hill,laura.hill@sandbox.local,Grid Operations,false,VPN-Users
+hramirez,E1103,Helen Ramirez,helen.ramirez@sandbox.local,Grid Operations,false,GG-All-Employees
+hramirez,E1103,Helen Ramirez,helen.ramirez@sandbox.local,Grid Operations,false,GG-SCADA-Users
+hramirez,E1103,Helen Ramirez,helen.ramirez@sandbox.local,Grid Operations,false,O365-E3
+hramirez,E1103,Helen Ramirez,helen.ramirez@sandbox.local,Grid Operations,false,VPN-Users
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,GG-All-Employees
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,GG-EMS-Operators
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,GG-GridOps
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,GG-Managers
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,GG-SCADA-Users
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,O365-E3
+staylor,E1104,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,false,VPN-Users
+nlewis,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,false,GG-All-Employees
+nlewis,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,false,GG-EMS-Operators
+nlewis,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,false,GG-GridOps
+nlewis,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,false,O365-E3
+nlewis,E1105,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,false,VPN-Users
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,GG-All-Employees
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,GG-EMS-Operators
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,GG-GridOps
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,GG-SCADA-Users
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,O365-E3
+sjones,E1106,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,false,VPN-Users
+panderson2,E1107,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,false,GG-All-Employees
+panderson2,E1107,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,false,GG-EMS-Operators
+panderson2,E1107,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,false,GG-GridOps
+panderson2,E1107,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,false,GG-Managers
+panderson2,E1107,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,false,VPN-Users
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,GG-All-Employees
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,GG-EMS-Operators
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,GG-GridOps
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,GG-SCADA-Users
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,O365-E3
+gjackson,E1108,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,false,VPN-Users
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,GG-All-Employees
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,GG-EMS-Operators
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,GG-GridOps
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,GG-SCADA-Users
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,O365-E3
+pyoung2,E1109,Pamela Young,pamela.young@sandbox.local,Grid Operations,false,VPN-Users
+pgarcia,E1110,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,false,GG-All-Employees
+pgarcia,E1110,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,false,GG-GridOps
+pgarcia,E1110,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,false,GG-SCADA-Users
+pgarcia,E1110,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,false,O365-E3
+pgarcia,E1110,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,false,VPN-Users
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,GG-All-Employees
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,GG-FieldServices
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,GG-Managers
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,GG-Meter-Tools
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,GG-Mobile-Workforce
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,O365-E3
+dlopez,E1112,Donna Lopez,donna.lopez@sandbox.local,Field Services,false,VPN-Users
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,GG-All-Employees
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,GG-FieldServices
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,GG-Meter-Tools
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,GG-Mobile-Workforce
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,O365-E3
+nperez,E1113,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,false,VPN-Users
+ssullivan,E1114,Sharon Sullivan,sharon.sullivan@sandbox.local,Field Services,false,GG-All-Employees
+ssullivan,E1114,Sharon Sullivan,sharon.sullivan@sandbox.local,Field Services,false,GG-Meter-Tools
+ssullivan,E1114,Sharon Sullivan,sharon.sullivan@sandbox.local,Field Services,false,O365-E3
+ssullivan,E1114,Sharon Sullivan,sharon.sullivan@sandbox.local,Field Services,false,VPN-Users
+asullivan,E1115,Anna Sullivan,anna.sullivan@sandbox.local,Field Services,false,GG-All-Employees
+asullivan,E1115,Anna Sullivan,anna.sullivan@sandbox.local,Field Services,false,GG-FieldServices
+asullivan,E1115,Anna Sullivan,anna.sullivan@sandbox.local,Field Services,false,O365-E3
+asullivan,E1115,Anna Sullivan,anna.sullivan@sandbox.local,Field Services,false,VPN-Users
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,GG-All-Employees
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,GG-FieldServices
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,GG-Meter-Tools
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,GG-Mobile-Workforce
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,O365-E3
+rflores,E1116,Ryan Flores,ryan.flores@sandbox.local,Field Services,false,VPN-Users
+jhall,E1117,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,false,GG-All-Employees
+jhall,E1117,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,false,GG-FieldServices
+jhall,E1117,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,false,GG-Mobile-Workforce
+jhall,E1117,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,false,O365-E3
+jhall,E1117,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,false,VPN-Users
+cscott,E1118,Carol Scott,carol.scott@sandbox.local,Field Services,false,GG-All-Employees
+cscott,E1118,Carol Scott,carol.scott@sandbox.local,Field Services,false,GG-Meter-Tools
+cscott,E1118,Carol Scott,carol.scott@sandbox.local,Field Services,false,O365-E3
+cscott,E1118,Carol Scott,carol.scott@sandbox.local,Field Services,false,VPN-Users
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,GG-All-Employees
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,GG-FieldServices
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,GG-Meter-Tools
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,GG-Mobile-Workforce
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,O365-E3
+dmurphy,E1119,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,false,VPN-Users
+awalker,E1120,Angela Walker,angela.walker@sandbox.local,Field Services,false,GG-All-Employees
+awalker,E1120,Angela Walker,angela.walker@sandbox.local,Field Services,false,GG-FieldServices
+awalker,E1120,Angela Walker,angela.walker@sandbox.local,Field Services,false,GG-Mobile-Workforce
+awalker,E1120,Angela Walker,angela.walker@sandbox.local,Field Services,false,O365-E3
+awalker,E1120,Angela Walker,angela.walker@sandbox.local,Field Services,false,VPN-Users
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,GG-All-Employees
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,GG-FieldServices
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,GG-Managers
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,GG-Meter-Tools
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,GG-Mobile-Workforce
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,O365-E3
+sreilly2,E1121,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,false,VPN-Users
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,GG-All-Employees
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,GG-FieldServices
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,GG-Meter-Tools
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,GG-Mobile-Workforce
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,O365-E3
+jcampbell,E1122,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,false,VPN-Users
+bwalker,E1123,Benjamin Walker,benjamin.walker@sandbox.local,Field Services,false,GG-All-Employees
+bwalker,E1123,Benjamin Walker,benjamin.walker@sandbox.local,Field Services,false,GG-Mobile-Workforce
+bwalker,E1123,Benjamin Walker,benjamin.walker@sandbox.local,Field Services,false,O365-E3
+bwalker,E1123,Benjamin Walker,benjamin.walker@sandbox.local,Field Services,false,VPN-Users
+storres,E1124,Steven Torres,steven.torres@sandbox.local,Field Services,false,GG-All-Employees
+storres,E1124,Steven Torres,steven.torres@sandbox.local,Field Services,false,GG-FieldServices
+storres,E1124,Steven Torres,steven.torres@sandbox.local,Field Services,false,GG-Meter-Tools
+storres,E1124,Steven Torres,steven.torres@sandbox.local,Field Services,false,GG-Mobile-Workforce
+storres,E1124,Steven Torres,steven.torres@sandbox.local,Field Services,false,VPN-Users
+jharris,E1125,Jacob Harris,jacob.harris@sandbox.local,Field Services,false,GG-All-Employees
+jharris,E1125,Jacob Harris,jacob.harris@sandbox.local,Field Services,false,GG-Mobile-Workforce
+jharris,E1125,Jacob Harris,jacob.harris@sandbox.local,Field Services,false,O365-E3
+jharris,E1125,Jacob Harris,jacob.harris@sandbox.local,Field Services,false,VPN-Users
+rreilly,E1126,Richard Reilly,richard.reilly@sandbox.local,Field Services,false,GG-All-Employees
+rreilly,E1126,Richard Reilly,richard.reilly@sandbox.local,Field Services,false,GG-FieldServices
+rreilly,E1126,Richard Reilly,richard.reilly@sandbox.local,Field Services,false,GG-Meter-Tools
+rreilly,E1126,Richard Reilly,richard.reilly@sandbox.local,Field Services,false,GG-SCADA-Users
+rreilly,E1126,Richard Reilly,richard.reilly@sandbox.local,Field Services,false,VPN-Users
+dmartinez,E1127,Debra Martinez,debra.martinez@sandbox.local,Field Services,false,GG-All-Employees
+dmartinez,E1127,Debra Martinez,debra.martinez@sandbox.local,Field Services,false,GG-FieldServices
+dmartinez,E1127,Debra Martinez,debra.martinez@sandbox.local,Field Services,false,GG-Meter-Tools
+dmartinez,E1127,Debra Martinez,debra.martinez@sandbox.local,Field Services,false,O365-E3
+dmartinez,E1127,Debra Martinez,debra.martinez@sandbox.local,Field Services,false,VPN-Users
+gkelly,E1128,George Kelly,george.kelly@sandbox.local,Field Services,false,GG-All-Employees
+gkelly,E1128,George Kelly,george.kelly@sandbox.local,Field Services,false,GG-FieldServices
+gkelly,E1128,George Kelly,george.kelly@sandbox.local,Field Services,false,GG-Managers
+gkelly,E1128,George Kelly,george.kelly@sandbox.local,Field Services,false,O365-E3
+gkelly,E1128,George Kelly,george.kelly@sandbox.local,Field Services,false,VPN-Users
+jreilly,E1129,Justin Reilly,justin.reilly@sandbox.local,Field Services,false,GG-All-Employees
+jreilly,E1129,Justin Reilly,justin.reilly@sandbox.local,Field Services,false,GG-FieldServices
+jreilly,E1129,Justin Reilly,justin.reilly@sandbox.local,Field Services,false,GG-Meter-Tools
+jreilly,E1129,Justin Reilly,justin.reilly@sandbox.local,Field Services,false,O365-E3
+jreilly,E1129,Justin Reilly,justin.reilly@sandbox.local,Field Services,false,VPN-Users
+bramirez2,E1130,Barbara Ramirez,barbara.ramirez@sandbox.local,Field Services,false,GG-All-Employees
+bramirez2,E1130,Barbara Ramirez,barbara.ramirez@sandbox.local,Field Services,false,GG-Mobile-Workforce
+bramirez2,E1130,Barbara Ramirez,barbara.ramirez@sandbox.local,Field Services,false,O365-E3
+bramirez2,E1130,Barbara Ramirez,barbara.ramirez@sandbox.local,Field Services,false,VPN-Users
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,GG-All-Employees
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,GG-FieldServices
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,GG-Meter-Tools
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,GG-Mobile-Workforce
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,O365-E3
+kjohnson,E1131,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,false,VPN-Users
+kking,E1132,Kimberly King,kimberly.king@sandbox.local,Field Services,false,GG-All-Employees
+kking,E1132,Kimberly King,kimberly.king@sandbox.local,Field Services,false,GG-FieldServices
+kking,E1132,Kimberly King,kimberly.king@sandbox.local,Field Services,false,GG-Mobile-Workforce
+kking,E1132,Kimberly King,kimberly.king@sandbox.local,Field Services,false,O365-E3
+kking,E1132,Kimberly King,kimberly.king@sandbox.local,Field Services,false,VPN-Users
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,GG-All-Employees
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,GG-FieldServices
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,GG-Meter-Tools
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,GG-Mobile-Workforce
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,O365-E3
+jflores2,E1133,Jacob Flores,jacob.flores@sandbox.local,Field Services,false,VPN-Users
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,GG-All-Employees
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,GG-FieldServices
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,GG-Meter-Tools
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,GG-Mobile-Workforce
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,O365-E3
+staylor2,E1134,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,false,VPN-Users
+elewis,E1135,Elizabeth Lewis,elizabeth.lewis@sandbox.local,Field Services,false,GG-All-Employees
+elewis,E1135,Elizabeth Lewis,elizabeth.lewis@sandbox.local,Field Services,false,GG-Meter-Tools
+elewis,E1135,Elizabeth Lewis,elizabeth.lewis@sandbox.local,Field Services,false,O365-E3
+elewis,E1135,Elizabeth Lewis,elizabeth.lewis@sandbox.local,Field Services,false,VPN-Users
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,GG-All-Employees
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,GG-FieldServices
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,GG-Finance-AP
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,GG-Meter-Tools
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,GG-Mobile-Workforce
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,O365-E3
+skelly,E1136,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,false,VPN-Users
+nthompson,E1137,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,false,GG-All-Employees
+nthompson,E1137,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,false,GG-FieldServices
+nthompson,E1137,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,false,GG-Meter-Tools
+nthompson,E1137,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,false,GG-Mobile-Workforce
+nthompson,E1137,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,false,VPN-Users
+mtorres,E1138,Mary Torres,mary.torres@sandbox.local,Field Services,false,GG-All-Employees
+mtorres,E1138,Mary Torres,mary.torres@sandbox.local,Field Services,false,GG-FieldServices
+mtorres,E1138,Mary Torres,mary.torres@sandbox.local,Field Services,false,GG-Mobile-Workforce
+mtorres,E1138,Mary Torres,mary.torres@sandbox.local,Field Services,false,O365-E3
+mtorres,E1138,Mary Torres,mary.torres@sandbox.local,Field Services,false,VPN-Users
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,GG-All-Employees
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,GG-FieldServices
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,GG-Meter-Tools
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,GG-Mobile-Workforce
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,O365-E3
+danderson,E1139,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,false,VPN-Users
+sgreen,E1140,Sarah Green,sarah.green@sandbox.local,Field Services,false,GG-All-Employees
+sgreen,E1140,Sarah Green,sarah.green@sandbox.local,Field Services,false,GG-FieldServices
+sgreen,E1140,Sarah Green,sarah.green@sandbox.local,Field Services,false,GG-Meter-Tools
+sgreen,E1140,Sarah Green,sarah.green@sandbox.local,Field Services,false,GG-Mobile-Workforce
+sgreen,E1140,Sarah Green,sarah.green@sandbox.local,Field Services,false,VPN-Users
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,GG-All-Employees
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,GG-CIS-Users
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,GG-CustomerService
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,GG-Managers
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,O365-E3
+rcampbell,E1141,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,false,VPN-Users
+brodriguez,E1142,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,false,GG-All-Employees
+brodriguez,E1142,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,false,GG-CIS-Users
+brodriguez,E1142,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,false,GG-Managers
+brodriguez,E1142,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,false,O365-E3
+brodriguez,E1142,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,false,VPN-Users
+anovak,E1143,Angela Novak,angela.novak@sandbox.local,Customer Service,false,GG-All-Employees
+anovak,E1143,Angela Novak,angela.novak@sandbox.local,Customer Service,false,GG-CIS-Users
+anovak,E1143,Angela Novak,angela.novak@sandbox.local,Customer Service,false,GG-CustomerService
+anovak,E1143,Angela Novak,angela.novak@sandbox.local,Customer Service,false,O365-E3
+anovak,E1143,Angela Novak,angela.novak@sandbox.local,Customer Service,false,VPN-Users
+dreilly,E1144,Donald Reilly,donald.reilly@sandbox.local,Customer Service,false,GG-All-Employees
+dreilly,E1144,Donald Reilly,donald.reilly@sandbox.local,Customer Service,false,GG-CustomerService
+dreilly,E1144,Donald Reilly,donald.reilly@sandbox.local,Customer Service,false,O365-E3
+dreilly,E1144,Donald Reilly,donald.reilly@sandbox.local,Customer Service,false,VPN-Users
+gsmith,E1145,Gary Smith,gary.smith@sandbox.local,Customer Service,false,GG-All-Employees
+gsmith,E1145,Gary Smith,gary.smith@sandbox.local,Customer Service,false,GG-CIS-Users
+gsmith,E1145,Gary Smith,gary.smith@sandbox.local,Customer Service,false,GG-CustomerService
+gsmith,E1145,Gary Smith,gary.smith@sandbox.local,Customer Service,false,O365-E3
+gsmith,E1145,Gary Smith,gary.smith@sandbox.local,Customer Service,false,VPN-Users
+jsullivan,E1146,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,false,GG-All-Employees
+jsullivan,E1146,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,false,GG-CIS-Users
+jsullivan,E1146,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,false,GG-CustomerService
+jsullivan,E1146,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,false,O365-E3
+jsullivan,E1146,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,false,VPN-Users
+elee,E1147,Emma Lee,emma.lee@sandbox.local,Customer Service,false,GG-All-Employees
+elee,E1147,Emma Lee,emma.lee@sandbox.local,Customer Service,false,GG-CIS-Users
+elee,E1147,Emma Lee,emma.lee@sandbox.local,Customer Service,false,GG-CustomerService
+elee,E1147,Emma Lee,emma.lee@sandbox.local,Customer Service,false,O365-E3
+elee,E1147,Emma Lee,emma.lee@sandbox.local,Customer Service,false,VPN-Users
+dclark,E1148,Debra Clark,debra.clark@sandbox.local,Customer Service,false,GG-All-Employees
+dclark,E1148,Debra Clark,debra.clark@sandbox.local,Customer Service,false,GG-CustomerService
+dclark,E1148,Debra Clark,debra.clark@sandbox.local,Customer Service,false,O365-E3
+dclark,E1148,Debra Clark,debra.clark@sandbox.local,Customer Service,false,VPN-Users
+swright,E1149,Steven Wright,steven.wright@sandbox.local,Customer Service,false,GG-All-Employees
+swright,E1149,Steven Wright,steven.wright@sandbox.local,Customer Service,false,GG-CIS-Users
+swright,E1149,Steven Wright,steven.wright@sandbox.local,Customer Service,false,GG-CustomerService
+swright,E1149,Steven Wright,steven.wright@sandbox.local,Customer Service,false,O365-E3
+swright,E1149,Steven Wright,steven.wright@sandbox.local,Customer Service,false,VPN-Users
+kclark,E1150,Karen Clark,karen.clark@sandbox.local,Customer Service,false,GG-All-Employees
+kclark,E1150,Karen Clark,karen.clark@sandbox.local,Customer Service,false,GG-CIS-Users
+kclark,E1150,Karen Clark,karen.clark@sandbox.local,Customer Service,false,O365-E3
+kclark,E1150,Karen Clark,karen.clark@sandbox.local,Customer Service,false,VPN-Users
+swilson,E1151,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,false,GG-All-Employees
+swilson,E1151,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,false,GG-CIS-Users
+swilson,E1151,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,false,GG-CustomerService
+swilson,E1151,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,false,O365-E3
+swilson,E1151,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,false,VPN-Users
+padams,E1152,Pamela Adams,pamela.adams@sandbox.local,Customer Service,false,GG-All-Employees
+padams,E1152,Pamela Adams,pamela.adams@sandbox.local,Customer Service,false,GG-CIS-Users
+padams,E1152,Pamela Adams,pamela.adams@sandbox.local,Customer Service,false,GG-CustomerService
+padams,E1152,Pamela Adams,pamela.adams@sandbox.local,Customer Service,false,O365-E3
+padams,E1152,Pamela Adams,pamela.adams@sandbox.local,Customer Service,false,VPN-Users
+jwilson,E1153,Jerry Wilson,jerry.wilson@sandbox.local,Customer Service,false,GG-All-Employees
+jwilson,E1153,Jerry Wilson,jerry.wilson@sandbox.local,Customer Service,false,GG-CIS-Users
+jwilson,E1153,Jerry Wilson,jerry.wilson@sandbox.local,Customer Service,false,GG-CustomerService
+jwilson,E1153,Jerry Wilson,jerry.wilson@sandbox.local,Customer Service,false,VPN-Users
+gwilson,E1154,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,false,GG-All-Employees
+gwilson,E1154,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,false,GG-CIS-Users
+gwilson,E1154,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,false,GG-CustomerService
+gwilson,E1154,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,false,O365-E3
+gwilson,E1154,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,false,VPN-Users
+ckowalski,E1155,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,false,GG-All-Employees
+ckowalski,E1155,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,false,GG-CustomerService
+ckowalski,E1155,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,false,GG-Managers
+ckowalski,E1155,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,false,O365-E3
+ckowalski,E1155,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,false,VPN-Users
+mdavis,E1156,Matthew Davis,matthew.davis@sandbox.local,Customer Service,false,GG-All-Employees
+mdavis,E1156,Matthew Davis,matthew.davis@sandbox.local,Customer Service,false,GG-CIS-Users
+mdavis,E1156,Matthew Davis,matthew.davis@sandbox.local,Customer Service,false,GG-CustomerService
+mdavis,E1156,Matthew Davis,matthew.davis@sandbox.local,Customer Service,false,VPN-Users
+rlopez,E1157,Robert Lopez,robert.lopez@sandbox.local,Customer Service,false,GG-All-Employees
+rlopez,E1157,Robert Lopez,robert.lopez@sandbox.local,Customer Service,false,GG-CIS-Users
+rlopez,E1157,Robert Lopez,robert.lopez@sandbox.local,Customer Service,false,GG-CustomerService
+rlopez,E1157,Robert Lopez,robert.lopez@sandbox.local,Customer Service,false,O365-E3
+rlopez,E1157,Robert Lopez,robert.lopez@sandbox.local,Customer Service,false,VPN-Users
+rallen,E1158,Ryan Allen,ryan.allen@sandbox.local,Customer Service,false,GG-All-Employees
+rallen,E1158,Ryan Allen,ryan.allen@sandbox.local,Customer Service,false,GG-CIS-Users
+rallen,E1158,Ryan Allen,ryan.allen@sandbox.local,Customer Service,false,O365-E3
+rallen,E1158,Ryan Allen,ryan.allen@sandbox.local,Customer Service,false,VPN-Users
+jking,E1159,Jerry King,jerry.king@sandbox.local,Customer Service,false,GG-All-Employees
+jking,E1159,Jerry King,jerry.king@sandbox.local,Customer Service,false,GG-CIS-Users
+jking,E1159,Jerry King,jerry.king@sandbox.local,Customer Service,false,GG-CustomerService
+jking,E1159,Jerry King,jerry.king@sandbox.local,Customer Service,false,VPN-Users
+cmiller,E1160,Carolyn Miller,carolyn.miller@sandbox.local,Customer Service,false,GG-All-Employees
+cmiller,E1160,Carolyn Miller,carolyn.miller@sandbox.local,Customer Service,false,GG-CIS-Users
+cmiller,E1160,Carolyn Miller,carolyn.miller@sandbox.local,Customer Service,false,GG-CustomerService
+cmiller,E1160,Carolyn Miller,carolyn.miller@sandbox.local,Customer Service,false,VPN-Users
+cjones2,E1161,Christopher Jones,christopher.jones@sandbox.local,Customer Service,false,GG-All-Employees
+cjones2,E1161,Christopher Jones,christopher.jones@sandbox.local,Customer Service,false,GG-CIS-Users
+cjones2,E1161,Christopher Jones,christopher.jones@sandbox.local,Customer Service,false,GG-CustomerService
+cjones2,E1161,Christopher Jones,christopher.jones@sandbox.local,Customer Service,false,O365-E3
+cjones2,E1161,Christopher Jones,christopher.jones@sandbox.local,Customer Service,false,VPN-Users
+bjackson,E1162,Brenda Jackson,brenda.jackson@sandbox.local,Customer Service,false,GG-All-Employees
+bjackson,E1162,Brenda Jackson,brenda.jackson@sandbox.local,Customer Service,false,GG-CIS-Users
+bjackson,E1162,Brenda Jackson,brenda.jackson@sandbox.local,Customer Service,false,GG-CustomerService
+bjackson,E1162,Brenda Jackson,brenda.jackson@sandbox.local,Customer Service,false,VPN-Users
+scampbell2,E1163,Samuel Campbell,samuel.campbell@sandbox.local,Customer Service,false,GG-All-Employees
+scampbell2,E1163,Samuel Campbell,samuel.campbell@sandbox.local,Customer Service,false,GG-CustomerService
+scampbell2,E1163,Samuel Campbell,samuel.campbell@sandbox.local,Customer Service,false,O365-E3
+scampbell2,E1163,Samuel Campbell,samuel.campbell@sandbox.local,Customer Service,false,VPN-Users
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,GG-All-Employees
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,GG-DBA
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,GG-Managers
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,GG-SupplyChain
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,GG-Warehouse
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,O365-E3
+rlee,E1164,Richard Lee,richard.lee@sandbox.local,Supply Chain,false,VPN-Users
+dgarcia,E1165,David Garcia,david.garcia@sandbox.local,Supply Chain,false,GG-All-Employees
+dgarcia,E1165,David Garcia,david.garcia@sandbox.local,Supply Chain,false,GG-Managers
+dgarcia,E1165,David Garcia,david.garcia@sandbox.local,Supply Chain,false,GG-SupplyChain
+dgarcia,E1165,David Garcia,david.garcia@sandbox.local,Supply Chain,false,O365-E3
+dgarcia,E1165,David Garcia,david.garcia@sandbox.local,Supply Chain,false,VPN-Users
+hscott,E1166,Helen Scott,helen.scott@sandbox.local,Supply Chain,false,GG-All-Employees
+hscott,E1166,Helen Scott,helen.scott@sandbox.local,Supply Chain,false,GG-SupplyChain
+hscott,E1166,Helen Scott,helen.scott@sandbox.local,Supply Chain,false,GG-Warehouse
+hscott,E1166,Helen Scott,helen.scott@sandbox.local,Supply Chain,false,O365-E3
+hscott,E1166,Helen Scott,helen.scott@sandbox.local,Supply Chain,false,VPN-Users
+mjackson,E1167,Michael Jackson,michael.jackson@sandbox.local,Supply Chain,false,GG-All-Employees
+mjackson,E1167,Michael Jackson,michael.jackson@sandbox.local,Supply Chain,false,GG-SupplyChain
+mjackson,E1167,Michael Jackson,michael.jackson@sandbox.local,Supply Chain,false,O365-E3
+mjackson,E1167,Michael Jackson,michael.jackson@sandbox.local,Supply Chain,false,VPN-Users
+aanderson2,E1168,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,false,GG-All-Employees
+aanderson2,E1168,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,false,GG-SupplyChain
+aanderson2,E1168,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,false,GG-Warehouse
+aanderson2,E1168,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,false,O365-E3
+aanderson2,E1168,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,false,VPN-Users
+ekelly,E1169,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,false,GG-All-Employees
+ekelly,E1169,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,false,GG-SupplyChain
+ekelly,E1169,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,false,GG-Warehouse
+ekelly,E1169,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,false,O365-E3
+ekelly,E1169,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,false,VPN-Users
+snelson,E1170,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,false,GG-All-Employees
+snelson,E1170,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,false,GG-SupplyChain
+snelson,E1170,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,false,GG-Warehouse
+snelson,E1170,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,false,O365-E3
+snelson,E1170,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,false,VPN-Users
+jlopez,E1171,James Lopez,james.lopez@sandbox.local,Supply Chain,false,GG-All-Employees
+jlopez,E1171,James Lopez,james.lopez@sandbox.local,Supply Chain,false,GG-SupplyChain
+jlopez,E1171,James Lopez,james.lopez@sandbox.local,Supply Chain,false,VPN-Users
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,GG-All-Employees
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,GG-Managers
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,GG-SupplyChain
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,GG-Warehouse
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,O365-E3
+bwilson,E1172,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,false,VPN-Users
+ghill,E1173,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,false,GG-All-Employees
+ghill,E1173,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,false,GG-SupplyChain
+ghill,E1173,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,false,GG-Warehouse
+ghill,E1173,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,false,O365-E3
+ghill,E1173,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,false,VPN-Users
+wmoore,E1174,William Moore,william.moore@sandbox.local,Supply Chain,false,GG-All-Employees
+wmoore,E1174,William Moore,william.moore@sandbox.local,Supply Chain,false,GG-SupplyChain
+wmoore,E1174,William Moore,william.moore@sandbox.local,Supply Chain,false,GG-Warehouse
+wmoore,E1174,William Moore,william.moore@sandbox.local,Supply Chain,false,O365-E3
+wmoore,E1174,William Moore,william.moore@sandbox.local,Supply Chain,false,VPN-Users
+adavis,E1175,Anna Davis,anna.davis@sandbox.local,Supply Chain,false,GG-All-Employees
+adavis,E1175,Anna Davis,anna.davis@sandbox.local,Supply Chain,false,GG-SupplyChain
+adavis,E1175,Anna Davis,anna.davis@sandbox.local,Supply Chain,false,O365-E3
+adavis,E1175,Anna Davis,anna.davis@sandbox.local,Supply Chain,false,VPN-Users
+rmartin,E1176,Rachel Martin,rachel.martin@sandbox.local,Supply Chain,false,GG-All-Employees
+rmartin,E1176,Rachel Martin,rachel.martin@sandbox.local,Supply Chain,false,GG-SupplyChain
+rmartin,E1176,Rachel Martin,rachel.martin@sandbox.local,Supply Chain,false,GG-Warehouse
+rmartin,E1176,Rachel Martin,rachel.martin@sandbox.local,Supply Chain,false,VPN-Users
+scarter,E1177,Sarah Carter,sarah.carter@sandbox.local,Supply Chain,false,GG-All-Employees
+scarter,E1177,Sarah Carter,sarah.carter@sandbox.local,Supply Chain,false,GG-SupplyChain
+scarter,E1177,Sarah Carter,sarah.carter@sandbox.local,Supply Chain,false,GG-Warehouse
+scarter,E1177,Sarah Carter,sarah.carter@sandbox.local,Supply Chain,false,VPN-Users
+jwright,E1178,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,false,GG-All-Employees
+jwright,E1178,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,false,GG-SupplyChain
+jwright,E1178,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,false,GG-Warehouse
+jwright,E1178,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,false,O365-E3
+jwright,E1178,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,false,VPN-Users
+jramirez,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,Supply Chain,false,GG-All-Employees
+jramirez,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,Supply Chain,false,GG-SupplyChain
+jramirez,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,Supply Chain,false,O365-E3
+jramirez,E1179,Jennifer Ramirez,jennifer.ramirez@sandbox.local,Supply Chain,false,VPN-Users
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,GG-All-Employees
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,GG-CIS-Users
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,GG-SupplyChain
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,GG-Warehouse
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,O365-E3
+srivera2,E1180,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,false,VPN-Users
+krobinson,E1181,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,false,GG-All-Employees
+krobinson,E1181,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,false,GG-Managers
+krobinson,E1181,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,false,GG-SupplyChain
+krobinson,E1181,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,false,GG-Warehouse
+krobinson,E1181,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,false,VPN-Users
+sking,E1182,Sharon King,sharon.king@sandbox.local,Supply Chain,false,GG-All-Employees
+sking,E1182,Sharon King,sharon.king@sandbox.local,Supply Chain,false,GG-SupplyChain
+sking,E1182,Sharon King,sharon.king@sandbox.local,Supply Chain,false,GG-Warehouse
+sking,E1182,Sharon King,sharon.king@sandbox.local,Supply Chain,false,O365-E3
+sking,E1182,Sharon King,sharon.king@sandbox.local,Supply Chain,false,VPN-Users
+ljones,E1183,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,false,GG-All-Employees
+ljones,E1183,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,false,GG-SupplyChain
+ljones,E1183,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,false,GG-Warehouse
+ljones,E1183,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,false,O365-E3
+ljones,E1183,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,false,VPN-Users
+dsullivan,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,false,GG-All-Employees
+dsullivan,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,false,GG-SupplyChain
+dsullivan,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,false,GG-Warehouse
+dsullivan,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,false,O365-E3
+dsullivan,E1184,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,false,VPN-Users
+djones2,E1185,Debra Jones,debra.jones@sandbox.local,Supply Chain,false,GG-All-Employees
+djones2,E1185,Debra Jones,debra.jones@sandbox.local,Supply Chain,false,GG-SupplyChain
+djones2,E1185,Debra Jones,debra.jones@sandbox.local,Supply Chain,false,GG-Warehouse
+djones2,E1185,Debra Jones,debra.jones@sandbox.local,Supply Chain,false,O365-E3
+djones2,E1185,Debra Jones,debra.jones@sandbox.local,Supply Chain,false,VPN-Users
+ctorres,E1186,Carolyn Torres,carolyn.torres@sandbox.local,Supply Chain,false,GG-All-Employees
+ctorres,E1186,Carolyn Torres,carolyn.torres@sandbox.local,Supply Chain,false,GG-SupplyChain
+ctorres,E1186,Carolyn Torres,carolyn.torres@sandbox.local,Supply Chain,false,O365-E3
+ctorres,E1186,Carolyn Torres,carolyn.torres@sandbox.local,Supply Chain,false,VPN-Users
+jjones2,E1187,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,false,GG-All-Employees
+jjones2,E1187,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,false,GG-SupplyChain
+jjones2,E1187,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,false,GG-Warehouse
+jjones2,E1187,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,false,O365-E3
+jjones2,E1187,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,false,VPN-Users
+sjones2,E1188,Scott Jones,scott.jones@sandbox.local,Supply Chain,false,GG-All-Employees
+sjones2,E1188,Scott Jones,scott.jones@sandbox.local,Supply Chain,false,GG-Warehouse
+sjones2,E1188,Scott Jones,scott.jones@sandbox.local,Supply Chain,false,VPN-Users
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,GG-All-Employees
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,GG-Executives
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,GG-SupplyChain
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,GG-Warehouse
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,O365-E3
+bflores,E1189,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,false,VPN-Users
+nadams,E1190,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,false,GG-All-Employees
+nadams,E1190,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,false,GG-SupplyChain
+nadams,E1190,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,false,GG-Warehouse
+nadams,E1190,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,false,O365-E3
+nadams,E1190,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,false,VPN-Users
+mrivera,E1191,Melissa Rivera,melissa.rivera@sandbox.local,Supply Chain,false,GG-All-Employees
+mrivera,E1191,Melissa Rivera,melissa.rivera@sandbox.local,Supply Chain,false,GG-SupplyChain
+mrivera,E1191,Melissa Rivera,melissa.rivera@sandbox.local,Supply Chain,false,GG-Warehouse
+mrivera,E1191,Melissa Rivera,melissa.rivera@sandbox.local,Supply Chain,false,VPN-Users
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,GG-All-Employees
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,GG-Legal
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,GG-Managers
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,O365-E3
+bflores2,E1192,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,false,VPN-Users
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,GG-All-Employees
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,GG-Legal
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,GG-Managers
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,O365-E3
+thill2,E1193,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,false,VPN-Users
+tharris,E1194,Tyler Harris,tyler.harris@sandbox.local,Legal & Compliance,false,GG-All-Employees
+tharris,E1194,Tyler Harris,tyler.harris@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+tharris,E1194,Tyler Harris,tyler.harris@sandbox.local,Legal & Compliance,false,O365-E3
+tharris,E1194,Tyler Harris,tyler.harris@sandbox.local,Legal & Compliance,false,VPN-Users
+wnguyen,E1195,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,false,GG-All-Employees
+wnguyen,E1195,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+wnguyen,E1195,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,false,GG-Legal
+wnguyen,E1195,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,false,O365-E3
+wnguyen,E1195,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,false,VPN-Users
+rrivera,E1196,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,false,GG-All-Employees
+rrivera,E1196,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,false,GG-FieldServices
+rrivera,E1196,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,false,GG-Legal
+rrivera,E1196,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,false,O365-E3
+rrivera,E1196,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,false,VPN-Users
+jmurphy,E1197,Janet Murphy,janet.murphy@sandbox.local,Legal & Compliance,false,GG-All-Employees
+jmurphy,E1197,Janet Murphy,janet.murphy@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+jmurphy,E1197,Janet Murphy,janet.murphy@sandbox.local,Legal & Compliance,false,GG-Legal
+jmurphy,E1197,Janet Murphy,janet.murphy@sandbox.local,Legal & Compliance,false,VPN-Users
+rjohnson,E1198,Ryan Johnson,ryan.johnson@sandbox.local,Legal & Compliance,false,GG-All-Employees
+rjohnson,E1198,Ryan Johnson,ryan.johnson@sandbox.local,Legal & Compliance,false,GG-Legal
+rjohnson,E1198,Ryan Johnson,ryan.johnson@sandbox.local,Legal & Compliance,false,O365-E3
+rjohnson,E1198,Ryan Johnson,ryan.johnson@sandbox.local,Legal & Compliance,false,VPN-Users
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,GG-All-Employees
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,GG-Finance-AP
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,GG-Legal
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,O365-E3
+smartinez,E1199,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,false,VPN-Users
+jnelson,E1200,John Nelson,john.nelson@sandbox.local,Legal & Compliance,false,GG-All-Employees
+jnelson,E1200,John Nelson,john.nelson@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+jnelson,E1200,John Nelson,john.nelson@sandbox.local,Legal & Compliance,false,GG-Legal
+jnelson,E1200,John Nelson,john.nelson@sandbox.local,Legal & Compliance,false,O365-E3
+jnelson,E1200,John Nelson,john.nelson@sandbox.local,Legal & Compliance,false,VPN-Users
+nmurphy,E1201,Nancy Murphy,nancy.murphy@sandbox.local,Legal & Compliance,false,GG-All-Employees
+nmurphy,E1201,Nancy Murphy,nancy.murphy@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+nmurphy,E1201,Nancy Murphy,nancy.murphy@sandbox.local,Legal & Compliance,false,O365-E3
+nmurphy,E1201,Nancy Murphy,nancy.murphy@sandbox.local,Legal & Compliance,false,VPN-Users
+tcampbell,E1202,Tyler Campbell,tyler.campbell@sandbox.local,Legal & Compliance,false,GG-All-Employees
+tcampbell,E1202,Tyler Campbell,tyler.campbell@sandbox.local,Legal & Compliance,false,GG-Legal
+tcampbell,E1202,Tyler Campbell,tyler.campbell@sandbox.local,Legal & Compliance,false,O365-E3
+tcampbell,E1202,Tyler Campbell,tyler.campbell@sandbox.local,Legal & Compliance,false,VPN-Users
+smartin2,E1203,Steven Martin,steven.martin@sandbox.local,Legal & Compliance,false,GG-All-Employees
+smartin2,E1203,Steven Martin,steven.martin@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+smartin2,E1203,Steven Martin,steven.martin@sandbox.local,Legal & Compliance,false,O365-E3
+smartin2,E1203,Steven Martin,steven.martin@sandbox.local,Legal & Compliance,false,VPN-Users
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,GG-All-Employees
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,GG-Legal
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,GG-Managers
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,O365-E3
+jroberts,E1204,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,false,VPN-Users
+pbrown,E1205,Paul Brown,paul.brown@sandbox.local,Legal & Compliance,false,GG-All-Employees
+pbrown,E1205,Paul Brown,paul.brown@sandbox.local,Legal & Compliance,false,GG-Legal
+pbrown,E1205,Paul Brown,paul.brown@sandbox.local,Legal & Compliance,false,O365-E3
+pbrown,E1205,Paul Brown,paul.brown@sandbox.local,Legal & Compliance,false,VPN-Users
+bkelly,E1206,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,false,GG-All-Employees
+bkelly,E1206,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+bkelly,E1206,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,false,GG-Legal
+bkelly,E1206,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,false,O365-E3
+bkelly,E1206,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,false,VPN-Users
+cgarcia,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,false,GG-All-Employees
+cgarcia,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+cgarcia,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,false,GG-Legal
+cgarcia,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,false,O365-E3
+cgarcia,E1207,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,false,VPN-Users
+swhite,E1208,Scott White,scott.white@sandbox.local,Legal & Compliance,false,GG-All-Employees
+swhite,E1208,Scott White,scott.white@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+swhite,E1208,Scott White,scott.white@sandbox.local,Legal & Compliance,false,GG-Legal
+swhite,E1208,Scott White,scott.white@sandbox.local,Legal & Compliance,false,O365-E3
+swhite,E1208,Scott White,scott.white@sandbox.local,Legal & Compliance,false,VPN-Users
+dperez2,E1209,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,false,GG-All-Employees
+dperez2,E1209,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+dperez2,E1209,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,false,GG-Legal
+dperez2,E1209,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,false,O365-E3
+dperez2,E1209,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,false,VPN-Users
+psmith,E1210,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,true,GG-All-Employees
+psmith,E1210,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,true,GG-CIP-Evidence
+psmith,E1210,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,true,GG-Legal
+psmith,E1210,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,true,O365-E3
+psmith,E1210,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,true,VPN-Users
+bramirez3,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,false,GG-All-Employees
+bramirez3,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+bramirez3,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,false,GG-Legal
+bramirez3,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,false,O365-E3
+bramirez3,E1211,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,false,VPN-Users
+ckowalski2,E1212,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,false,GG-All-Employees
+ckowalski2,E1212,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+ckowalski2,E1212,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,false,GG-Legal
+ckowalski2,E1212,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,false,O365-E3
+ckowalski2,E1212,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,false,VPN-Users
+rgreen,E1213,Robert Green,robert.green@sandbox.local,Legal & Compliance,false,GG-All-Employees
+rgreen,E1213,Robert Green,robert.green@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+rgreen,E1213,Robert Green,robert.green@sandbox.local,Legal & Compliance,false,GG-Legal
+rgreen,E1213,Robert Green,robert.green@sandbox.local,Legal & Compliance,false,O365-E3
+rgreen,E1213,Robert Green,robert.green@sandbox.local,Legal & Compliance,false,VPN-Users
+dthomas,E1214,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,false,GG-All-Employees
+dthomas,E1214,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+dthomas,E1214,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,false,GG-Legal
+dthomas,E1214,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,false,O365-E3
+dthomas,E1214,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,false,VPN-Users
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,GG-All-Employees
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,GG-Legal
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,GG-Managers
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,O365-E3
+bwright,E1215,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,false,VPN-Users
+rwhite,E1216,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,false,GG-All-Employees
+rwhite,E1216,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+rwhite,E1216,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,false,GG-Legal
+rwhite,E1216,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,false,O365-E3
+rwhite,E1216,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,false,VPN-Users
+sroberts,E1217,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,false,GG-All-Employees
+sroberts,E1217,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+sroberts,E1217,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,false,GG-Legal
+sroberts,E1217,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,false,O365-E3
+sroberts,E1217,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,false,VPN-Users
+dlopez2,E1218,Dennis Lopez,dennis.lopez@sandbox.local,Legal & Compliance,false,GG-All-Employees
+dlopez2,E1218,Dennis Lopez,dennis.lopez@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+dlopez2,E1218,Dennis Lopez,dennis.lopez@sandbox.local,Legal & Compliance,false,O365-E3
+dlopez2,E1218,Dennis Lopez,dennis.lopez@sandbox.local,Legal & Compliance,false,VPN-Users
+swilliams,E1219,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,false,GG-All-Employees
+swilliams,E1219,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+swilliams,E1219,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,false,GG-Legal
+swilliams,E1219,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,false,O365-E3
+swilliams,E1219,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,false,VPN-Users
+gsullivan,E1220,Gary Sullivan,gary.sullivan@sandbox.local,Legal & Compliance,false,GG-All-Employees
+gsullivan,E1220,Gary Sullivan,gary.sullivan@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+gsullivan,E1220,Gary Sullivan,gary.sullivan@sandbox.local,Legal & Compliance,false,O365-E3
+gsullivan,E1220,Gary Sullivan,gary.sullivan@sandbox.local,Legal & Compliance,false,VPN-Users
+mreilly,E1221,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,false,GG-All-Employees
+mreilly,E1221,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+mreilly,E1221,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,false,GG-Legal
+mreilly,E1221,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,false,O365-E3
+mreilly,E1221,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,false,VPN-Users
+jharris2,E1222,Jonathan Harris,jonathan.harris@sandbox.local,Legal & Compliance,false,GG-All-Employees
+jharris2,E1222,Jonathan Harris,jonathan.harris@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+jharris2,E1222,Jonathan Harris,jonathan.harris@sandbox.local,Legal & Compliance,false,O365-E3
+jharris2,E1222,Jonathan Harris,jonathan.harris@sandbox.local,Legal & Compliance,false,VPN-Users
+egarcia,E1223,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,false,GG-All-Employees
+egarcia,E1223,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+egarcia,E1223,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,false,GG-Legal
+egarcia,E1223,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,false,O365-E3
+egarcia,E1223,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,false,VPN-Users
+anelson,E1224,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,false,GG-All-Employees
+anelson,E1224,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+anelson,E1224,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,false,GG-Legal
+anelson,E1224,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,false,O365-E3
+anelson,E1224,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,false,VPN-Users
+tlewis,E1225,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,false,GG-All-Employees
+tlewis,E1225,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+tlewis,E1225,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,false,GG-Legal
+tlewis,E1225,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,false,O365-E3
+tlewis,E1225,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,false,VPN-Users
+ljones2,E1226,Linda Jones,linda.jones@sandbox.local,Legal & Compliance,false,GG-All-Employees
+ljones2,E1226,Linda Jones,linda.jones@sandbox.local,Legal & Compliance,false,GG-CIP-Evidence
+ljones2,E1226,Linda Jones,linda.jones@sandbox.local,Legal & Compliance,false,O365-E3
+ljones2,E1226,Linda Jones,linda.jones@sandbox.local,Legal & Compliance,false,VPN-Users
+svc_iiq,,svc_iiq,,,false,GG-Server-Admins
+svc_backup,,svc_backup,,,false,GG-Server-Admins
+svc_backup,,svc_backup,,,false,GG-Domain-Admins
+svc_scada_hist,,svc_scada_hist,,,false,GG-SCADA-Users
+testuser01,,testuser01,,,false,GG-All-Employees
+jdoe_old,,jdoe_old,,,false,VPN-Users
+jdoe_old,,jdoe_old,,,false,GG-Finance

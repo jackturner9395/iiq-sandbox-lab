@@ -1,0 +1,227 @@
+employeeId,firstName,lastName,displayName,email,department,title,location,managerId,employeeType,status,hireDate
+E1001,Christine,Davis,Christine Davis,christine.davis@sandbox.local,Executive,Chief Executive Officer,Central HQ,,Employee,Active,2005-12-09
+E1002,Kimberly,Anderson,Kimberly Anderson,kimberly.anderson@sandbox.local,Information Technology,VP Information Technology,Central HQ,E1001,Contractor,Active,2022-02-19
+E1003,John,Johnson,John Johnson,john.johnson@sandbox.local,Information Technology,Manager Information Technology,Central HQ,E1002,Employee,Active,2005-09-07
+E1004,Debra,Hall,Debra Hall,debra.hall@sandbox.local,Information Technology,Application Developer,River Operations Center,E1003,Employee,Active,2005-03-23
+E1005,Eric,Perez,Eric Perez,eric.perez@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1003,Contractor,Active,2017-02-12
+E1006,Timothy,Hill,Timothy Hill,timothy.hill@sandbox.local,Information Technology,IAM Analyst,North Service Center,E1003,Employee,Active,2008-07-03
+E1007,Samuel,Jackson,Samuel Jackson,samuel.jackson@sandbox.local,Information Technology,Database Administrator,Central HQ,E1003,Employee,Active,2007-01-22
+E1008,Ashley,Roberts,Ashley Roberts,ashley.roberts@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1003,Employee,Active,2017-05-15
+E1009,Christine,Murphy,Christine Murphy,christine.murphy@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1003,Employee,Active,2013-12-22
+E1010,Dennis,Jones,Dennis Jones,dennis.jones@sandbox.local,Information Technology,Application Developer,East Service Center,E1003,Employee,Active,2010-08-13
+E1011,Andrew,Green,Andrew Green,andrew.green@sandbox.local,Information Technology,Database Administrator,North Service Center,E1003,Employee,Active,2006-04-27
+E1012,John,Novak,John Novak,john.novak@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1003,Employee,Active,2023-12-11
+E1013,Sandra,Adams,Sandra Adams,sandra.adams@sandbox.local,Information Technology,Service Desk Analyst,North Service Center,E1003,Employee,Active,2013-03-08
+E1014,Emma,Wright,Emma Wright,emma.wright@sandbox.local,Information Technology,IAM Analyst,River Operations Center,E1003,Employee,Active,2017-06-08
+E1015,Sarah,Allen,Sarah Allen,sarah.allen@sandbox.local,Information Technology,Manager Information Technology,Central HQ,E1002,Employee,Active,2009-11-06
+E1016,Carolyn,Ramirez,Carolyn Ramirez,carolyn.ramirez@sandbox.local,Information Technology,Application Developer,River Operations Center,E1015,Employee,Active,2019-09-09
+E1017,Samuel,Reilly,Samuel Reilly,samuel.reilly@sandbox.local,Information Technology,Systems Administrator,Central HQ,E1015,Employee,Active,2022-05-25
+E1018,Dennis,Perez,Dennis Perez,dennis.perez@sandbox.local,Information Technology,Systems Administrator,Central HQ,E1015,Employee,Active,2013-09-25
+E1019,Matthew,Allen,Matthew Allen,matthew.allen@sandbox.local,Information Technology,Systems Administrator,Central HQ,E1015,Employee,Active,2021-10-07
+E1020,Karen,White,Karen White,karen.white@sandbox.local,Information Technology,Network Engineer,East Service Center,E1015,Employee,Active,2024-06-16
+E1021,Robert,Davis,Robert Davis,robert.davis@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1015,Employee,Active,2012-10-03
+E1022,William,Campbell,William Campbell,william.campbell@sandbox.local,Information Technology,Service Desk Analyst,East Service Center,E1015,Employee,Active,2009-11-16
+E1023,Samuel,Hernandez,Samuel Hernandez,samuel.hernandez@sandbox.local,Information Technology,IAM Analyst,East Service Center,E1015,Employee,Active,2011-09-25
+E1024,Aaron,Gonzalez,Aaron Gonzalez,aaron.gonzalez@sandbox.local,Information Technology,Database Administrator,North Service Center,E1015,Employee,Active,2019-09-15
+E1025,Jessica,Thomas,Jessica Thomas,jessica.thomas@sandbox.local,Information Technology,Network Engineer,Central HQ,E1015,Employee,Active,2012-10-08
+E1026,James,Jones,James Jones,james.jones@sandbox.local,Information Technology,Database Administrator,Central HQ,E1015,Contractor,Active,2006-06-03
+E1027,Anna,Thomas,Anna Thomas,anna.thomas@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1015,Employee,Active,2023-10-16
+E1028,Kimberly,Kowalski,Kimberly Kowalski,kimberly.kowalski@sandbox.local,Information Technology,Manager Information Technology,River Operations Center,E1002,Employee,Active,2008-11-14
+E1029,Eric,Clark,Eric Clark,eric.clark@sandbox.local,Information Technology,Service Desk Analyst,Central HQ,E1028,Employee,Active,2025-02-02
+E1030,Sharon,Campbell,Sharon Campbell,sharon.campbell@sandbox.local,Information Technology,IAM Analyst,Central HQ,E1028,Employee,Active,2011-09-15
+E1031,Sarah,Ramirez,Sarah Ramirez,sarah.ramirez@sandbox.local,Information Technology,Network Engineer,Central HQ,E1028,Employee,Active,2007-08-26
+E1032,Samuel,Miller,Samuel Miller,samuel.miller@sandbox.local,Information Technology,Systems Administrator,East Service Center,E1028,Employee,Active,2007-04-06
+E1033,Nicholas,Young,Nicholas Young,nicholas.young@sandbox.local,Information Technology,Service Desk Analyst,River Operations Center,E1028,Employee,Active,2010-07-01
+E1034,Rebecca,Taylor,Rebecca Taylor,rebecca.taylor@sandbox.local,Information Technology,Service Desk Analyst,North Service Center,E1028,Employee,Active,2022-11-23
+E1035,Justin,Martinez,Justin Martinez,justin.martinez@sandbox.local,Information Technology,Network Engineer,Central HQ,E1028,Employee,Active,2022-01-24
+E1036,Brian,Brown,Brian Brown,brian.brown@sandbox.local,Information Technology,Systems Administrator,East Service Center,E1028,Employee,Active,2021-03-02
+E1037,Anna,Garcia,Anna Garcia,anna.garcia@sandbox.local,Finance,VP Finance,Central HQ,E1001,Contractor,Active,2007-11-28
+E1038,Sharon,Davis,Sharon Davis,sharon.davis@sandbox.local,Finance,Manager Finance,East Service Center,E1037,Employee,Active,2024-01-20
+E1039,Laura,Nelson,Laura Nelson,laura.nelson@sandbox.local,Finance,Financial Analyst,Central HQ,E1038,Employee,Active,2015-04-09
+E1040,Gary,Rodriguez,Gary Rodriguez,gary.rodriguez@sandbox.local,Finance,Financial Analyst,Central HQ,E1038,Contractor,Active,2024-10-04
+E1041,Elizabeth,Wright,Elizabeth Wright,elizabeth.wright@sandbox.local,Finance,AP Specialist,Central HQ,E1038,Employee,Active,2007-04-12
+E1042,Joshua,Hernandez,Joshua Hernandez,joshua.hernandez@sandbox.local,Finance,Payroll Specialist,North Service Center,E1038,Employee,Active,2025-09-01
+E1043,Rachel,Sullivan,Rachel Sullivan,rachel.sullivan@sandbox.local,Finance,Financial Analyst,Central HQ,E1038,Employee,Active,2009-05-04
+E1044,Susan,Mitchell,Susan Mitchell,susan.mitchell@sandbox.local,Finance,AP Specialist,East Service Center,E1038,Employee,Active,2015-04-22
+E1045,Christine,Kelly,Christine Kelly,christine.kelly@sandbox.local,Finance,Manager Finance,River Operations Center,E1037,Employee,Active,2006-02-21
+E1046,Donna,Williams,Donna Williams,donna.williams@sandbox.local,Finance,Accountant,Central HQ,E1045,Employee,Active,2013-03-24
+E1047,Jonathan,Scott,Jonathan Scott,jonathan.scott@sandbox.local,Finance,Payroll Specialist,Central HQ,E1045,Contractor,Active,2009-09-02
+E1048,Stephanie,Nguyen,Stephanie Nguyen,stephanie.nguyen@sandbox.local,Finance,AP Specialist,Central HQ,E1045,Employee,Active,2006-06-07
+E1049,Carolyn,Thomas,Carolyn Thomas,carolyn.thomas@sandbox.local,Finance,Accountant,East Service Center,E1045,Employee,Active,2018-10-24
+E1050,Karen,Thomas,Karen Thomas,karen.thomas@sandbox.local,Finance,AP Specialist,Central HQ,E1045,Employee,Active,2005-03-24
+E1051,George,Kowalski,George Kowalski,george.kowalski@sandbox.local,Finance,Payroll Specialist,North Service Center,E1045,Employee,Active,2013-03-26
+E1052,Janet,Miller,Janet Miller,janet.miller@sandbox.local,Finance,Payroll Specialist,River Operations Center,E1045,Employee,Active,2019-06-10
+E1053,Ashley,Anderson,Ashley Anderson,ashley.anderson@sandbox.local,Finance,Accountant,River Operations Center,E1045,Employee,Active,2007-05-12
+E1054,Dennis,Allen,Dennis Allen,dennis.allen@sandbox.local,Finance,Payroll Specialist,East Service Center,E1045,Employee,Active,2005-02-09
+E1055,Matthew,Nguyen,Matthew Nguyen,matthew.nguyen@sandbox.local,Human Resources,VP Human Resources,Central HQ,E1001,Employee,Active,2008-10-14
+E1056,Brian,Ramirez,Brian Ramirez,brian.ramirez@sandbox.local,Human Resources,Manager Human Resources,East Service Center,E1055,Contractor,Active,2023-04-09
+E1057,Cynthia,Smith,Cynthia Smith,cynthia.smith@sandbox.local,Human Resources,Benefits Specialist,East Service Center,E1056,Employee,Active,2026-04-12
+E1058,Cynthia,Jones,Cynthia Jones,cynthia.jones@sandbox.local,Human Resources,Benefits Specialist,East Service Center,E1056,Employee,Active,2008-12-10
+E1059,Scott,Martin,Scott Martin,scott.martin@sandbox.local,Human Resources,Benefits Specialist,River Operations Center,E1056,Employee,Active,2022-03-07
+E1060,Jacob,Baker,Jacob Baker,jacob.baker@sandbox.local,Human Resources,Benefits Specialist,East Service Center,E1056,Employee,Active,2017-09-27
+E1061,James,Martin,James Martin,james.martin@sandbox.local,Human Resources,Recruiter,East Service Center,E1056,Employee,Active,2015-08-15
+E1062,Jonathan,Baker,Jonathan Baker,jonathan.baker@sandbox.local,Human Resources,HR Generalist,North Service Center,E1056,Employee,Active,2007-05-17
+E1063,Jerry,Green,Jerry Green,jerry.green@sandbox.local,Human Resources,Manager Human Resources,Central HQ,E1055,Employee,Active,2012-11-10
+E1064,Betty,Martinez,Betty Martinez,betty.martinez@sandbox.local,Human Resources,HR Generalist,River Operations Center,E1063,Employee,Terminated,2007-08-14
+E1065,Jack,Torres,Jack Torres,jack.torres@sandbox.local,Human Resources,HR Generalist,River Operations Center,E1063,Employee,Active,2012-03-21
+E1066,Aaron,Smith,Aaron Smith,aaron.smith@sandbox.local,Human Resources,HR Generalist,Central HQ,E1063,Employee,Active,2021-08-02
+E1067,Emma,Thomas,Emma Thomas,emma.thomas@sandbox.local,Human Resources,HR Generalist,River Operations Center,E1063,Employee,Active,2022-10-11
+E1068,Jonathan,Flores,Jonathan Flores,jonathan.flores@sandbox.local,Human Resources,Benefits Specialist,River Operations Center,E1063,Employee,Active,2022-08-06
+E1069,Larry,Lewis,Larry Lewis,larry.lewis@sandbox.local,Human Resources,Recruiter,North Service Center,E1063,Employee,Active,2021-08-21
+E1070,Steven,Moore,Steven Moore,steven.moore@sandbox.local,Human Resources,Recruiter,Central HQ,E1063,Employee,Active,2015-06-18
+E1071,William,Rodriguez,William Rodriguez,william.rodriguez@sandbox.local,Human Resources,Manager Human Resources,River Operations Center,E1055,Employee,Active,2011-02-14
+E1072,George,Wright,George Wright,george.wright@sandbox.local,Human Resources,Recruiter,Central HQ,E1071,Employee,Active,2017-10-23
+E1073,Robert,Kelly,Robert Kelly,robert.kelly@sandbox.local,Human Resources,Benefits Specialist,Central HQ,E1071,Employee,Active,2014-07-28
+E1074,Laura,Wright,Laura Wright,laura.wright@sandbox.local,Human Resources,Benefits Specialist,East Service Center,E1071,Employee,Active,2020-04-09
+E1075,Cynthia,Young,Cynthia Young,cynthia.young@sandbox.local,Human Resources,HR Generalist,North Service Center,E1071,Employee,Active,2017-12-06
+E1076,Amy,Rodriguez,Amy Rodriguez,amy.rodriguez@sandbox.local,Human Resources,Benefits Specialist,River Operations Center,E1071,Employee,Active,2026-01-03
+E1077,Dennis,Ramirez,Dennis Ramirez,dennis.ramirez@sandbox.local,Human Resources,HR Generalist,Central HQ,E1071,Contractor,Active,2017-06-07
+E1078,Stephen,Lee,Stephen Lee,stephen.lee@sandbox.local,Human Resources,Recruiter,River Operations Center,E1071,Employee,Active,2018-05-27
+E1079,William,Walker,William Walker,william.walker@sandbox.local,Human Resources,HR Generalist,Central HQ,E1071,Employee,Active,2016-04-21
+E1080,David,Roberts,David Roberts,david.roberts@sandbox.local,Human Resources,Benefits Specialist,Central HQ,E1071,Employee,Terminated,2011-01-20
+E1081,Thomas,Walker,Thomas Walker,thomas.walker@sandbox.local,Grid Operations,VP Grid Operations,Central HQ,E1001,Employee,Active,2011-08-23
+E1082,Stephanie,Hernandez,Stephanie Hernandez,stephanie.hernandez@sandbox.local,Grid Operations,Manager Grid Operations,North Service Center,E1081,Employee,Active,2010-05-04
+E1083,Patricia,Martin,Patricia Martin,patricia.martin@sandbox.local,Grid Operations,Outage Coordinator,North Service Center,E1082,Employee,Active,2023-12-27
+E1084,Jack,Thomas,Jack Thomas,jack.thomas@sandbox.local,Grid Operations,System Operator,Central HQ,E1082,Employee,Active,2024-02-26
+E1085,Gregory,Kowalski,Gregory Kowalski,gregory.kowalski@sandbox.local,Grid Operations,System Operator,River Operations Center,E1082,Employee,Active,2007-09-21
+E1086,Melissa,Smith,Melissa Smith,melissa.smith@sandbox.local,Grid Operations,Outage Coordinator,Central HQ,E1082,Employee,Active,2016-11-27
+E1087,Stephen,Rivera,Stephen Rivera,stephen.rivera@sandbox.local,Grid Operations,Protection Engineer,North Service Center,E1082,Employee,Active,2025-05-20
+E1088,Benjamin,Roberts,Benjamin Roberts,benjamin.roberts@sandbox.local,Grid Operations,Outage Coordinator,North Service Center,E1082,Employee,Active,2015-04-27
+E1089,Barbara,Moore,Barbara Moore,barbara.moore@sandbox.local,Grid Operations,Outage Coordinator,River Operations Center,E1082,Employee,Active,2026-07-11
+E1090,Patricia,Young,Patricia Young,patricia.young@sandbox.local,Grid Operations,SCADA Engineer,Central HQ,E1082,Employee,Active,2013-06-09
+E1091,Raymond,Hall,Raymond Hall,raymond.hall@sandbox.local,Grid Operations,SCADA Engineer,East Service Center,E1082,Employee,Active,2007-04-24
+E1092,Emma,Carter,Emma Carter,emma.carter@sandbox.local,Grid Operations,Protection Engineer,North Service Center,E1082,Employee,Active,2019-01-03
+E1093,Michelle,Anderson,Michelle Anderson,michelle.anderson@sandbox.local,Grid Operations,Manager Grid Operations,Central HQ,E1081,Employee,Active,2023-06-16
+E1094,Brenda,Thompson,Brenda Thompson,brenda.thompson@sandbox.local,Grid Operations,Outage Coordinator,East Service Center,E1093,Employee,Active,2019-05-10
+E1095,Paul,Anderson,Paul Anderson,paul.anderson@sandbox.local,Grid Operations,System Operator,Central HQ,E1093,Contractor,Active,2022-12-06
+E1096,Anthony,Wilson,Anthony Wilson,anthony.wilson@sandbox.local,Grid Operations,Outage Coordinator,East Service Center,E1093,Employee,Active,2021-10-10
+E1097,Richard,Murphy,Richard Murphy,richard.murphy@sandbox.local,Grid Operations,Protection Engineer,Central HQ,E1093,Employee,Active,2005-12-18
+E1098,Thomas,Moore,Thomas Moore,thomas.moore@sandbox.local,Grid Operations,System Operator,East Service Center,E1093,Employee,Active,2009-11-28
+E1099,Justin,Miller,Justin Miller,justin.miller@sandbox.local,Grid Operations,System Operator,River Operations Center,E1093,Employee,Active,2015-03-02
+E1100,Paul,Reilly,Paul Reilly,paul.reilly@sandbox.local,Grid Operations,Outage Coordinator,Central HQ,E1093,Employee,Active,2007-10-21
+E1101,Carolyn,Brown,Carolyn Brown,carolyn.brown@sandbox.local,Grid Operations,Protection Engineer,East Service Center,E1093,Employee,Active,2007-04-04
+E1102,Laura,Hill,Laura Hill,laura.hill@sandbox.local,Grid Operations,Protection Engineer,River Operations Center,E1093,Employee,Active,2019-05-28
+E1103,Helen,Ramirez,Helen Ramirez,helen.ramirez@sandbox.local,Grid Operations,SCADA Engineer,Central HQ,E1093,Employee,Active,2008-04-21
+E1104,Sandra,Taylor,Sandra Taylor,sandra.taylor@sandbox.local,Grid Operations,Manager Grid Operations,Central HQ,E1081,Employee,Active,2022-02-06
+E1105,Nicholas,Lewis,Nicholas Lewis,nicholas.lewis@sandbox.local,Grid Operations,Outage Coordinator,Central HQ,E1104,Employee,Active,2014-12-28
+E1106,Stephen,Jones,Stephen Jones,stephen.jones@sandbox.local,Grid Operations,Protection Engineer,North Service Center,E1104,Employee,Active,2011-07-04
+E1107,Pamela,Anderson,Pamela Anderson,pamela.anderson@sandbox.local,Grid Operations,Protection Engineer,Central HQ,E1104,Contractor,Active,2010-05-20
+E1108,Gregory,Jackson,Gregory Jackson,gregory.jackson@sandbox.local,Grid Operations,Outage Coordinator,North Service Center,E1104,Employee,Active,2017-05-17
+E1109,Pamela,Young,Pamela Young,pamela.young@sandbox.local,Grid Operations,Outage Coordinator,Central HQ,E1104,Employee,Active,2015-10-09
+E1110,Patricia,Garcia,Patricia Garcia,patricia.garcia@sandbox.local,Grid Operations,Protection Engineer,East Service Center,E1104,Employee,Active,2005-11-27
+E1111,Andrew,Torres,Andrew Torres,andrew.torres@sandbox.local,Field Services,VP Field Services,Central HQ,E1001,Employee,Terminated,2020-09-21
+E1112,Donna,Lopez,Donna Lopez,donna.lopez@sandbox.local,Field Services,Manager Field Services,River Operations Center,E1111,Employee,Active,2020-02-16
+E1113,Nicholas,Perez,Nicholas Perez,nicholas.perez@sandbox.local,Field Services,Substation Technician,Central HQ,E1112,Employee,Active,2020-05-22
+E1114,Sharon,Sullivan,Sharon Sullivan,sharon.sullivan@sandbox.local,Field Services,Lineworker,Central HQ,E1112,Employee,Active,2008-07-28
+E1115,Anna,Sullivan,Anna Sullivan,anna.sullivan@sandbox.local,Field Services,Lineworker,East Service Center,E1112,Employee,Active,2006-04-17
+E1116,Ryan,Flores,Ryan Flores,ryan.flores@sandbox.local,Field Services,Crew Supervisor,Central HQ,E1112,Employee,Active,2022-03-10
+E1117,Jonathan,Hall,Jonathan Hall,jonathan.hall@sandbox.local,Field Services,Crew Supervisor,North Service Center,E1112,Employee,Active,2012-12-06
+E1118,Carol,Scott,Carol Scott,carol.scott@sandbox.local,Field Services,Lineworker,Central HQ,E1112,Employee,Active,2008-08-04
+E1119,Dennis,Murphy,Dennis Murphy,dennis.murphy@sandbox.local,Field Services,Meter Technician,North Service Center,E1112,Employee,Active,2013-07-27
+E1120,Angela,Walker,Angela Walker,angela.walker@sandbox.local,Field Services,Meter Technician,Central HQ,E1112,Employee,Active,2024-09-24
+E1121,Sarah,Reilly,Sarah Reilly,sarah.reilly@sandbox.local,Field Services,Manager Field Services,River Operations Center,E1111,Employee,Active,2021-05-27
+E1122,Joshua,Campbell,Joshua Campbell,joshua.campbell@sandbox.local,Field Services,Substation Technician,East Service Center,E1121,Employee,Active,2020-03-15
+E1123,Benjamin,Walker,Benjamin Walker,benjamin.walker@sandbox.local,Field Services,Substation Technician,East Service Center,E1121,Employee,Active,2015-04-23
+E1124,Steven,Torres,Steven Torres,steven.torres@sandbox.local,Field Services,Crew Supervisor,River Operations Center,E1121,Contractor,Active,2020-12-26
+E1125,Jacob,Harris,Jacob Harris,jacob.harris@sandbox.local,Field Services,Meter Technician,Central HQ,E1121,Employee,Active,2023-06-28
+E1126,Richard,Reilly,Richard Reilly,richard.reilly@sandbox.local,Field Services,Crew Supervisor,River Operations Center,E1121,Contractor,Active,2009-07-28
+E1127,Debra,Martinez,Debra Martinez,debra.martinez@sandbox.local,Field Services,Lineworker,Central HQ,E1121,Employee,Active,2017-11-03
+E1128,George,Kelly,George Kelly,george.kelly@sandbox.local,Field Services,Manager Field Services,East Service Center,E1111,Employee,Active,2015-11-23
+E1129,Justin,Reilly,Justin Reilly,justin.reilly@sandbox.local,Field Services,Lineworker,Central HQ,E1128,Employee,Active,2014-04-24
+E1130,Barbara,Ramirez,Barbara Ramirez,barbara.ramirez@sandbox.local,Field Services,Lineworker,North Service Center,E1128,Employee,Active,2019-03-23
+E1131,Kevin,Johnson,Kevin Johnson,kevin.johnson@sandbox.local,Field Services,Lineworker,Central HQ,E1128,Employee,Active,2016-07-05
+E1132,Kimberly,King,Kimberly King,kimberly.king@sandbox.local,Field Services,Crew Supervisor,Central HQ,E1128,Employee,Active,2007-10-28
+E1133,Jacob,Flores,Jacob Flores,jacob.flores@sandbox.local,Field Services,Meter Technician,East Service Center,E1128,Employee,Active,2019-11-09
+E1134,Stephen,Taylor,Stephen Taylor,stephen.taylor@sandbox.local,Field Services,Lineworker,River Operations Center,E1128,Employee,Active,2026-09-06
+E1135,Elizabeth,Lewis,Elizabeth Lewis,elizabeth.lewis@sandbox.local,Field Services,Substation Technician,Central HQ,E1128,Employee,Active,2018-12-09
+E1136,Stephen,Kelly,Stephen Kelly,stephen.kelly@sandbox.local,Field Services,Substation Technician,River Operations Center,E1128,Employee,Active,2008-04-13
+E1137,Nicole,Thompson,Nicole Thompson,nicole.thompson@sandbox.local,Field Services,Substation Technician,Central HQ,E1128,Contractor,Active,2026-07-09
+E1138,Mary,Torres,Mary Torres,mary.torres@sandbox.local,Field Services,Lineworker,North Service Center,E1128,Employee,Active,2014-04-20
+E1139,Deborah,Anderson,Deborah Anderson,deborah.anderson@sandbox.local,Field Services,Meter Technician,North Service Center,E1128,Employee,Active,2026-11-27
+E1140,Sarah,Green,Sarah Green,sarah.green@sandbox.local,Field Services,Lineworker,North Service Center,E1128,Contractor,Active,2019-01-19
+E1141,Ryan,Campbell,Ryan Campbell,ryan.campbell@sandbox.local,Customer Service,VP Customer Service,Central HQ,E1001,Employee,Active,2015-12-14
+E1142,Betty,Rodriguez,Betty Rodriguez,betty.rodriguez@sandbox.local,Customer Service,Manager Customer Service,Central HQ,E1141,Employee,Active,2013-03-09
+E1143,Angela,Novak,Angela Novak,angela.novak@sandbox.local,Customer Service,Billing Analyst,Central HQ,E1142,Employee,Active,2019-02-05
+E1144,Donald,Reilly,Donald Reilly,donald.reilly@sandbox.local,Customer Service,Call Center Lead,River Operations Center,E1142,Employee,Active,2022-06-03
+E1145,Gary,Smith,Gary Smith,gary.smith@sandbox.local,Customer Service,Billing Analyst,River Operations Center,E1142,Employee,Active,2026-05-19
+E1146,Jacob,Sullivan,Jacob Sullivan,jacob.sullivan@sandbox.local,Customer Service,Call Center Lead,Central HQ,E1142,Employee,Active,2020-01-20
+E1147,Emma,Lee,Emma Lee,emma.lee@sandbox.local,Customer Service,Call Center Lead,Central HQ,E1142,Employee,Active,2019-12-10
+E1148,Debra,Clark,Debra Clark,debra.clark@sandbox.local,Customer Service,Customer Service Rep,Central HQ,E1142,Employee,Active,2020-02-04
+E1149,Steven,Wright,Steven Wright,steven.wright@sandbox.local,Customer Service,Customer Service Rep,Central HQ,E1142,Employee,Active,2022-07-19
+E1150,Karen,Clark,Karen Clark,karen.clark@sandbox.local,Customer Service,Call Center Lead,River Operations Center,E1142,Employee,Active,2013-01-23
+E1151,Stephanie,Wilson,Stephanie Wilson,stephanie.wilson@sandbox.local,Customer Service,Billing Analyst,Central HQ,E1142,Employee,Active,2008-11-12
+E1152,Pamela,Adams,Pamela Adams,pamela.adams@sandbox.local,Customer Service,Billing Analyst,Central HQ,E1142,Employee,Active,2008-08-03
+E1153,Jerry,Wilson,Jerry Wilson,jerry.wilson@sandbox.local,Customer Service,Call Center Lead,Central HQ,E1142,Contractor,Active,2015-04-05
+E1154,Gregory,Wilson,Gregory Wilson,gregory.wilson@sandbox.local,Customer Service,Customer Service Rep,East Service Center,E1142,Employee,Active,2011-04-11
+E1155,Christopher,Kowalski,Christopher Kowalski,christopher.kowalski@sandbox.local,Customer Service,Manager Customer Service,Central HQ,E1141,Employee,Active,2009-03-18
+E1156,Matthew,Davis,Matthew Davis,matthew.davis@sandbox.local,Customer Service,Call Center Lead,Central HQ,E1155,Contractor,Active,2012-10-11
+E1157,Robert,Lopez,Robert Lopez,robert.lopez@sandbox.local,Customer Service,Billing Analyst,North Service Center,E1155,Employee,Active,2008-12-03
+E1158,Ryan,Allen,Ryan Allen,ryan.allen@sandbox.local,Customer Service,Call Center Lead,East Service Center,E1155,Employee,Active,2024-01-24
+E1159,Jerry,King,Jerry King,jerry.king@sandbox.local,Customer Service,Billing Analyst,Central HQ,E1155,Contractor,Active,2020-07-14
+E1160,Carolyn,Miller,Carolyn Miller,carolyn.miller@sandbox.local,Customer Service,Billing Analyst,River Operations Center,E1155,Contractor,Active,2007-06-20
+E1161,Christopher,Jones,Christopher Jones,christopher.jones@sandbox.local,Customer Service,Customer Service Rep,North Service Center,E1155,Employee,Active,2015-07-20
+E1162,Brenda,Jackson,Brenda Jackson,brenda.jackson@sandbox.local,Customer Service,Billing Analyst,River Operations Center,E1155,Contractor,Active,2008-11-21
+E1163,Samuel,Campbell,Samuel Campbell,samuel.campbell@sandbox.local,Customer Service,Customer Service Rep,Central HQ,E1155,Employee,Active,2019-07-14
+E1164,Richard,Lee,Richard Lee,richard.lee@sandbox.local,Supply Chain,VP Supply Chain,Central HQ,E1001,Employee,Active,2016-03-22
+E1165,David,Garcia,David Garcia,david.garcia@sandbox.local,Supply Chain,Manager Supply Chain,Central HQ,E1164,Employee,Active,2016-03-18
+E1166,Helen,Scott,Helen Scott,helen.scott@sandbox.local,Supply Chain,Procurement Analyst,Central HQ,E1165,Employee,Active,2026-07-28
+E1167,Michael,Jackson,Michael Jackson,michael.jackson@sandbox.local,Supply Chain,Procurement Analyst,Central HQ,E1165,Employee,Active,2011-03-22
+E1168,Angela,Anderson,Angela Anderson,angela.anderson@sandbox.local,Supply Chain,Buyer,East Service Center,E1165,Employee,Active,2013-10-08
+E1169,Eric,Kelly,Eric Kelly,eric.kelly@sandbox.local,Supply Chain,Procurement Analyst,East Service Center,E1165,Employee,Active,2025-09-01
+E1170,Samantha,Nelson,Samantha Nelson,samantha.nelson@sandbox.local,Supply Chain,Procurement Analyst,Central HQ,E1165,Employee,Active,2014-06-12
+E1171,James,Lopez,James Lopez,james.lopez@sandbox.local,Supply Chain,Buyer,River Operations Center,E1165,Contractor,Active,2025-01-03
+E1172,Brenda,Wilson,Brenda Wilson,brenda.wilson@sandbox.local,Supply Chain,Manager Supply Chain,River Operations Center,E1164,Employee,Active,2016-05-24
+E1173,Gregory,Hill,Gregory Hill,gregory.hill@sandbox.local,Supply Chain,Buyer,Central HQ,E1172,Employee,Active,2024-01-22
+E1174,William,Moore,William Moore,william.moore@sandbox.local,Supply Chain,Warehouse Coordinator,River Operations Center,E1172,Employee,Active,2018-05-07
+E1175,Anna,Davis,Anna Davis,anna.davis@sandbox.local,Supply Chain,Warehouse Coordinator,Central HQ,E1172,Employee,Active,2023-08-17
+E1176,Rachel,Martin,Rachel Martin,rachel.martin@sandbox.local,Supply Chain,Buyer,East Service Center,E1172,Contractor,Active,2011-05-07
+E1177,Sarah,Carter,Sarah Carter,sarah.carter@sandbox.local,Supply Chain,Warehouse Coordinator,Central HQ,E1172,Contractor,Active,2018-03-05
+E1178,Jacob,Wright,Jacob Wright,jacob.wright@sandbox.local,Supply Chain,Procurement Analyst,East Service Center,E1172,Employee,Active,2016-02-13
+E1179,Jennifer,Ramirez,Jennifer Ramirez,jennifer.ramirez@sandbox.local,Supply Chain,Buyer,Central HQ,E1172,Employee,Active,2023-07-19
+E1180,Sharon,Rivera,Sharon Rivera,sharon.rivera@sandbox.local,Supply Chain,Procurement Analyst,Central HQ,E1172,Employee,Active,2015-03-26
+E1181,Katherine,Robinson,Katherine Robinson,katherine.robinson@sandbox.local,Supply Chain,Manager Supply Chain,Central HQ,E1164,Contractor,Active,2008-04-14
+E1182,Sharon,King,Sharon King,sharon.king@sandbox.local,Supply Chain,Buyer,Central HQ,E1181,Employee,Active,2012-06-25
+E1183,Lisa,Jones,Lisa Jones,lisa.jones@sandbox.local,Supply Chain,Procurement Analyst,East Service Center,E1181,Employee,Active,2016-06-24
+E1184,Dennis,Sullivan,Dennis Sullivan,dennis.sullivan@sandbox.local,Supply Chain,Buyer,Central HQ,E1181,Employee,Active,2010-10-05
+E1185,Debra,Jones,Debra Jones,debra.jones@sandbox.local,Supply Chain,Buyer,North Service Center,E1181,Employee,Active,2023-10-15
+E1186,Carolyn,Torres,Carolyn Torres,carolyn.torres@sandbox.local,Supply Chain,Procurement Analyst,East Service Center,E1181,Employee,Active,2025-06-05
+E1187,Jonathan,Jones,Jonathan Jones,jonathan.jones@sandbox.local,Supply Chain,Warehouse Coordinator,Central HQ,E1181,Employee,Active,2023-01-12
+E1188,Scott,Jones,Scott Jones,scott.jones@sandbox.local,Supply Chain,Warehouse Coordinator,Central HQ,E1181,Contractor,Active,2014-02-21
+E1189,Barbara,Flores,Barbara Flores,barbara.flores@sandbox.local,Supply Chain,Procurement Analyst,River Operations Center,E1181,Employee,Active,2006-08-26
+E1190,Nicole,Adams,Nicole Adams,nicole.adams@sandbox.local,Supply Chain,Buyer,River Operations Center,E1181,Employee,Active,2006-08-04
+E1191,Melissa,Rivera,Melissa Rivera,melissa.rivera@sandbox.local,Supply Chain,Buyer,Central HQ,E1181,Contractor,Active,2019-08-17
+E1192,Brandon,Flores,Brandon Flores,brandon.flores@sandbox.local,Legal & Compliance,VP Legal & Compliance,Central HQ,E1001,Employee,Active,2014-07-14
+E1193,Tyler,Hill,Tyler Hill,tyler.hill@sandbox.local,Legal & Compliance,Manager Legal & Compliance,North Service Center,E1192,Employee,Active,2007-06-04
+E1194,Tyler,Harris,Tyler Harris,tyler.harris@sandbox.local,Legal & Compliance,NERC CIP Specialist,North Service Center,E1193,Employee,Active,2024-03-11
+E1195,William,Nguyen,William Nguyen,william.nguyen@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1193,Employee,Active,2025-12-22
+E1196,Raymond,Rivera,Raymond Rivera,raymond.rivera@sandbox.local,Legal & Compliance,Compliance Analyst,River Operations Center,E1193,Employee,Active,2015-03-22
+E1197,Janet,Murphy,Janet Murphy,janet.murphy@sandbox.local,Legal & Compliance,Paralegal,East Service Center,E1193,Contractor,Active,2026-07-17
+E1198,Ryan,Johnson,Ryan Johnson,ryan.johnson@sandbox.local,Legal & Compliance,NERC CIP Specialist,Central HQ,E1193,Employee,Active,2020-04-08
+E1199,Sarah,Martinez,Sarah Martinez,sarah.martinez@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1193,Employee,Active,2022-12-17
+E1200,John,Nelson,John Nelson,john.nelson@sandbox.local,Legal & Compliance,NERC CIP Specialist,East Service Center,E1193,Employee,Active,2017-03-06
+E1201,Nancy,Murphy,Nancy Murphy,nancy.murphy@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1193,Employee,Active,2006-07-12
+E1202,Tyler,Campbell,Tyler Campbell,tyler.campbell@sandbox.local,Legal & Compliance,Compliance Analyst,East Service Center,E1193,Employee,Active,2019-04-18
+E1203,Steven,Martin,Steven Martin,steven.martin@sandbox.local,Legal & Compliance,NERC CIP Specialist,Central HQ,E1193,Employee,Active,2023-08-15
+E1204,Joshua,Roberts,Joshua Roberts,joshua.roberts@sandbox.local,Legal & Compliance,Manager Legal & Compliance,East Service Center,E1192,Employee,Active,2010-04-26
+E1205,Paul,Brown,Paul Brown,paul.brown@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1204,Employee,Active,2008-12-28
+E1206,Brandon,Kelly,Brandon Kelly,brandon.kelly@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Active,2021-03-27
+E1207,Cynthia,Garcia,Cynthia Garcia,cynthia.garcia@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Active,2018-01-13
+E1208,Scott,White,Scott White,scott.white@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Active,2005-06-04
+E1209,Debra,Perez,Debra Perez,debra.perez@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Active,2020-12-27
+E1210,Patrick,Smith,Patrick Smith,patrick.smith@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Terminated,2022-12-20
+E1211,Brenda,Ramirez,Brenda Ramirez,brenda.ramirez@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1204,Employee,Active,2006-04-14
+E1212,Christine,Kowalski,Christine Kowalski,christine.kowalski@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1204,Employee,Active,2020-10-18
+E1213,Robert,Green,Robert Green,robert.green@sandbox.local,Legal & Compliance,Paralegal,North Service Center,E1204,Employee,Active,2018-01-20
+E1214,Deborah,Thomas,Deborah Thomas,deborah.thomas@sandbox.local,Legal & Compliance,Paralegal,North Service Center,E1204,Employee,Active,2021-06-03
+E1215,Brenda,Wright,Brenda Wright,brenda.wright@sandbox.local,Legal & Compliance,Manager Legal & Compliance,East Service Center,E1192,Employee,Active,2017-08-02
+E1216,Rebecca,White,Rebecca White,rebecca.white@sandbox.local,Legal & Compliance,NERC CIP Specialist,Central HQ,E1215,Employee,Active,2016-04-24
+E1217,Susan,Roberts,Susan Roberts,susan.roberts@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1215,Employee,Active,2016-09-11
+E1218,Dennis,Lopez,Dennis Lopez,dennis.lopez@sandbox.local,Legal & Compliance,Paralegal,North Service Center,E1215,Employee,Active,2010-03-03
+E1219,Stephen,Williams,Stephen Williams,stephen.williams@sandbox.local,Legal & Compliance,NERC CIP Specialist,Central HQ,E1215,Employee,Active,2015-05-17
+E1220,Gary,Sullivan,Gary Sullivan,gary.sullivan@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1215,Employee,Active,2011-05-12
+E1221,Michael,Reilly,Michael Reilly,michael.reilly@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1215,Employee,Active,2018-07-24
+E1222,Jonathan,Harris,Jonathan Harris,jonathan.harris@sandbox.local,Legal & Compliance,NERC CIP Specialist,River Operations Center,E1215,Employee,Active,2016-09-09
+E1223,Eric,Garcia,Eric Garcia,eric.garcia@sandbox.local,Legal & Compliance,NERC CIP Specialist,Central HQ,E1215,Employee,Active,2015-02-03
+E1224,Amanda,Nelson,Amanda Nelson,amanda.nelson@sandbox.local,Legal & Compliance,NERC CIP Specialist,East Service Center,E1215,Employee,Active,2010-12-15
+E1225,Timothy,Lewis,Timothy Lewis,timothy.lewis@sandbox.local,Legal & Compliance,Compliance Analyst,Central HQ,E1215,Employee,Active,2018-05-21
+E1226,Linda,Jones,Linda Jones,linda.jones@sandbox.local,Legal & Compliance,Paralegal,Central HQ,E1215,Employee,Active,2026-03-01

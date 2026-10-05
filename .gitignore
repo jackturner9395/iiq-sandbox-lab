@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# Runtime state from the mock servers
+labs/scim/scim_data.json
+labs/scim/scim_requests.log
+
+# SailPoint-licensed media is never committed
+*.war
+identityiq-*.zip

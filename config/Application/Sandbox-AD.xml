@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Application authoritative="false" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Sandbox Active Directory" profileClass="" type="DelimitedFile">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="Sandbox Correlation by EmployeeId"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="delimiter" value=","/>
+      <entry key="file" value="C:/IIQSandbox/data/ad_accounts.csv"/>
+      <entry key="filetransport" value="local"/>
+      <entry key="filterEmptyRecords" value="true"/>
+      <entry key="hasHeader" value="true"/>
+      <entry key="mergeRows" value="true"/>
+      <entry key="indexColumn" value="sAMAccountName"/>
+      <entry key="mergeColumns">
+        <value>
+          <List>
+            <String>memberOf</String>
+          </List>
+        </value>
+      </entry>
+      <entry key="parseType" value="delimited"/>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US" value="Sandbox demo app loaded from ad_accounts.csv"/>
+          </Map>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <Schemas>
+    <Schema displayAttribute="sAMAccountName" identityAttribute="sAMAccountName" instanceAttribute="" nativeObjectType="account" objectType="account">
+        <AttributeDefinition name="sAMAccountName" type="string"/>
+        <AttributeDefinition name="employeeId" type="string"/>
+        <AttributeDefinition name="displayName" type="string"/>
+        <AttributeDefinition name="mail" type="string"/>
+        <AttributeDefinition name="department" type="string"/>
+        <AttributeDefinition name="disabled" type="string"/>
+        <AttributeDefinition entitlement="true" managed="true" multi="true" name="memberOf" type="string"/>
+    </Schema>
+  </Schemas>
+</Application>
