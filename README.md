@@ -2,7 +2,8 @@
 
 A local **SailPoint IdentityIQ 8.4** environment I built to practice end-to-end identity governance work:
 authoritative-source onboarding, correlation, identity creation rules, entitlement aggregation, and
-connector onboarding against mock SCIM 2.0 and OAuth2 REST APIs I wrote.
+connector onboarding against mock SCIM 2.0 and OAuth2 REST APIs I wrote, and a **live SaaS integration**:
+request-driven provisioning to Google Analytics through its Admin API.
 
 **Stack:** IdentityIQ 8.4 · Tomcat 9 · MySQL 8.0 · Java 17 (Temurin) · SailPoint SSB for builds/deploys ·
 PowerShell automation · Python (FastAPI and stdlib) mock targets
@@ -34,6 +35,11 @@ flowchart LR
     CORR --> WH
     WH <-->|SCIM2 connector| SCIM
     WH <-->|Web Services connector| WS
+
+    subgraph SaaS["Live SaaS target"]
+        GA["Google Analytics 4<br/>Admin API · access bindings<br/>OAuth2 JWT (service account)"]
+    end
+    WH <-->|"Web Services connector<br/>aggregate + provision"| GA
 ```
 
 ## What's here
@@ -45,6 +51,7 @@ flowchart LR
 | [`config/`](config) | IIQ XML objects: 3 applications, correlation config, identity creation rule, aggregation and refresh tasks |
 | [`sandbox-data/`](sandbox-data) | Synthetic feeds: an HR roster with a manager hierarchy, AD accounts with group memberships, EBS users with responsibilities |
 | [`labs/scim/`](labs/scim) | Standard-library-only **SCIM 2.0 server** (Users, Groups, paging, Bearer/Basic auth, request log), seeded from the HR feed, used to test the IIQ SCIM2 connector |
+| [`docs/google-analytics/`](docs/google-analytics) | **Google Analytics connector**: [technical reference](docs/google-analytics/TECHNICAL.md) and [step-by-step rebuild guide](docs/google-analytics/STEP-BY-STEP.md) (both also as PDF). The config is under `config/` (`GoogleAnalytics.xml`, the Build Access Binding rule, correlation, and the aggregation task). |
 | [`labs/web-services/`](labs/web-services) | **FastAPI "Acme HR" REST API** with OAuth2 client credentials, paging, nested JSON, and role objects, plus starter rules and a full [lab guide](labs/web-services/LAB_GUIDE.md) for onboarding it with the Web Services connector |
 
 ## Design notes
@@ -58,6 +65,10 @@ flowchart LR
   managed so it lands in the Entitlement Catalog.
 - **Load order matters.** Rules and correlation config are imported before the applications that reference them,
   and HR is aggregated first so identities exist before AD and EBS try to correlate.
+- **Google Analytics: merge-then-patch.** GA's `PATCH accessBinding` replaces the whole role list, but an IIQ
+  plan only carries the change. A Before Operation rule merges the change into the account's current roles,
+  always sends the full list, and switches to `DELETE` when the last role is removed. It was tested live:
+  create → add role → remove role → remove last role.
 - **The mocks seed realistic problems on purpose:** mixed-case logins, a service account with no employee ID
   (orphan), suspended users, and an optional "hard mode" where roles have to be fetched with a child operation.
 
@@ -85,6 +96,7 @@ SailPoint software and SSB are licensed through SailPoint Compass and are **not*
 - [x] Sandbox install automation and demo data
 - [x] HR / AD / EBS onboarding with creation rule and correlation
 - [x] Mock SCIM 2.0 and REST targets
+- [x] Google Analytics (live GA4 Admin API): aggregation, correlation, and LCM provisioning, with docs
 - [ ] Web Services connector: aggregation, rules, and provisioning ([lab guide](labs/web-services/LAB_GUIDE.md))
 - [ ] Break/fix troubleshooting runbook
 - [ ] Screenshots

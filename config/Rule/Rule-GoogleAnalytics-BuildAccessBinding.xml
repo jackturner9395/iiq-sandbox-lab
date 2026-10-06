@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Builds the request body for Google Analytics access binding writes.
+  Attach as the Before Rule on Create Account, Add Entitlement and Remove Entitlement.
+
+  GA's PATCH replaces the whole roles list, but an IIQ plan only carries the delta.
+  So this merges the plan into the account's current roles (IIQ's last aggregated copy)
+  and always sends the full final list. Re-running it for the same plan sends the same body.
+  If no roles remain, the request is switched to DELETE (GA rejects an empty binding).
+-->
+<Rule language="beanshell" name="Google Analytics - Build Access Binding" type="WebServiceBeforeOperationRule">
+  <Description>Merges plan role changes into the account's current roles and builds the GA access binding body.</Description>
+  <Signature returnType="EndPoint">
+    <Inputs>
+      <Argument name="application" type="Application"/>
+      <Argument name="requestEndPoint" type="EndPoint"/>
+      <Argument name="oAuthHeaders" type="Map"/>
+      <Argument name="provisioningPlan" type="ProvisioningPlan"/>
+      <Argument name="log"/>
+      <Argument name="context"/>
+    </Inputs>
+    <Returns>
+      <Argument name="requestEndPoint" type="EndPoint"/>
+    </Returns>
+  </Signature>
+  <Source><![CDATA[
+import java.util.*;
+import sailpoint.object.*;
+import sailpoint.object.ProvisioningPlan.AccountRequest;
+import sailpoint.object.ProvisioningPlan.AttributeRequest;
+import sailpoint.tools.Util;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+AccountRequest acctReq = null;
+if (provisioningPlan != null) {
+    for (AccountRequest ar : Util.iterate(provisioningPlan.getAccountRequests())) {
+        if (application.getName().equals(ar.getApplicationName())) {
+            acctReq = ar;
+            break;
+        }
+    }
+}
+if (acctReq == null) {
+    return requestEndPoint;
+}
+
+boolean isCreate = AccountRequest.Operation.Create.equals(acctReq.getOperation());
+String nativeId = acctReq.getNativeIdentity();
+
+// Start from IIQ's copy of the account; a new account has no roles yet.
+List roles = new ArrayList();
+if (!isCreate && nativeId != null) {
+    QueryOptions qo = new QueryOptions();
+    qo.addFilter(Filter.eq("application.name", application.getName()));
+    qo.addFilter(Filter.eq("nativeIdentity", nativeId));
+    List links = context.getObjects(Link.class, qo);
+    if (!Util.isEmpty(links)) {
+        roles.addAll(Util.asList(((Link) links.get(0)).getAttribute("roles")));
+    }
+}
+
+String user = null;
+for (AttributeRequest req : Util.iterate(acctReq.getAttributeRequests())) {
+    String name = req.getName();
+    if ("user".equals(name)) {
+        user = (String) req.getValue();
+    } else if ("roles".equals(name)) {
+        List vals = Util.asList(req.getValue());
+        if (vals == null) {
+            continue;
+        }
+        if (ProvisioningPlan.Operation.Remove.equals(req.getOperation())) {
+            roles.removeAll(vals);
+        } else {
+            if (ProvisioningPlan.Operation.Set.equals(req.getOperation())) {
+                roles.clear();
+            }
+            for (Object v : vals) {
+                if (!roles.contains(v)) {
+                    roles.add(v);
+                }
+            }
+        }
+    }
+}
+
+Map body = requestEndPoint.getBody();
+if (body == null) {
+    body = new HashMap();
+    body.put("bodyFormat", "raw");
+}
+
+if (roles.isEmpty()) {
+    if (isCreate) {
+        throw new Exception("Google Analytics: cannot create an access binding with no roles");
+    }
+    log.debug("Google Analytics: no roles left on " + nativeId + ", deleting the binding");
+    requestEndPoint.setHttpMethodType("DELETE");
+    body.remove("jsonBody");
+} else {
+    Map payload = new LinkedHashMap();
+    if (isCreate) {
+        if (Util.isNullOrEmpty(user)) {
+            throw new Exception("Google Analytics: create plan has no user email; check the Create Account provisioning policy");
+        }
+        payload.put("user", user);
+    }
+    payload.put("roles", roles);
+    body.put("jsonBody", new ObjectMapper().writeValueAsString(payload));
+}
+requestEndPoint.setBody(body);
+
+log.debug("Google Analytics: " + requestEndPoint.getHttpMethodType() + " " + requestEndPoint.getFullUrl() + " roles=" + roles);
+return requestEndPoint;
+]]></Source>
+</Rule>

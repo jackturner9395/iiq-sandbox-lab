@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Google Analytics (GA4 Admin API) - account-level access bindings, aggregation + provisioning.
+  One IIQ account = one access binding (a Google user + their roles on GA account 410795087).
+
+  Auth: OAuth2 JWT Bearer with the service account key. The private key (encrypted PKCS#8 PEM)
+  and its password are entered in the UI after import and are deliberately not stored here.
+  The service account needs the Administrator role on the GA account for the write operations.
+
+  Writes: GA's PATCH replaces the whole roles list, so Create/Add/Remove Entitlement run the
+  "Google Analytics - Build Access Binding" rule to send the merged list (import that rule first).
+-->
+<Application connector="sailpoint.connector.webservices.WebServicesConnector" featuresString="NO_RANDOM_ACCESS, PROVISIONING, SYNC_PROVISIONING" icon="enterpriseIcon" name="Google Analytics" profileClass="" type="Web Services">
+  <AccountCorrelationConfig>
+    <Reference class="sailpoint.object.CorrelationConfig" name="GoogleAnalyticsCorrelation"/>
+  </AccountCorrelationConfig>
+  <Attributes>
+    <Map>
+      <entry key="authenticationMethod" value="OAuth2Login"/>
+      <entry key="grant_type" value="JWT_BEARER"/>
+      <entry key="token_url" value="https://oauth2.googleapis.com/token"/>
+      <entry key="oAuthJwtHeader">
+        <value>
+          <Map>
+            <entry key="alg" value="RS256"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="oAuthJwtPayload">
+        <value>
+          <Map>
+            <entry key="aud" value="https://oauth2.googleapis.com/token"/>
+            <entry key="exp" value="15f"/>
+            <entry key="iat"/>
+            <entry key="iss" value="iiq-ga-reader@api-test-345702.iam.gserviceaccount.com"/>
+            <entry key="scope" value="https://www.googleapis.com/auth/analytics.manage.users"/>
+          </Map>
+        </value>
+      </entry>
+      <entry key="genericWebServiceBaseUrl" value="https://analyticsadmin.googleapis.com"/>
+      <entry key="templateApplication" value="Web Services"/>
+      <entry key="version" value="v2"/>
+      <entry key="aggregationType" value="account"/>
+      <entry key="enableHasMore" value="true"/>
+      <entry key="httpCookieSpecsStandard" value="true"/>
+      <entry key="fixedPlanMultivaluedAttribute" value="true"/>
+      <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+      <entry key="encrypted" value="accesstoken,refresh_token,oauth_token_info,client_secret,private_key,private_key_password,clientCertificate,clientKeySpec,resourceOwnerPassword,custom_auth_token_info"/>
+      <entry key="connectionParameters">
+        <value>
+          <List>
+            <Map>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="contextUrl" value="/v1alpha/accounts/410795087/accessBindings?pageSize=1"/>
+              <entry key="httpMethodType" value="GET"/>
+              <entry key="operationType" value="Test Connection"/>
+              <entry key="rootPath" value="$.accessBindings"/>
+              <entry key="sequenceNumberForEndpoint" value="1"/>
+              <entry key="uniqueNameForEndPoint" value="Test Connection"/>
+            </Map>
+            <Map>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <!-- API max page size is 500; paging steps can be added later if the account outgrows it. -->
+              <entry key="contextUrl" value="/v1alpha/accounts/410795087/accessBindings?pageSize=500"/>
+              <entry key="httpMethodType" value="GET"/>
+              <entry key="operationType" value="Account Aggregation"/>
+              <entry key="resMappingObj">
+                <value>
+                  <Map>
+                    <entry key="bindingName" value="name"/>
+                    <entry key="roles" value="roles"/>
+                    <entry key="user" value="user"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="rootPath" value="$.accessBindings"/>
+              <entry key="sequenceNumberForEndpoint" value="2"/>
+              <entry key="uniqueNameForEndPoint" value="Account Aggregation"/>
+            </Map>
+            <Map>
+              <entry key="beforeRule" value="Google Analytics - Build Access Binding"/>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="contextUrl" value="/v1alpha/accounts/410795087/accessBindings"/>
+              <entry key="header">
+                <value>
+                  <Map>
+                    <entry key="Content-Type" value="application/json"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="httpMethodType" value="POST"/>
+              <entry key="operationType" value="Create Account"/>
+              <!-- Google generates the binding id; map it back so IIQ learns the account's native identity. -->
+              <entry key="resMappingObj">
+                <value>
+                  <Map>
+                    <entry key="bindingName" value="name"/>
+                    <entry key="roles" value="roles"/>
+                    <entry key="user" value="user"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="responseCode">
+                <value>
+                  <List>
+                    <String>2**</String>
+                  </List>
+                </value>
+              </entry>
+              <entry key="rootPath" value="$"/>
+              <entry key="sequenceNumberForEndpoint" value="3"/>
+              <entry key="uniqueNameForEndPoint" value="Create Account"/>
+            </Map>
+            <Map>
+              <entry key="beforeRule" value="Google Analytics - Build Access Binding"/>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="contextUrl" value="/v1alpha/$plan.nativeIdentity$"/>
+              <entry key="header">
+                <value>
+                  <Map>
+                    <entry key="Content-Type" value="application/json"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="httpMethodType" value="PATCH"/>
+              <entry key="operationType" value="Add Entitlement"/>
+              <entry key="responseCode">
+                <value>
+                  <List>
+                    <String>2**</String>
+                  </List>
+                </value>
+              </entry>
+              <entry key="sequenceNumberForEndpoint" value="4"/>
+              <entry key="uniqueNameForEndPoint" value="Add Entitlement"/>
+            </Map>
+            <Map>
+              <entry key="beforeRule" value="Google Analytics - Build Access Binding"/>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="contextUrl" value="/v1alpha/$plan.nativeIdentity$"/>
+              <entry key="header">
+                <value>
+                  <Map>
+                    <entry key="Content-Type" value="application/json"/>
+                  </Map>
+                </value>
+              </entry>
+              <!-- The rule switches this to DELETE when the last role is removed. -->
+              <entry key="httpMethodType" value="PATCH"/>
+              <entry key="operationType" value="Remove Entitlement"/>
+              <entry key="responseCode">
+                <value>
+                  <List>
+                    <String>2**</String>
+                  </List>
+                </value>
+              </entry>
+              <entry key="sequenceNumberForEndpoint" value="5"/>
+              <entry key="uniqueNameForEndPoint" value="Remove Entitlement"/>
+            </Map>
+            <Map>
+              <entry key="body">
+                <value>
+                  <Map>
+                    <entry key="bodyFormat" value="raw"/>
+                  </Map>
+                </value>
+              </entry>
+              <entry key="contextUrl" value="/v1alpha/$plan.nativeIdentity$"/>
+              <entry key="httpMethodType" value="DELETE"/>
+              <entry key="operationType" value="Delete Account"/>
+              <entry key="responseCode">
+                <value>
+                  <List>
+                    <String>2**</String>
+                  </List>
+                </value>
+              </entry>
+              <entry key="sequenceNumberForEndpoint" value="6"/>
+              <entry key="uniqueNameForEndPoint" value="Delete Account"/>
+            </Map>
+          </List>
+        </value>
+      </entry>
+      <entry key="sysDescriptions">
+        <value>
+          <Map>
+            <entry key="en_US" value="GA4 Admin API - account-level user access (aggregation and provisioning)"/>
+          </Map>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Owner>
+    <Reference class="sailpoint.object.Identity" name="spadmin"/>
+  </Owner>
+  <ProvisioningForms>
+    <Form name="Google Analytics Create Account" objectType="account" type="Create">
+      <Attributes>
+        <Map>
+          <entry key="pageTitle" value="Google Analytics Create Account"/>
+        </Map>
+      </Attributes>
+      <Section name="Section 1">
+        <Field displayName="Google Email" name="user" required="true" type="string">
+          <Script>
+            <Source>return identity.getEmail();</Source>
+          </Script>
+        </Field>
+      </Section>
+    </Form>
+  </ProvisioningForms>
+  <Schemas>
+    <Schema displayAttribute="user" identityAttribute="bindingName" instanceAttribute="" nativeObjectType="user" objectType="account">
+      <AttributeDefinition name="bindingName" type="string">
+        <Description>Access binding resource name, e.g. accounts/410795087/accessBindings/abc123</Description>
+      </AttributeDefinition>
+      <AttributeDefinition name="user" type="string">
+        <Description>Email of the Google account (user or service account)</Description>
+      </AttributeDefinition>
+      <AttributeDefinition entitlement="true" managed="true" multi="true" name="roles" type="string">
+        <Description>GA predefined roles, e.g. predefinedRoles/viewer</Description>
+      </AttributeDefinition>
+    </Schema>
+  </Schemas>
+</Application>
