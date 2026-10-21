@@ -1,0 +1,509 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Certification Detail Report: one-file import (report form + report).
+  Built from config/Form/Form-Certification-Detail-Report.xml and config/TaskDefinition/Report-Certification-Detail.xml.
+-->
+<sailpoint>
+<!--
+  Filters for "Certification Detail Report". Every filter is optional; leave them all empty for everything.
+-->
+<Form hidden="true" name="Certification Detail Report Form" type="Report">
+  <Section columns="2" label="Certification filters" name="customProperties">
+    <Field displayName="Campaigns" helpKey="Only certifications in these campaigns." multi="true" name="certificationGroups" type="CertificationGroup" value="ref:certificationGroups"/>
+    <Field displayName="Certification types" helpKey="Only these certification types (Manager, Targeted, Application Owner, ...)." multi="true" name="certificationTypes" type="string" value="ref:certificationTypes">
+      <AllowedValuesDefinition>
+        <Script>
+          <Source>
+            import sailpoint.object.Certification;
+            import sailpoint.tools.Message;
+
+            List values = new ArrayList();
+            for (Certification.Type t : Certification.Type.values()) {
+              List pair = new ArrayList();
+              pair.add(t.toString());
+              pair.add(new Message(t.getMessageKey(), new Object[0]).getLocalizedMessage());
+              values.add(pair);
+            }
+            return values;
+          </Source>
+        </Script>
+      </AllowedValuesDefinition>
+    </Field>
+    <Field displayName="Certifiers" helpKey="Only certifications where one of these people (or workgroups) is a certifier." multi="true" name="certifiers" type="Identity" value="ref:certifiers"/>
+    <Field displayName="Identities certified" helpKey="Only these users." multi="true" name="identities" type="Identity" value="ref:identities"/>
+    <Field displayName="Applications" helpKey="Only access on these applications." multi="true" name="applications" type="Application" value="ref:applications"/>
+    <Field displayName="Certification status" helpKey="Open: not signed off yet. Signed: signed off." name="signedStatus" type="string" value="ref:signedStatus">
+      <AllowedValues>
+        <String>All</String>
+        <String>Open</String>
+        <String>Signed</String>
+      </AllowedValues>
+    </Field>
+    <Field displayName="Sub-certifications" helpKey="All: every certification. Top level only: leave out reassigned and subordinate certifications. Sub-certifications only: only reassigned and subordinate certifications." name="hierarchy" type="string" value="ref:hierarchy">
+      <AllowedValues>
+        <String>All</String>
+        <String>Top level only</String>
+        <String>Sub-certifications only</String>
+      </AllowedValues>
+    </Field>
+    <Field displayName="Decision" helpKey="Only items with this decision." multi="true" name="decisions" type="string" value="ref:decisions">
+      <AllowedValues>
+        <String>Open</String>
+        <String>Approved</String>
+        <String>Revoked</String>
+        <String>Allowed</String>
+        <String>Acknowledged</String>
+        <String>Reassigned</String>
+      </AllowedValues>
+    </Field>
+    <Field columnSpan="1" displayName="Created" helpKey="Certification created in this range." name="creationDate" type="string" value="ref:creationDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+    <Field columnSpan="1" displayName="Signed off" helpKey="Certification signed off in this range." name="signedDate" type="string" value="ref:signedDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+    <Field columnSpan="1" displayName="Due" helpKey="Certification due in this range." name="expirationDate" type="string" value="ref:expirationDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+  </Section>
+</Form>
+<!--
+  Certification Detail Report
+
+  One row per certification item (one piece of access for one user), across every certification type,
+  with the campaign, the certification, its parent certification (reassigned and subordinate
+  certifications are sub-certifications), the certifiers, sign-off, the user certified, the access,
+  and the decision.
+
+  Reports -> Access Review and Certification Reports -> Certification Detail Report. Filters are on the
+  "Certification filters" form (Form "Certification Detail Report Form"); all are optional.
+-->
+<TaskDefinition executor="sailpoint.reporting.LiveReportExecutor" name="Certification Detail Report" progressMode="Percentage" resultAction="Rename" subType="Access Review and Certification Reports" template="true" type="LiveReport">
+  <Description>Every certification and sub-certification with the users certified, the access certified, the certifiers, and each decision.</Description>
+  <RequiredRights>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessCertificationDecisionReport"/>
+  </RequiredRights>
+  <Attributes>
+    <Map>
+      <entry key="report">
+        <value>
+          <LiveReport title="Certification Detail Report">
+            <Chart category="type" groupBy="action.status,type" nullSeries="cert_action_open" series="action.status" title="Decisions by item type" type="column" value="count(*)"/>
+            <ReportSummary title="Summary">
+              <Values>
+                <LiveReportSummaryValue label="Campaigns" name="campaigns"/>
+                <LiveReportSummaryValue label="Certifications" name="certifications"/>
+                <LiveReportSummaryValue label="Sub-certifications" name="subCertifications"/>
+                <LiveReportSummaryValue label="Identities certified" name="identities"/>
+                <LiveReportSummaryValue label="Items" name="items"/>
+                <LiveReportSummaryValue label="Items decided" name="decided"/>
+              </Values>
+              <DataSourceScript>
+                <Source>
+                  <![CDATA[
+                  import sailpoint.object.*;
+
+                  Map map = new HashMap();
+                  List fields = new ArrayList();
+                  fields.add("count(*)");
+                  fields.add("count(distinct parent.id)");
+                  fields.add("count(distinct parent.certification.id)");
+                  fields.add("count(distinct parent.certification.certificationGroups.id)");
+                  Iterator it = context.search(CertificationItem.class, new QueryOptions(baseQueryOptions), fields);
+                  if (it.hasNext()) {
+                    Object[] r = (Object[]) it.next();
+                    map.put("items", r[0]);
+                    map.put("identities", r[1]);
+                    map.put("certifications", r[2]);
+                    map.put("campaigns", r[3]);
+                  }
+
+                  QueryOptions subs = new QueryOptions(baseQueryOptions);
+                  subs.addFilter(Filter.notnull("parent.certification.parent"));
+                  it = context.search(CertificationItem.class, subs, "count(distinct parent.certification.id)");
+                  map.put("subCertifications", it.hasNext() ? ((Object[]) it.next())[0] : null);
+
+                  QueryOptions decided = new QueryOptions(baseQueryOptions);
+                  decided.addFilter(Filter.notnull("action.status"));
+                  map.put("decided", context.countObjects(CertificationItem.class, decided));
+
+                  return map;
+                  ]]>
+                </Source>
+              </DataSourceScript>
+            </ReportSummary>
+            <ReportForm>
+              <Reference class="sailpoint.object.Form" name="Certification Detail Report Form"/>
+            </ReportForm>
+            <DataSource defaultSort="parent.certification.created,parent.certification.name,parent.lastname,parent.firstname,type" objectType="CertificationItem" type="Filter">
+              <QueryParameters>
+                <Parameter argument="certificationGroups" property="parent.certification.certificationGroups.id"/>
+                <Parameter argument="certificationTypes" property="parent.certification.type">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+
+                      if (value != null &amp;&amp; !value.isEmpty()) {
+                        List types = new ArrayList();
+                        for (Object v : value) {
+                          types.add(Enum.valueOf(Certification.Type.class, v.toString()));
+                        }
+                        queryOptions.addFilter(Filter.in("parent.certification.type", types));
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="certifiers" property="parent.certification.certifiers">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+                      import sailpoint.api.ObjectUtil;
+
+                      // certifiers is a list of names; find the certifications first, then filter on their IDs.
+                      if (value != null &amp;&amp; !value.isEmpty()) {
+                        Set certIds = new HashSet();
+                        for (Object name : ObjectUtil.convertIdsToNames(context, Identity.class, value)) {
+                          QueryOptions qo = new QueryOptions();
+                          qo.addFilter(Filter.containsAll("certifiers", Arrays.asList(new Object[] { name })));
+                          Iterator it = context.search(Certification.class, qo, "id");
+                          while (it.hasNext()) {
+                            certIds.add(((Object[]) it.next())[0]);
+                          }
+                        }
+                        if (certIds.isEmpty()) {
+                          certIds.add("none");
+                        }
+                        queryOptions.addFilter(Filter.in("parent.certification.id", new ArrayList(certIds)));
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="identities" property="parent.identity">
+                  <ValueScript>
+                    <Source>
+                      import sailpoint.object.*;
+                      import sailpoint.api.ObjectUtil;
+
+                      return (value != null) ? ObjectUtil.convertIdsToNames(context, Identity.class, value) : null;
+                    </Source>
+                  </ValueScript>
+                </Parameter>
+                <Parameter argument="applications" property="applicationNames">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+                      import sailpoint.api.ObjectUtil;
+
+                      if (value != null &amp;&amp; !value.isEmpty()) {
+                        List filters = new ArrayList();
+                        for (Object app : ObjectUtil.convertIdsToNames(context, Application.class, value)) {
+                          filters.add(Filter.containsAll("applicationNames", Arrays.asList(new Object[] { app })));
+                        }
+                        queryOptions.addFilter(Filter.or(filters));
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="signedStatus" property="parent.certification.signed">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+
+                      if ("Open".equals(value)) {
+                        queryOptions.addFilter(Filter.isnull("parent.certification.signed"));
+                      } else if ("Signed".equals(value)) {
+                        queryOptions.addFilter(Filter.notnull("parent.certification.signed"));
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="hierarchy" property="parent.certification.parent">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+
+                      if ("Top level only".equals(value)) {
+                        queryOptions.addFilter(Filter.isnull("parent.certification.parent"));
+                      } else if ("Sub-certifications only".equals(value)) {
+                        queryOptions.addFilter(Filter.notnull("parent.certification.parent"));
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="decisions" property="action.status">
+                  <QueryScript>
+                    <Source>
+                      import sailpoint.object.*;
+
+                      if (value != null &amp;&amp; !value.isEmpty()) {
+                        Map statuses = new HashMap();
+                        statuses.put("Approved", new String[] { "Approved", "ApproveAccount" });
+                        statuses.put("Revoked", new String[] { "Remediated", "RevokeAccount" });
+                        statuses.put("Allowed", new String[] { "Mitigated" });
+                        statuses.put("Acknowledged", new String[] { "Acknowledged" });
+                        statuses.put("Reassigned", new String[] { "AccountReassign" });
+
+                        List filters = new ArrayList();
+                        List picked = new ArrayList();
+                        for (Object v : value) {
+                          if ("Open".equals(v)) {
+                            filters.add(Filter.isnull("action"));
+                          } else if (statuses.containsKey(v)) {
+                            for (String s : (String[]) statuses.get(v)) {
+                              picked.add(Enum.valueOf(CertificationAction.Status.class, s));
+                            }
+                          }
+                        }
+                        if (!picked.isEmpty()) {
+                          filters.add(Filter.in("action.status", picked));
+                        }
+                        if (!filters.isEmpty()) {
+                          queryOptions.addFilter(filters.size() == 1 ? (Filter) filters.get(0) : Filter.or(filters));
+                        }
+                      }
+                      return queryOptions;
+                    </Source>
+                  </QueryScript>
+                </Parameter>
+                <Parameter argument="creationDate" property="parent.certification.created" valueClass="daterange"/>
+                <Parameter argument="signedDate" property="parent.certification.signed" valueClass="daterange"/>
+                <Parameter argument="expirationDate" property="parent.certification.expiration" valueClass="daterange"/>
+              </QueryParameters>
+            </DataSource>
+            <Columns>
+              <!-- Campaign and certification -->
+              <ReportColumnConfig field="campaign" header="Campaign" property="parent.certification.certificationGroups.name" sortable="true"/>
+              <ReportColumnConfig field="certification" header="Certification" property="parent.certification.name" sortable="true"/>
+              <ReportColumnConfig field="parentCertification" header="Parent certification" property="parent.certification.parent.name" sortable="true"/>
+              <ReportColumnConfig field="certificationLevel" header="Level" property="parent.certification.parent.id">
+                <RenderScript>
+                  <Source>
+                    return (value == null) ? "Top level" : "Sub-certification";
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="certificationType" header="Certification type" property="parent.certification.type" sortable="true">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.tools.Message;
+                    return (value == null) ? null : new Message(value.getMessageKey(), new Object[0]).getLocalizedMessage(locale, timezone);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="phase" header="Phase" property="parent.certification.phase" sortable="true">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.tools.Message;
+                    return (value == null) ? null : new Message(value.getMessageKey(), new Object[0]).getLocalizedMessage(locale, timezone);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="certifiers" header="Certifier" property="parent.certification.id">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.object.*;
+
+                    Certification cert = (value == null) ? null : context.getObjectById(Certification.class, value);
+                    if (cert == null || cert.getCertifiers() == null) return null;
+                    List names = new ArrayList();
+                    for (String name : cert.getCertifiers()) {
+                      QueryOptions qo = new QueryOptions();
+                      qo.addFilter(Filter.eq("name", name));
+                      Iterator it = context.search(Identity.class, qo, "displayName");
+                      Object dn = it.hasNext() ? ((Object[]) it.next())[0] : null;
+                      sailpoint.tools.Util.flushIterator(it);
+                      names.add((dn == null) ? name : dn + " (" + name + ")");
+                    }
+                    return sailpoint.tools.Util.listToCsv(names);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="created" header="Created" property="parent.certification.created" sortable="true"/>
+              <ReportColumnConfig field="due" header="Due" property="parent.certification.expiration" sortable="true"/>
+              <ReportColumnConfig field="signed" header="Signed off" property="parent.certification.signed" sortable="true"/>
+              <ReportColumnConfig field="signedBy" header="Signed off by" property="parent.certification.id">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.object.*;
+
+                    Certification cert = (value == null) ? null : context.getObjectById(Certification.class, value);
+                    if (cert == null || cert.getSignOffHistory() == null) return null;
+                    List names = new ArrayList();
+                    for (SignOffHistory h : cert.getSignOffHistory()) {
+                      String name = h.getSignerDisplayableName();
+                      if (name != null &amp;&amp; !names.contains(name)) names.add(name);
+                    }
+                    return sailpoint.tools.Util.listToCsv(names);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+
+              <!-- Who or what is being certified -->
+              <ReportColumnConfig field="identity" header="User certified (ID)" property="parent.identity" sortable="true"/>
+              <ReportColumnConfig field="identityName" header="User certified" property="parent.id" scriptArguments="parent.firstname,parent.lastname,parent.identity,parent.targetDisplayName,parent.targetName,parent.accountGroup">
+                <RenderScript>
+                  <Source>
+                    String first = (String) scriptArgs.get("parent.firstname");
+                    String last = (String) scriptArgs.get("parent.lastname");
+                    if (first != null || last != null) {
+                      return ((first == null ? "" : first) + " " + (last == null ? "" : last)).trim();
+                    }
+                    String[] keys = { "parent.identity", "parent.targetDisplayName", "parent.targetName", "parent.accountGroup" };
+                    for (String k : keys) {
+                      Object v = scriptArgs.get(k);
+                      if (v != null) return v;
+                    }
+                    return null;
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="manager" header="User's manager" property="parent">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.reporting.ReportingLibrary;
+                    return (value == null) ? null : ReportingLibrary.getCertificationItemManagerName(context, value);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+
+              <!-- The access being certified -->
+              <ReportColumnConfig field="itemType" header="Item type" property="type" sortable="true">
+                <RenderScript>
+                  <Source>
+                    if (value == null) return null;
+                    Map labels = new HashMap();
+                    labels.put("Bundle", "Role");
+                    labels.put("Exception", "Entitlement");
+                    labels.put("Account", "Account");
+                    labels.put("PolicyViolation", "Policy violation");
+                    labels.put("AccountGroupMembership", "Group membership");
+                    labels.put("DataOwner", "Entitlement (owner review)");
+                    String s = value.toString();
+                    return labels.containsKey(s) ? labels.get(s) : s;
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="application" header="Application" property="exceptionApplication" sortable="true"/>
+              <ReportColumnConfig field="account" header="Account" property="exceptionEntitlements.nativeIdentity" sortable="true"/>
+              <ReportColumnConfig field="role" header="Role" property="bundle" sortable="true"/>
+              <ReportColumnConfig field="attribute" header="Entitlement attribute" property="exceptionAttributeName" sortable="true"/>
+              <ReportColumnConfig field="value" header="Entitlement value" property="exceptionAttributeValue" sortable="true"/>
+              <ReportColumnConfig field="entitlementName" header="Entitlement display name" property="exceptionApplication" scriptArguments="exceptionAttributeName,exceptionAttributeValue">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.object.*;
+
+                    Object attr = scriptArgs.get("exceptionAttributeName");
+                    Object val = scriptArgs.get("exceptionAttributeValue");
+                    if (value == null || attr == null || val == null) return null;
+                    QueryOptions qo = new QueryOptions();
+                    qo.addFilter(Filter.eq("application.name", value));
+                    qo.addFilter(Filter.eq("attribute", attr));
+                    qo.addFilter(Filter.eq("value", val));
+                    Iterator it = context.search(ManagedAttribute.class, qo, "displayName");
+                    Object dn = it.hasNext() ? ((Object[]) it.next())[0] : null;
+                    sailpoint.tools.Util.flushIterator(it);
+                    return (dn == null) ? val : dn;
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="access" header="Access (full description)" property="exceptionEntitlements" scriptArguments="bundle,violationSummary,targetDisplayName">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.reporting.ReportingLibrary;
+                    Object d = ReportingLibrary.describeCertificationEntitlement(value, scriptArgs.get("bundle"), scriptArgs.get("violationSummary"), null);
+                    return (d == null) ? scriptArgs.get("targetDisplayName") : d;
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+
+              <!-- The decision -->
+              <ReportColumnConfig field="itemStatus" header="Item status" property="summaryStatus" sortable="true">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.tools.Message;
+                    return (value == null) ? null : new Message(value.getMessageKey(), new Object[0]).getLocalizedMessage(locale, timezone);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="decision" header="Decision" property="action.status" sortable="true">
+                <RenderScript>
+                  <Source>
+                    if (value == null) return "Open";
+                    Map labels = new HashMap();
+                    labels.put("Approved", "Approved");
+                    labels.put("ApproveAccount", "Approved (account)");
+                    labels.put("Remediated", "Revoked");
+                    labels.put("RevokeAccount", "Revoked (account)");
+                    labels.put("Mitigated", "Allowed (exception)");
+                    labels.put("Acknowledged", "Acknowledged");
+                    labels.put("AccountReassign", "Reassigned");
+                    labels.put("Delegated", "Delegated");
+                    labels.put("Cleared", "Cleared");
+                    labels.put("Modified", "Modified");
+                    String s = value.toString();
+                    return labels.containsKey(s) ? labels.get(s) : s;
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="decidedBy" header="Decided by" property="action.actorDisplayName" scriptArguments="action.actorName">
+                <RenderScript>
+                  <Source>
+                    return (value != null) ? value : scriptArgs.get("action.actorName");
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="decisionDate" header="Decision date" property="action.decisionDate" sortable="true"/>
+              <ReportColumnConfig field="comments" header="Decision comments" property="action.comments"/>
+              <ReportColumnConfig field="allowedUntil" header="Allowed until" property="action.mitigationExpiration" sortable="true"/>
+              <ReportColumnConfig field="revocationStatus" header="Revocation status" property="action">
+                <RenderScript>
+                  <Source>
+                    import sailpoint.reporting.ReportingLibrary;
+                    return (value == null) ? null : ReportingLibrary.getRemediationStatus(context, value);
+                  </Source>
+                </RenderScript>
+              </ReportColumnConfig>
+              <ReportColumnConfig field="delegatedTo" header="Item delegated to" property="delegation.ownerName" sortable="true"/>
+              <ReportColumnConfig field="identityDelegatedTo" header="User delegated to" property="parent.delegation.ownerName" sortable="true"/>
+            </Columns>
+          </LiveReport>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+  <Signature>
+    <Inputs>
+      <Argument multi="true" name="certificationGroups" type="CertificationGroup"/>
+      <Argument multi="true" name="certificationTypes" type="string"/>
+      <Argument multi="true" name="certifiers" type="Identity"/>
+      <Argument multi="true" name="identities" type="Identity"/>
+      <Argument multi="true" name="applications" type="Application"/>
+      <Argument name="signedStatus" type="string"/>
+      <Argument name="hierarchy" type="string"/>
+      <Argument multi="true" name="decisions" type="string"/>
+      <Argument name="creationDate" type="date"/>
+      <Argument name="signedDate" type="date"/>
+      <Argument name="expirationDate" type="date"/>
+    </Inputs>
+  </Signature>
+</TaskDefinition>
+</sailpoint>

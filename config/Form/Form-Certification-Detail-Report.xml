@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Form PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  Filters for "Certification Detail Report". Every filter is optional; leave them all empty for everything.
+-->
+<Form hidden="true" name="Certification Detail Report Form" type="Report">
+  <Section columns="2" label="Certification filters" name="customProperties">
+    <Field displayName="Campaigns" helpKey="Only certifications in these campaigns." multi="true" name="certificationGroups" type="CertificationGroup" value="ref:certificationGroups"/>
+    <Field displayName="Certification types" helpKey="Only these certification types (Manager, Targeted, Application Owner, ...)." multi="true" name="certificationTypes" type="string" value="ref:certificationTypes">
+      <AllowedValuesDefinition>
+        <Script>
+          <Source>
+            import sailpoint.object.Certification;
+            import sailpoint.tools.Message;
+
+            List values = new ArrayList();
+            for (Certification.Type t : Certification.Type.values()) {
+              List pair = new ArrayList();
+              pair.add(t.toString());
+              pair.add(new Message(t.getMessageKey(), new Object[0]).getLocalizedMessage());
+              values.add(pair);
+            }
+            return values;
+          </Source>
+        </Script>
+      </AllowedValuesDefinition>
+    </Field>
+    <Field displayName="Certifiers" helpKey="Only certifications where one of these people (or workgroups) is a certifier." multi="true" name="certifiers" type="Identity" value="ref:certifiers"/>
+    <Field displayName="Identities certified" helpKey="Only these users." multi="true" name="identities" type="Identity" value="ref:identities"/>
+    <Field displayName="Applications" helpKey="Only access on these applications." multi="true" name="applications" type="Application" value="ref:applications"/>
+    <Field displayName="Certification status" helpKey="Open: not signed off yet. Signed: signed off." name="signedStatus" type="string" value="ref:signedStatus">
+      <AllowedValues>
+        <String>All</String>
+        <String>Open</String>
+        <String>Signed</String>
+      </AllowedValues>
+    </Field>
+    <Field displayName="Sub-certifications" helpKey="All: every certification. Top level only: leave out reassigned and subordinate certifications. Sub-certifications only: only reassigned and subordinate certifications." name="hierarchy" type="string" value="ref:hierarchy">
+      <AllowedValues>
+        <String>All</String>
+        <String>Top level only</String>
+        <String>Sub-certifications only</String>
+      </AllowedValues>
+    </Field>
+    <Field displayName="Decision" helpKey="Only items with this decision." multi="true" name="decisions" type="string" value="ref:decisions">
+      <AllowedValues>
+        <String>Open</String>
+        <String>Approved</String>
+        <String>Revoked</String>
+        <String>Allowed</String>
+        <String>Acknowledged</String>
+        <String>Reassigned</String>
+      </AllowedValues>
+    </Field>
+    <Field columnSpan="1" displayName="Created" helpKey="Certification created in this range." name="creationDate" type="string" value="ref:creationDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+    <Field columnSpan="1" displayName="Signed off" helpKey="Certification signed off in this range." name="signedDate" type="string" value="ref:signedDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+    <Field columnSpan="1" displayName="Due" helpKey="Certification due in this range." name="expirationDate" type="string" value="ref:expirationDate">
+      <Attributes>
+        <Map>
+          <entry key="xtype" value="daterange"/>
+        </Map>
+      </Attributes>
+    </Field>
+  </Section>
+</Form>
