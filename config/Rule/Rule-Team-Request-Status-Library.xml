@@ -8,6 +8,9 @@
   set up manually, not as failed. Real failures (no manual work item) still say Failed.
 
   Only the launcher's own direct reports are ever queried; a team member picked on the form is checked against that list.
+  Exception: someone with a capability in TRS_VIEW_AS_CAPABILITIES gets a "View as manager" picker and can see any
+  manager's team (for testing and for the helpdesk). The capability is checked here, not just by the QuickLink
+  population, so widening the population never lets a regular user view other teams.
 -->
 <Rule language="beanshell" name="Team Request Status Library">
   <Description>Helper functions for the My Team's Requests workflow: direct reports, their recent requests, plain-English status, and the results form.</Description>
@@ -21,6 +24,32 @@ import sailpoint.tools.Util;
 int TRS_DAYS = 60;          // how far back to look
 int TRS_MAX = 50;           // most requests shown at once
 String TRS_ALL = "All";     // team member filter value for everyone
+// Capabilities that get the "View as manager" picker, e.g. add "Help Desk".
+// Either the name (SystemAdministrator) or the name shown in the UI (System Administrator) works.
+List TRS_VIEW_AS_CAPABILITIES = Arrays.asList(new String[] { "System Administrator" });
+
+/** Lower-cased with spaces removed, so "System Administrator" matches "SystemAdministrator". */
+String trsCapKey(String s) {
+    return (s == null) ? "" : s.replaceAll("\\s+", "").toLowerCase();
+}
+
+/** True if the person can view any manager's team. */
+boolean trsCanViewAs(String launcherName) {
+    Identity launcher = Util.isNullOrEmpty(launcherName) ? null : context.getObjectByName(Identity.class, launcherName);
+    if (launcher == null) {
+        return false;
+    }
+    Set wanted = new HashSet();
+    for (Object cap : TRS_VIEW_AS_CAPABILITIES) {
+        wanted.add(trsCapKey((String) cap));
+    }
+    for (Capability cap : Util.safeIterable(launcher.getCapabilityManager().getEffectiveCapabilities())) {
+        if (wanted.contains(trsCapKey(cap.getName())) || wanted.contains(trsCapKey(cap.getDisplayableName()))) {
+            return true;
+        }
+    }
+    return false;
+}
 
 String trsDisplayName(Identity identity, String fallback) {
     if (identity == null) {
@@ -316,19 +345,45 @@ Field trsReadOnly(String name, String label, String value) {
     return f;
 }
 
-/** The results form: team member filter, then one section per request. */
-Form trsBuildForm(String managerName, String memberName) {
-    if (Util.isNullOrEmpty(memberName)) {
-        memberName = TRS_ALL;
+/**
+ * The results form: filters, then one section per request.
+ * viewAsManager is only honored when the launcher passes trsCanViewAs; otherwise it is the launcher's own team.
+ */
+Form trsBuildForm(String launcherName, String viewAsManager, String memberName) {
+    boolean canViewAs = trsCanViewAs(launcherName);
+    boolean viewingOther = canViewAs && !Util.isNullOrEmpty(viewAsManager) && !viewAsManager.equals(launcherName);
+    String managerName = viewingOther ? viewAsManager : launcherName;
+
+    List team = trsTeam(managerName);
+    boolean memberInTeam = false;
+    for (Object o : team) {
+        if (((Map) o).get("name").equals(memberName)) {
+            memberInTeam = true;
+        }
     }
+    if (!memberInTeam) {
+        memberName = TRS_ALL;   // also resets the filter when the picked manager changes
+    }
+
     Form form = new Form();
     form.setName("My Team's Requests");
     form.setPageTitle("My Team's Requests");
 
-    List team = trsTeam(managerName);
     Form.Section filter = new Form.Section();
     filter.setName("filter");
-    filter.setLabel("Access requests for your direct reports, last " + TRS_DAYS + " days");
+    String whose = viewingOther ? trsNameToDisplay(managerName) + "'s" : "your";
+    filter.setLabel("Access requests for " + whose + " direct reports, last " + TRS_DAYS + " days");
+    if (canViewAs) {
+        Field manager = new Field();
+        manager.setName("viewAsManager");
+        manager.setDisplayName("View as manager");
+        manager.setHelpKey("Admins only: see what this manager sees. Leave empty for your own team. Click Show after picking.");
+        manager.setType("sailpoint.object.Identity");
+        manager.setFilterString("managerStatus == true");
+        manager.setAttribute("valueProperty", "name");
+        manager.setValue(viewingOther ? managerName : null);
+        filter.add(manager);
+    }
     Field member = new Field();
     member.setName("teamMember");
     member.setDisplayName("Team member");
@@ -348,9 +403,17 @@ Form trsBuildForm(String managerName, String memberName) {
     if (rows.isEmpty()) {
         Form.Section none = new Form.Section();
         none.setName("none");
-        Field msg = trsReadOnly("noRequests", "Requests", team.isEmpty()
-                ? "No one reports to you in IdentityIQ."
-                : "No access requests in the last " + TRS_DAYS + " days.");
+        String empty;
+        if (!team.isEmpty()) {
+            empty = "No access requests in the last " + TRS_DAYS + " days.";
+        } else if (viewingOther) {
+            empty = "No one reports to " + trsNameToDisplay(managerName) + " in IdentityIQ.";
+        } else if (canViewAs) {
+            empty = "No one reports to you. Pick a manager in \"View as manager\" and click Show.";
+        } else {
+            empty = "No one reports to you in IdentityIQ.";
+        }
+        Field msg = trsReadOnly("noRequests", "Requests", empty);
         none.add(msg);
         form.add(none);
     }

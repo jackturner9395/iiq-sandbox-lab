@@ -10,6 +10,11 @@ have to call the helpdesk.
 - **Changes nothing.** The workflow is transient, so it leaves no workflow case behind.
 - **Scope:** only the launcher's own direct reports are ever queried. A team member picked on the form is checked
   against that list.
+- **View as manager (admins):** people with a capability listed in `TRS_VIEW_AS_CAPABILITIES` (default:
+  System Administrator) get a **View as manager** field. They can pick any manager, click **Show**, and see
+  exactly what that manager sees. This is for testing, and for the helpdesk if you add their capability. The rule
+  checks the capability itself, so adding the QuickLink to a wider population never lets regular users view
+  other teams. To let admins open the QuickLink, add it to your admin QuickLink population (see Import).
 
 ## Statuses
 
@@ -34,9 +39,18 @@ manual work item must set it too, or those requests fall back to the request's r
 
 ## Import
 
-The bundle has no environment-specific values, so it imports as-is into any environment.
+The bundles have no environment-specific values, so they import as-is into any environment.
 
-**From the UI:** Global Settings → Import from File → choose `config/Team-Request-Status-Import.xml` → Import.
+| File | Use it for | Contains |
+|---|---|---|
+| `config/Team-Request-Status-Import.xml` | **First install** | Rule, workflow, QuickLink |
+| `config/Team-Request-Status-Update.xml` | **Updating an existing install** | Rule and workflow only |
+
+Use the update file for every change after the first install. Re-importing the full bundle resets the QuickLink
+to the **Manager** population only, which removes any population you added in the UI (for example
+SystemAdministrator). This was tested in the sandbox.
+
+**From the UI:** Global Settings → Import from File → choose the file → Import.
 
 **From the console** (on the IIQ server, from `WEB-INF/bin`):
 
@@ -67,9 +81,11 @@ At the top of `config/Rule/Rule-Team-Request-Status-Library.xml`:
 |---|---|---|
 | `TRS_DAYS` | 60 | How far back to look |
 | `TRS_MAX` | 50 | Most requests shown at once |
+| `TRS_VIEW_AS_CAPABILITIES` | System Administrator | Capabilities that get the "View as manager" picker, e.g. add `"Help Desk"`. Use the name shown in the UI or the internal name; spacing and case don't matter |
 
-After editing a source file, rebuild the bundle: concatenate the rule, workflow and QuickLink (in that order)
-inside one `<sailpoint>` element, without their XML declaration and DOCTYPE lines.
+After editing a source file, rebuild the bundles: concatenate the rule, workflow and QuickLink (in that order;
+the update bundle leaves out the QuickLink) inside one `<sailpoint>` element, without their XML declaration and
+DOCTYPE lines.
 
 ## Test results (sandbox, 2026-10-21)
 
@@ -78,5 +94,10 @@ inside one `<sailpoint>` element, without their XML declaration and DOCTYPE line
   as "Sent…".
 - Filtering: a direct report returns only their requests; a person who isn't a direct report returns nothing.
 - Logged in as a manager, the QuickLink opened and the form rendered.
+- View as manager: an admin picking a manager saw that manager's exact list. Changing the manager reset a stale
+  team member filter to All. A regular manager passing a view-as value still got only their own team, and an
+  admin with no reports and no manager picked got a prompt to pick one.
+- Update bundle: a population added to the QuickLink survived importing the update bundle and was removed by
+  re-importing the full bundle.
 - Timing: 48 requests with about 5 items each took 0.2 to 0.6 s to build. Every lookup uses an indexed column
   (request target and created date, work item request ID, managed attribute application/attribute/value).

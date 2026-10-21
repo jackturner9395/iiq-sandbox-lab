@@ -4,7 +4,8 @@
   My Team's Requests Workflow
 
   QuickLink (managers only) -> read-only form listing the access requests for the launcher's direct reports,
-  with a plain-English status for each request and item. "Show" re-runs it for the picked team member;
+  with a plain-English status for each request and item. Admins also get a "View as manager" picker.
+  "Show" re-runs it for the picked manager / team member;
   "Close" ends it. Nothing is changed. The workflow is transient, so nothing is saved.
 
   Logic lives in the rule "Team Request Status Library".
@@ -15,6 +16,9 @@
     <Description>Keeps the case in memory only; a status lookup leaves nothing behind.</Description>
   </Variable>
   <Variable initializer="string:All" name="teamMember"/>
+  <Variable name="viewAsManager">
+    <Description>Admins only (see TRS_VIEW_AS_CAPABILITIES in the library): the manager whose team to show. Ignored for everyone else.</Description>
+  </Variable>
   <Variable name="statusForm"/>
   <Variable name="showAgain"/>
 
@@ -29,14 +33,14 @@
   <Step icon="Default" name="Build Form" posX="120" posY="100">
     <Script>
       <Source>
-        workflow.put("statusForm", trsBuildForm(launcher, teamMember));
+        workflow.put("statusForm", trsBuildForm(launcher, viewAsManager, teamMember));
       </Source>
     </Script>
     <Transition to="Show Requests"/>
   </Step>
 
   <Step icon="Approval" name="Show Requests" posX="230" posY="100">
-    <Approval name="Show Requests" owner="ref:launcher" return="teamMember">
+    <Approval name="Show Requests" owner="ref:launcher" return="viewAsManager,teamMember">
       <Arg name="workItemType" value="Form"/>
       <Arg name="workItemRequester" value="ref:launcher"/>
       <Arg name="workItemDescription" value="My Team's Requests"/>
