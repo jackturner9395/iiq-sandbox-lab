@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Workflow PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  My Team's Requests Workflow
+
+  QuickLink (managers only) -> read-only form listing the access requests for the launcher's direct reports,
+  with a plain-English status for each request and item. "Show" re-runs it for the picked team member;
+  "Close" ends it. Nothing is changed. The workflow is transient, so nothing is saved.
+
+  Logic lives in the rule "Team Request Status Library".
+-->
+<Workflow explicitTransitions="true" name="Team Request Status Workflow" type="Generic">
+  <Variable input="true" name="launcher"/>
+  <Variable initializer="true" input="true" name="transient">
+    <Description>Keeps the case in memory only; a status lookup leaves nothing behind.</Description>
+  </Variable>
+  <Variable initializer="string:All" name="teamMember"/>
+  <Variable name="statusForm"/>
+  <Variable name="showAgain"/>
+
+  <RuleLibraries>
+    <Reference class="sailpoint.object.Rule" name="Team Request Status Library"/>
+  </RuleLibraries>
+
+  <Step icon="Start" name="Start" posX="20" posY="100">
+    <Transition to="Build Form"/>
+  </Step>
+
+  <Step icon="Default" name="Build Form" posX="120" posY="100">
+    <Script>
+      <Source>
+        workflow.put("statusForm", trsBuildForm(launcher, teamMember));
+      </Source>
+    </Script>
+    <Transition to="Show Requests"/>
+  </Step>
+
+  <Step icon="Approval" name="Show Requests" posX="230" posY="100">
+    <Approval name="Show Requests" owner="ref:launcher" return="teamMember">
+      <Arg name="workItemType" value="Form"/>
+      <Arg name="workItemRequester" value="ref:launcher"/>
+      <Arg name="workItemDescription" value="My Team's Requests"/>
+      <Arg name="workItemForm" value="ref:statusForm"/>
+      <AfterScript>
+        <Source>
+          import sailpoint.object.WorkItem;
+          workflow.put("showAgain", (item != null &amp;&amp; item.getState() == WorkItem.State.Finished) ? "true" : "false");
+        </Source>
+      </AfterScript>
+    </Approval>
+    <Transition to="Build Form" when="script:&quot;true&quot;.equals(showAgain)"/>
+    <Transition to="End"/>
+  </Step>
+
+  <Step icon="Stop" name="End" posX="340" posY="100"/>
+</Workflow>

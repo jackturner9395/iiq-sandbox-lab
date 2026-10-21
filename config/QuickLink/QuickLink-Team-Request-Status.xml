@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE QuickLink PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<!--
+  My Team's Requests QuickLink. Managers only (the OOTB "Manager" dynamic scope, managerStatus = true).
+  Read-only: shows where their direct reports' access requests are.
+-->
+<QuickLink action="workflow" category="Access" enabled="true" messageKey="My Team's Requests" name="My Team's Requests" ordering="27">
+  <Attributes>
+    <Map>
+      <entry key="forceAllowSelf" value="true"/>
+      <entry key="launcher">
+        <value>
+          <Script>
+            <Source>return currentUser.getName();</Source>
+          </Script>
+        </value>
+      </entry>
+      <entry key="workflowName" value="Team Request Status Workflow"/>
+    </Map>
+  </Attributes>
+  <Description>See where your direct reports' access requests are: waiting on approval, being set up, done, or needing the helpdesk.</Description>
+  <QuickLinkOptions allowSelf="true">
+    <DynamicScopeRef>
+      <Reference class="sailpoint.object.DynamicScope" name="Manager"/>
+    </DynamicScopeRef>
+  </QuickLinkOptions>
+</QuickLink>

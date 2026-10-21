@@ -52,6 +52,7 @@ flowchart LR
 | [`sandbox-data/`](sandbox-data) | Synthetic feeds: an HR roster with a manager hierarchy, AD accounts with group memberships, EBS users with responsibilities |
 | [`labs/scim/`](labs/scim) | Standard-library-only **SCIM 2.0 server** (Users, Groups, paging, Bearer/Basic auth, request log), seeded from the HR feed, used to test the IIQ SCIM2 connector |
 | [`docs/google-analytics/`](docs/google-analytics) | **Google Analytics connector**: [technical reference](docs/google-analytics/TECHNICAL.md) and [step-by-step rebuild guide](docs/google-analytics/STEP-BY-STEP.md) (both also as PDF). The config is under `config/` (`GoogleAnalytics.xml`, the Build Access Binding rule, correlation, and the aggregation task). |
+| [`docs/team-request-status/`](docs/team-request-status) | **My Team's Requests QuickLink**: managers see where their direct reports' access requests are, with a plain-English status per request and item. A request IIQ marks Failed but that went to manual fulfillment shows as being set up manually. Import file: [`config/Team-Request-Status-Import.xml`](config/Team-Request-Status-Import.xml) |
 | [`labs/web-services/`](labs/web-services) | **FastAPI "Acme HR" REST API** with OAuth2 client credentials, paging, nested JSON, and role objects, plus starter rules and a full [lab guide](labs/web-services/LAB_GUIDE.md) for onboarding it with the Web Services connector |
 
 ## Design notes
@@ -97,6 +98,7 @@ SailPoint software and SSB are licensed through SailPoint Compass and are **not*
 - [x] HR / AD / EBS onboarding with creation rule and correlation
 - [x] Mock SCIM 2.0 and REST targets
 - [x] Google Analytics (live GA4 Admin API): aggregation, correlation, and LCM provisioning, with docs
+- [x] My Team's Requests QuickLink: manager self-service request status, with docs
 - [ ] Web Services connector: aggregation, rules, and provisioning ([lab guide](labs/web-services/LAB_GUIDE.md))
 - [ ] Break/fix troubleshooting runbook
 - [ ] Screenshots
